@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Unspoken-pain-test
+  m_EditorClassIdentifier: 
+  links:
+  - guid: 5d199803-b141-434d-bf4b-5ffc48e2391d
+    targetGuid: 6266ea30-74ad-482a-abb0-251f95a4d665
+    portId: 0
+  - guid: 6266ea30-74ad-482a-abb0-251f95a4d665
+    targetGuid: 7c6bf945-9a7b-4929-bfe3-5dbf1c9c1e1f
+    portId: 1
+  nodes:
+  - guid: 7c6bf945-9a7b-4929-bfe3-5dbf1c9c1e1f
+    characterSpr: {fileID: 0}
+    characterName: Richard
+    dialogueText: 3
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1442.4
+      y: 356.8
+      width: 499.19995
+      height: 303.2
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 6266ea30-74ad-482a-abb0-251f95a4d665
+    characterSpr: {fileID: 0}
+    characterName: Richard
+    dialogueText: 2
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 896.8
+      y: 376.8
+      width: 499.2
+      height: 303.2
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 5d199803-b141-434d-bf4b-5ffc48e2391d
+    characterSpr: {fileID: 0}
+    characterName: Richard
+    dialogueText: 1
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 340
+      y: 354.4
+      width: 499.2
+      height: 303.19998
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
