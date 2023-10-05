@@ -11,6 +11,7 @@ public enum Category
 public class InteractiveModel : MonoBehaviour
 {
     [SerializeField] private Category category;
+    [SerializeField] private InteractiveView view;
     public Action interactAction { get; protected set; } 
 
     public void DisplayConsoleMessage()
@@ -29,5 +30,10 @@ public class InteractiveModel : MonoBehaviour
     public void OnAction()
     {
         interactAction?.Invoke();
+    }
+
+    public void OnOpenView()
+    {
+        view.gameObject.SetActive(true);
     }
 }
