@@ -3,20 +3,21 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    Camera cam;
     PlayerInput GameInput;
     InputAction m_input;
+    Animator m_ani;
     private int moveDir;
     private float navPos;
-    private bool onNav = false;
+    [HideInInspector] public bool onNav = false;
+    private bool canMove => GameManager.Instance.inGame;
     public int MoveDir()
     {
         return moveDir;
     }
     private void Awake()
     {
-        cam = Camera.main;
         GameInput = new PlayerInput();
+        m_ani = GetComponentInChildren<Animator>();
     }
     private void OnEnable()
     {
@@ -32,8 +33,17 @@ public class PlayerController : MonoBehaviour
         if (onNav) moveDir = Navigate();
         else moveDir = (int) m_input.ReadValue<float>();
     }
+    void SetAnimator()
+    {
+        m_ani.SetFloat("Speed", moveDir * moveDir);
+        if (moveDir == 0) return;
+        Vector3 scale = transform.localScale;
+        scale.x = moveDir * Mathf.Abs(scale.x);
+        transform.localScale = scale;
+    }
     public void SetNavigate(float pos)
     {
+        if(!canMove) return;
         navPos = pos;
         onNav = true;
     }
@@ -46,18 +56,10 @@ public class PlayerController : MonoBehaviour
         else dir = -1;
         return dir;
     }
-    //Test navigate
-    void MoveByClick()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-            SetNavigate(mousePos.x);
-        }
-    }
     void Update()
     {
+        if(!canMove) return;
         InputUpdate();
-        MoveByClick();
+        SetAnimator();
     }
 }

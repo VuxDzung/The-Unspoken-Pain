@@ -15,8 +15,7 @@ public class InteractiveController : MonoBehaviour
             InteractiveModel interactModel = hit.transform.GetComponent<InteractiveModel>();
             if (Input.GetMouseButtonDown(0))
             {
-                interactModel.OnOpenView();
-                interactModel.DisplayConsoleMessage();
+                interactModel.NavigateTo();
             }
         }
     }
