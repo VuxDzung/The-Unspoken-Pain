@@ -13,6 +13,6 @@ public class InteractiveView : MonoBehaviour
 
     public void OnBackButtonClick()
     {
-        this.gameObject.SetActive(false);
+        GameManager.Instance.ChangeCanvas(0);
     }
 }
