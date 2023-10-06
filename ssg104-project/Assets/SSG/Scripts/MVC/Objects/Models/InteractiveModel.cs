@@ -10,29 +10,26 @@ public enum Category
     Object
 }
 
-public class InteractiveModel : MonoBehaviour
+public class InteractiveModel : InteractiveObject
 {
     [SerializeField] private Category category;
-    [SerializeField] private InteractiveView view;
-    public Action interactAction { get; protected set; }
-    private int viewOrder = 0;
+    [SerializeField] private GameObject highline;
+    public Action interactAction { get; set; }
     private void Awake()
     {
         interactAction += OnOpenView;
     }
-    private void Start()
+    protected override void Start()
     {
-        SetViewOrder();
+        base.Start();
+        SetMouseOn(false);
     }
-    private void SetViewOrder()
+    public void SetMouseOn(bool active) 
     {
-        if (view == null) return;
-        InteractiveView[] views = GameManager.Instance.getAllView();
-        for (int i = 0; i < views.Length; i++)
-        {
-            if (view == views[i]) viewOrder = i;
-        }
+        if(highline == null) return;
+        highline.SetActive(active);
     }
+
     public void DisplayConsoleMessage()
     {
         switch (category)
@@ -52,10 +49,5 @@ public class InteractiveModel : MonoBehaviour
     public void OnAction()
     {
         interactAction?.Invoke();
-    }
-
-    public void OnOpenView()
-    {
-        GameManager.Instance.ChangeCanvas(viewOrder);
     }
 }
