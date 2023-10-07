@@ -5,8 +5,17 @@ using UnityEngine;
 public class GameManager : GenericSingleton<GameManager>
 {
     PlayerController player => FindObjectOfType<PlayerController>();
-    [SerializeField] private List<GameObject> activeObject;
-    [SerializeField] private GameObject[] gameViews;
+    SourceManager source => FindObjectOfType<SourceManager>();
+    private List<GameObject> activeObject
+    {
+        get { return source.activeObject; }
+        set { activeObject = source.activeObject; }
+    }
+    private GameObject[] gameViews
+    {
+        get { return source.gameViews; }
+        set { gameViews = source.gameViews; }
+    }
     private InteractiveModel curNavObj = null;
     [HideInInspector] public bool inGame = true;
     void Start()
@@ -52,10 +61,11 @@ public class GameManager : GenericSingleton<GameManager>
     public void ChangeCanvas(int ord)
     {
         SetObjInGame(ord);
+        foreach (GameObject v in gameViews) 
+            if (v.activeSelf) v.SetActive(false);
         foreach (GameObject v in gameViews)
             if (gameViews[ord] == null) continue;
             else if (gameViews[ord] == v) v.SetActive(true);
-            else if (gameViews[ord].activeSelf) v.SetActive(false);
     }
     public void SetMoveNavigate(InteractiveModel obj)
     {
