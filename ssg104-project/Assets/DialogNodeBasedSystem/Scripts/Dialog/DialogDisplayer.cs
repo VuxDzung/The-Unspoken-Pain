@@ -1,5 +1,7 @@
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 namespace cherrydev
 {
     public class DialogDisplayer : MonoBehaviour
@@ -7,6 +9,19 @@ namespace cherrydev
         [SerializeField] private SentencePanel dialogSentensePanel;
         [SerializeField] private AnswerPanel dialogAnswerPanel;
         [SerializeField] private DialogBehaviour dialogBehaviour;
+        [SerializeField] private Button skipButton;
+
+        [SerializeField] private string currenScene = "";
+        [SerializeField] private string nextSceneName = "";
+        [SerializeField] private Button saveButton;
+
+        public Action afterEndSentence { get; set; }
+        public Action<string> endDialogChangeScene { get; set; }
+
+        private void Start()
+        {
+            skipButton.onClick.AddListener(DisableDialogPanel);
+        }
 
         private void OnEnable()
         {
@@ -58,6 +73,8 @@ namespace cherrydev
         {
             DisableDialogAnswerPanel();
             DisableDialogSentencePanel();
+            afterEndSentence?.Invoke();
+            endDialogChangeScene?.Invoke(nextSceneName);
         }
 
         /// <summary>

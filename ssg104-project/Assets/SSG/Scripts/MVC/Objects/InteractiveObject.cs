@@ -24,4 +24,11 @@ public class InteractiveObject : MonoBehaviour
     {
         GameManager.Instance.ChangeCanvas(viewOrder);
     }
+
+    public void OnOpenDefaultView()
+    {
+        GameManager.Instance.ChangeCanvas(0);
+    }
+
+    
 }

@@ -58,6 +58,29 @@ namespace cherrydev
             return amount;
         }
 
+        public int GetCurrentNodeIndex()
+        {
+            // Find the index of the current node in the nodesList
+            if (nodeToDrawLineFrom != null)
+            {
+                return nodesList.IndexOf(nodeToDrawLineFrom);
+            }
+
+            return -1; // Return -1 if no current node is set
+        }
+
+        public void SetCurrentNodeIndex(int index)
+        {
+            if (index >= 0 && index < nodesList.Count)
+            {
+                nodeToDrawLineFrom = nodesList[index];
+            }
+            else
+            {
+                Debug.LogWarning("Invalid node index.");
+            }
+        }
+
 #endif
     }
 }

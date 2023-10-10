@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Newtonsoft.Json;
 
 namespace VNCreator
 {
@@ -54,10 +55,46 @@ namespace VNCreator
             PlayerPrefs.SetString(currentLoadName, _save);
         }
 
+        public static void SaveScene(string scene)
+        {
+            PlayerPrefs.SetString("Scene", scene);
+        }
+
+        public static void SavePlatformer(UserData data)
+        {
+            string platformData = JsonConvert.SerializeObject(data);
+            PlayerPrefs.SetString("User", platformData);
+        }
+
+        public static string LoadScene() => PlayerPrefs.GetString("Scene");
+
+        public static UserData LoadPlatformer()
+        {
+            UserData loadedData = JsonConvert.DeserializeObject<UserData>(GetCurrentPlatformerData());
+            return loadedData;
+        }
+
+        public static string GetCurrentPlatformerData()
+        {
+            return PlayerPrefs.GetString("User");
+        }
+
         public static void NewLoad(string saveName)
         {
             currentLoadName = saveName;
             PlayerPrefs.SetString(saveName, string.Empty);
         }
+    }
+
+    public class UserData
+    {
+        public Dictionary<string, bool> mainSubject = new Dictionary<string, bool>();
+        public Inventory inventory { get; set; }
+    }
+
+    [System.Serializable]
+    public class Inventory
+    {
+        public GameObject[] items;
     }
 }

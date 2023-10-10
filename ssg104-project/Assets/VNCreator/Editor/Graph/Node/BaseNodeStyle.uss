@@ -9,6 +9,15 @@
 	flex-direction: row;
 }
 
+/* Define a custom class for a Toggle element */
+.my_toggle {
+    /* Define your styling properties here */
+    /* For example, you can set background color, text color, etc. */
+    background-color: #CCCCCC;
+    color: #333333;
+    /* Add more styling as needed */
+}
+
 .char_img{
 	height: 90px;
 	width: 160px;
@@ -28,6 +37,13 @@
 	padding: 0px;
 	float: left;
 }
+
+.end_of_skip
+{
+	height: 20px;
+	width: 50px;
+}
+
 
 .char_name{
 	height: 20px;

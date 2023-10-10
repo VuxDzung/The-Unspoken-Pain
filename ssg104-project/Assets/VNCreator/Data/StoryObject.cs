@@ -64,5 +64,27 @@ namespace VNCreator
             else
                 return null;
         }
+
+        public NodeData GetLastNode(int _choiceId)
+        {
+            _tempLinks = new List<Link>();
+
+            for (int i = 0; i < links.Count; i++)
+            {
+                _tempLinks.Add(links[i]);
+
+                if (links[i].guid == links[links.Count - 2].guid) break;
+            }
+
+            if (_choiceId < _tempLinks.Count)
+                return GetCurrentNode(_tempLinks[_choiceId].targetGuid);
+            else
+                return null;
+        }
+
+        public void Display()
+        {
+             
+        }
     }
 }

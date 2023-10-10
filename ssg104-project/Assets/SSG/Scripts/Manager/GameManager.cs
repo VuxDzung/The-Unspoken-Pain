@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using VNCreator;
 public class GameManager : GenericSingleton<GameManager>
 {
     PlayerController player => FindObjectOfType<PlayerController>();
+    internal Dictionary<string, bool> mainStorySubjects = new Dictionary<string, bool>();
+    internal Dictionary<string, bool> inactiveStorySubjects = new Dictionary<string, bool>();
+    internal Inventory platformerInventory;
     SourceManager source => FindObjectOfType<SourceManager>();
     private List<GameObject> activeObject
     {
@@ -81,5 +84,45 @@ public class GameManager : GenericSingleton<GameManager>
             curNavObj.OnAction();
             curNavObj = null;
         }
+    }
+
+    public void AddInteractedObjects(InteractiveObject _object) { 
+        this.mainStorySubjects.Add(_object.name, true);
+        Debug.Log("Added");
+    }
+
+    public void PlatformerSaveProcess()
+    {
+        UserData platformerData = new UserData();
+        foreach (var mainSubject in mainStorySubjects)
+        {
+            platformerData.mainSubject.Add(mainSubject.Key, mainSubject.Value);
+        }
+        platformerData.inventory = platformerInventory;
+
+        GameSaveManager.SaveScene(source.currentScene);
+        GameSaveManager.SavePlatformer(platformerData);
+    }
+
+    public void LoadProcess()
+    {
+        Debug.Log($"Platformer data: {GameSaveManager.GetCurrentPlatformerData()}");
+        UserData previourData = GameSaveManager.LoadPlatformer();
+        foreach(var pairs in previourData.mainSubject)
+        {
+            mainStorySubjects.Add(pairs.Key, pairs.Value);
+        }
+    }
+
+    public bool HadInteracted(InteractiveObject currentObject)
+    {
+        foreach(var m_object in mainStorySubjects)
+        {
+            if (m_object.Key == currentObject.name && m_object.Value == true)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

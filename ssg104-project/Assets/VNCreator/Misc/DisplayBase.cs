@@ -7,28 +7,43 @@ namespace VNCreator
 {
     public class DisplayBase : MonoBehaviour
     {
+        [SerializeField] private bool playOnAwake = true;
         public StoryObject story;
 
         protected NodeData currentNode;
         protected bool lastNode;
+        public bool isSkipping { get; set; }
 
+        protected List<string> _loadList = new List<string>();
         protected List<string> loadList = new List<string>();
 
         void Awake()
+        {
+            if (playOnAwake) TriggerDialog();
+        }
+
+        protected virtual void Update()
+        {
+            
+        }
+
+        public void TriggerDialog()
         {
             if (PlayerPrefs.GetString(GameSaveManager.currentLoadName) == string.Empty)
             {
                 currentNode = story.GetFirstNode();
                 loadList.Add(currentNode.guid);
+                _loadList.Add(currentNode.guid);
             }
             else
             {
                 loadList = GameSaveManager.Load();
-                if(loadList == null || loadList.Count == 0)
+                if (loadList == null || loadList.Count == 0)
                 {
                     currentNode = story.GetFirstNode();
                     loadList = new List<string>();
                     loadList.Add(currentNode.guid);
+                    _loadList.Add(currentNode.guid);
                 }
                 else
                 {
@@ -45,6 +60,10 @@ namespace VNCreator
                 lastNode = currentNode.endNode;
                 loadList.Add(currentNode.guid);
             }
+            else
+            {
+                Debug.Log("Last node reach");
+            }
         }
 
         protected virtual void Previous()
@@ -54,9 +73,20 @@ namespace VNCreator
             lastNode = currentNode.endNode;
         }
 
+        public NodeData GetPreviousNode()
+        {
+
+            loadList.RemoveAt(loadList.Count - 1);
+            NodeData previousNode = story.GetCurrentNode(loadList[loadList.Count - 1]);
+            lastNode = previousNode.endNode;
+
+            return previousNode;
+        }
+
         protected void Save()
         {
             GameSaveManager.Save(loadList);
+            Debug.Log("Saved");
         }
     }
 }

@@ -7,6 +7,7 @@ namespace VNCreator
     [Serializable]
     public class NodeData
     {
+        public string endOfSkip;//Yes or no
         public string guid;
         public Sprite characterSpr;
         public string characterName;

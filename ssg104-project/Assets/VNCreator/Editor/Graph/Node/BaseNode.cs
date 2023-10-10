@@ -42,6 +42,8 @@ namespace VNCreator
             VisualElement charSprDisplay = this.Query<VisualElement>("Char_Img");
             charSprDisplay.style.backgroundImage = node.nodeData.characterSpr ? node.nodeData.characterSpr.texture : null;
 
+           
+
             ObjectField charSprField = this.Query<ObjectField>("Icon_Selection").First();
             charSprField.objectType = typeof(Sprite);
             charSprField.value = node.nodeData.characterSpr;
@@ -52,6 +54,29 @@ namespace VNCreator
                     charSprDisplay.style.backgroundImage = node.nodeData.characterSpr ? node.nodeData.characterSpr.texture : null;
                 }
             );
+
+            VisualElement toggleElement = this.Query("Toggle_Field");
+            
+            // Check if the element exists
+            if (toggleElement != null)
+            {
+                Debug.Log("No null");
+                // The element exists, you can work with it here.
+                TextField endOfSkipToggle = this.Query<TextField>("Toggle_Field");
+                endOfSkipToggle.value = node.nodeData.endOfSkip;
+
+                endOfSkipToggle.RegisterValueChangedCallback(
+                    e =>
+                    {
+                        node.nodeData.endOfSkip = e.newValue;
+                    }
+                );
+            }
+            else
+            {
+                // The element does not exist.
+                Debug.LogError("Toggle init null");
+            }
 
             TextField charNameField = this.Query<TextField>("Char_Name");
             charNameField.value = node.nodeData.characterName;

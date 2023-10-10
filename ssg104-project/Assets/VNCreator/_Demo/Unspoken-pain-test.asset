@@ -13,17 +13,27 @@ MonoBehaviour:
   m_Name: Unspoken-pain-test
   m_EditorClassIdentifier: 
   links:
+  - guid: 27d31304-2731-471a-9078-9b1c8416ad7c
+    targetGuid: 7c6bf945-9a7b-4929-bfe3-5dbf1c9c1e1f
+    portId: 0
+  - guid: 27d31304-2731-471a-9078-9b1c8416ad7c
+    targetGuid: eefc4d77-f524-408f-af00-9b98aca38fe9
+    portId: 1
   - guid: 5d199803-b141-434d-bf4b-5ffc48e2391d
     targetGuid: 6266ea30-74ad-482a-abb0-251f95a4d665
-    portId: 0
+    portId: 2
   - guid: 6266ea30-74ad-482a-abb0-251f95a4d665
-    targetGuid: 7c6bf945-9a7b-4929-bfe3-5dbf1c9c1e1f
-    portId: 1
+    targetGuid: 9c8ba68d-ab23-4661-9c03-d12d7e3b8a6a
+    portId: 3
+  - guid: 9c8ba68d-ab23-4661-9c03-d12d7e3b8a6a
+    targetGuid: 27d31304-2731-471a-9078-9b1c8416ad7c
+    portId: 4
   nodes:
-  - guid: 7c6bf945-9a7b-4929-bfe3-5dbf1c9c1e1f
+  - endOfSkip: 
+    guid: 7c6bf945-9a7b-4929-bfe3-5dbf1c9c1e1f
     characterSpr: {fileID: 0}
     characterName: Richard
-    dialogueText: 3
+    dialogueText: choice 1 choose
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 1
@@ -32,34 +42,56 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 1442.4
-      y: 356.8
+      x: 2344.8
+      y: 25.599998
       width: 499.19995
       height: 303.2
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 6266ea30-74ad-482a-abb0-251f95a4d665
+  - endOfSkip: 
+    guid: 27d31304-2731-471a-9078-9b1c8416ad7c
     characterSpr: {fileID: 0}
     characterName: Richard
-    dialogueText: 2
+    dialogueText: Choices
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 0
+    choices: 2
+    choiceOptions:
+    - Choice 1
+    - Choice 2
+    nodePosition:
+      serializedVersion: 2
+      x: 1521.6
+      y: 346.4
+      width: 499.20007
+      height: 362.4
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - endOfSkip: 
+    guid: eefc4d77-f524-408f-af00-9b98aca38fe9
+    characterSpr: {fileID: 0}
+    characterName: grew
+    dialogueText: Endvasvsa
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
     choices: 1
     choiceOptions:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 896.8
-      y: 376.8
-      width: 499.2
+      x: 2233.6
+      y: 488.8
+      width: 499.19995
       height: 303.2
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 5d199803-b141-434d-bf4b-5ffc48e2391d
+  - endOfSkip: 
+    guid: 5d199803-b141-434d-bf4b-5ffc48e2391d
     characterSpr: {fileID: 0}
     characterName: Richard
-    dialogueText: 1
+    dialogueText: Hello
     backgroundSpr: {fileID: 0}
     startNode: 1
     endNode: 0
@@ -68,9 +100,47 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 340
-      y: 354.4
+      x: -237.6
+      y: 320
       width: 499.2
-      height: 303.19998
+      height: 303.2
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - endOfSkip: 
+    guid: 6266ea30-74ad-482a-abb0-251f95a4d665
+    characterSpr: {fileID: 0}
+    characterName: Richard
+    dialogueText: Good luck
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 482.4
+      y: 220
+      width: 499.19998
+      height: 303.2
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - endOfSkip: 
+    guid: 9c8ba68d-ab23-4661-9c03-d12d7e3b8a6a
+    characterSpr: {fileID: 0}
+    characterName: Voice from the void
+    dialogueText: Now make your choice
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1005.6
+      y: 425.59998
+      width: 499.20007
+      height: 303.2
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}

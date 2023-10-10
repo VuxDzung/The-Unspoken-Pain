@@ -22,31 +22,37 @@ namespace VNCreator
         public Button previousBtn;
         public Button saveBtn;
         public Button menuButton;
+        public Button skipButton;
         [Header("Choices")]
         public Button choiceBtn1;
         public Button choiceBtn2;
         public Button choiceBtn3;
         [Header("End")]
+        [SerializeField] private int endSkipNodeIndex;
         public GameObject endScreen;
         [Header("Main menu")]
         [Scene]
+        [SerializeField] private bool endOfGame = false;
         public string mainMenu;
 
         void Start()
         {
+            isSkipping = false;
             nextBtn.onClick.AddListener(delegate { NextNode(0); });
-            if(previousBtn != null)
+            if (previousBtn != null)
                 previousBtn.onClick.AddListener(Previous);
-            if(saveBtn != null)
+            if (saveBtn != null)
                 saveBtn.onClick.AddListener(Save);
             if (menuButton != null)
                 menuButton.onClick.AddListener(ExitGame);
+            if (skipButton != null)
+                skipButton.onClick.AddListener(IsSkipping);
 
-            if(choiceBtn1 != null)
+            if (choiceBtn1 != null)
                 choiceBtn1.onClick.AddListener(delegate { NextNode(0); });
-            if(choiceBtn2 != null)
+            if (choiceBtn2 != null)
                 choiceBtn2.onClick.AddListener(delegate { NextNode(1); });
-            if(choiceBtn3 != null)
+            if (choiceBtn3 != null)
                 choiceBtn3.onClick.AddListener(delegate { NextNode(2); });
 
             endScreen.SetActive(false);
@@ -54,9 +60,34 @@ namespace VNCreator
             StartCoroutine(DisplayCurrentNode());
         }
 
+        protected override void Update()
+        {
+            base.Update();
+
+            if (Input.GetKeyDown(KeyCode.Space) && currentNode.choices <= 1)
+                NextNode(0);
+
+            if (isSkipping)
+            {
+                if (currentNode.endOfSkip.Length == 0)
+                {
+                    characterNameTxt.text = currentNode.characterName;
+                    dialogueTxt.text = currentNode.dialogueText;
+                    Debug.Log($"End: {currentNode.dialogueText}");
+                    isSkipping = false;
+                    return;
+                }
+            }
+            
+            if (isSkipping)
+                NextNode(0);
+        }
+
+        public void IsSkipping() => isSkipping = true;
+
         protected override void NextNode(int _choiceId)
         {
-            if (lastNode)
+            if (lastNode || endOfGame)
             {
                 endScreen.SetActive(true);
                 return;
@@ -83,33 +114,11 @@ namespace VNCreator
 
             if (currentNode.choices <= 1) 
             {
-                nextBtn.gameObject.SetActive(true);
-
-                choiceBtn1.gameObject.SetActive(false);
-                choiceBtn2.gameObject.SetActive(false);
-                choiceBtn3.gameObject.SetActive(false);
-
-                previousBtn.gameObject.SetActive(loadList.Count != 1);
+                DisplaySentenceView();
             }
             else
             {
-                nextBtn.gameObject.SetActive(false);
-
-                choiceBtn1.gameObject.SetActive(true);
-                choiceBtn1.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[0];
-
-                choiceBtn2.gameObject.SetActive(true);
-                choiceBtn2.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[1];
-
-                if (currentNode.choices == 3)
-                {
-                    choiceBtn3.gameObject.SetActive(true);
-                    choiceBtn3.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[2];
-                }
-                else
-                {
-                    choiceBtn3.gameObject.SetActive(false);
-                }
+                DisplayChoiceView();
             }
 
             if (currentNode.backgroundMusic != null)
@@ -144,6 +153,38 @@ namespace VNCreator
         void ExitGame()
         {
             SceneManager.LoadScene(mainMenu, LoadSceneMode.Single);
+        }
+
+        public void DisplaySentenceView()
+        {
+            nextBtn.gameObject.SetActive(true);
+
+            choiceBtn1.gameObject.SetActive(false);
+            choiceBtn2.gameObject.SetActive(false);
+            choiceBtn3.gameObject.SetActive(false);
+
+            previousBtn.gameObject.SetActive(loadList.Count != 1);
+        }
+
+        public void DisplayChoiceView()
+        {
+            nextBtn.gameObject.SetActive(false);
+
+            choiceBtn1.gameObject.SetActive(true);
+            choiceBtn1.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[0];
+
+            choiceBtn2.gameObject.SetActive(true);
+            choiceBtn2.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[1];
+
+            if (currentNode.choices == 3)
+            {
+                choiceBtn3.gameObject.SetActive(true);
+                choiceBtn3.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[2];
+            }
+            else
+            {
+                choiceBtn3.gameObject.SetActive(false);
+            }
         }
     }
 }

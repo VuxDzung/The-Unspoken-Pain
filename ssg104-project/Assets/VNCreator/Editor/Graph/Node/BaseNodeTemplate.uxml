@@ -11,6 +11,8 @@
 			</engine:VisualElement>
 		</engine:VisualElement>
 		<engine:VisualElement>
+			<engine:Label name="End of skip" class="min_header"/>
+			<engine:TextField name="Toggle_Field" class="end_of_skip"/>
 			<engine:Label text="Character Name" class="min_header"/>
 			<engine:TextField name="Char_Name" class="char_name"/>
 			<engine:Label text="Dialogue" class="min_header"/>

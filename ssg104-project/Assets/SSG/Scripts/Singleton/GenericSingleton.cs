@@ -40,4 +40,11 @@ public class GenericSingleton<T> : MonoBehaviour where T  : Component
             Destroy(gameObject);
         }
     }
+
+    
+    private void OnDisable()
+    {
+        Destroy(gameObject);
+    }
+    
 }
