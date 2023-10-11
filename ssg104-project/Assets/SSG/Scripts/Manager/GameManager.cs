@@ -98,7 +98,7 @@ public class GameManager : GenericSingleton<GameManager>
         {
             platformerData.mainSubject.Add(mainSubject.Key, mainSubject.Value);
         }
-        platformerData.inventory = platformerInventory;
+        //platformerData.inventory = platformerInventory;
 
         GameSaveManager.SaveScene(source.currentScene);
         GameSaveManager.SavePlatformer(platformerData);

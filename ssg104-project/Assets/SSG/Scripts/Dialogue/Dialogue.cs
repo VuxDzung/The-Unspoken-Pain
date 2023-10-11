@@ -9,6 +9,6 @@ public class Dialogue : ScriptableObject
     public List<Dialogue> subDialogues;
     public string nodeID;
     public string characterName;
-    public Image characterImage;
+    public Sprite characterImage;
     public string dialouge;
 }
