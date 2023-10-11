@@ -153,8 +153,6 @@ public class DialogueManager : MonoBehaviour
 
     protected void Choice(int choice)
     {
-        Debug.Log("Before Choose: " + BoT);
-        
         Branch choosingBranch = branchOnTrack.subBranchs[choice];
         for (int i = 0; i < decisionBranches.Count; i++)
         {
@@ -162,6 +160,10 @@ public class DialogueManager : MonoBehaviour
 
             if (decisionBranches[temp] == choosingBranch)
             {
+                /*
+                 * change branch story here
+                 * remove 2 changes after if neccessary
+                 */
                 BoT = temp;
                 DoT = 0;
                 break;
