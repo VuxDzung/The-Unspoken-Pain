@@ -55,7 +55,9 @@ public class DialogueManager : MonoBehaviour
         {
             if (stories[i] == mainStory) SoT = i; break;
         }
-        BuildDecision();
+        if (!mainStory.isBuilt) { BuildDecision(); Debug.Log("1"); }
+        else this.decisionBranches = mainStory.decisionBranches;
+        DefaultDialogueTrigger();
     }
 
     public void Skip()
@@ -103,7 +105,8 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
-        DefaultDialogueTrigger();
+        mainStory.decisionBranches = decisionBranches;
+        mainStory.isBuilt = true;
     }
     #region Connect-code
     private bool CheckLoop(Branch curBranch, Dialogue sub)
