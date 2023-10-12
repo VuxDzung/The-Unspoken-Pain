@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3329286190401829455, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_Name
-      value: Lamp Variant
+      value: Lamp
       objectReference: {fileID: 0}
     - target: {fileID: 6033209874791115224, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6033209874791115224, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.562
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6033209874791115224, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.573
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6033209874791115224, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_LocalPosition.z
@@ -66,6 +66,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3329286190401829455, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 8323003889412643787}
+    - targetCorrespondingSourceObject: {fileID: 3329286190401829455, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 9028232475929027989}
   m_SourcePrefab: {fileID: 100100000, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
 --- !u!1 &4278342565110815368 stripped
@@ -73,6 +76,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3329286190401829455, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
   m_PrefabInstance: {fileID: 1543531547332616391}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8323003889412643787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278342565110815368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5b92525dfac164683f46d888ee99a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!108 &9028232475929027989
 Light:
   m_ObjectHideFlags: 0

@@ -6,7 +6,6 @@ using VNCreator;
 public class SourceManager : MonoBehaviour
 {
     public string currentScene;
-    public List<GameObject> activeObject;
     public GameObject[] gameViews;
     private InteractiveModel[] itemModels => FindObjectsOfType<InteractiveModel>();
     private void Awake()

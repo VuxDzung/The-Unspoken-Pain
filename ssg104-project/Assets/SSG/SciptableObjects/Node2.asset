@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
   m_Name: Node2
   m_EditorClassIdentifier: 
-  subDialogues: []
+  subDialogues:
+  - {fileID: 11400000, guid: 6791054415b3373448c8260aadc87c97, type: 2}
   nodeID: Node2
   characterName: Richard
   characterImage: {fileID: 21300000, guid: 59761d37806f3244ba77b4b23f66b5a4, type: 3}
-  dialouge: Choice 1 choosen
+  dialouge: Chosen1

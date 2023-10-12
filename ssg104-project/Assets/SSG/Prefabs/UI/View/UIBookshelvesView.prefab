@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIBookshelvesView
       objectReference: {fileID: 0}
+    - target: {fileID: 2518219944619213338, guid: d756aac7e6545c244bd35565cf1682ee, type: 3}
+      propertyPath: m_text
+      value: Display bookshelve view
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437881837940430816, guid: d756aac7e6545c244bd35565cf1682ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6704897713165383262, guid: d756aac7e6545c244bd35565cf1682ee, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -22,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6704897713165383262, guid: d756aac7e6545c244bd35565cf1682ee, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6704897713165383262, guid: d756aac7e6545c244bd35565cf1682ee, type: 3}
       propertyPath: m_AnchorMax.x

@@ -11,7 +11,7 @@ public enum Category
 
 public class InteractiveModel : InteractiveObject
 {
-    internal bool interactable;
+    internal bool interactable = true;
     [SerializeField] private Category category;
     [SerializeField] private GameObject highline;
 
