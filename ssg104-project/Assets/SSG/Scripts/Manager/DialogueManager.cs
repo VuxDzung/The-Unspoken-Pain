@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using TMPro;
 using UnityEngine.UI;
+using Unity.Mathematics;
 
 [Serializable]
 public class Branch
@@ -17,8 +18,7 @@ public class Branch
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField] protected Story[] stories;
-    [SerializeField] private TextMeshProUGUI tmp;
+    public Story[] stories;
     internal Story mainStory;
     private Dialogue[] storyDialogues
     {
@@ -31,10 +31,11 @@ public class DialogueManager : MonoBehaviour
         set { }
     }
 
-    protected Action endDialogueAction;
-    protected Action endMainStoryAction;
+    internal Action<Dialogue> showDialogue;
+    internal Action endDialogueAction;
+    internal Action endMainStoryAction;
 
-    [SerializeField] protected List<Branch> decisionBranches = new List<Branch>();
+    [SerializeField] private List<Branch> decisionBranches = new List<Branch>();
     internal int SoT = 0; //Story On Track
     internal int BoT = 0; //Branch On Track
     internal int DoT = 0; //Dialogue On Track
@@ -43,58 +44,18 @@ public class DialogueManager : MonoBehaviour
     protected Branch branchOnTrack;
     protected Dialogue dialogueOnTrack;
 
-    [SerializeField] protected int startStory = 0;
-    [SerializeField] protected bool playOnStart = false;
-    [Header("Character View")]
-    [SerializeField] private Image characterImg;
-    [SerializeField] private TextMeshProUGUI tmpCharacterName;
-    [SerializeField] private Image background;
+    [SerializeField] private bool connectedStory;
+    [SerializeField] private List<int3> connectNote = new List<int3>();
 
-    [Header("Dialogue view")]
-    [SerializeField] private GameObject choicesView;
-    [SerializeField] private TextMeshProUGUI tmpDialouge;
-
-    [Header("Buttons")]
-    [SerializeField] private Button backToHome;
-    [SerializeField] private Button autoButton;
-    [SerializeField] private Button skipButton;
-    [SerializeField] private Button saveButton;
-    [SerializeField] private Button[] choiceButtons;
-
-    private bool isSkipping = false;
-    private bool choiceIsClicked = false;
-    private bool hasReachChoiceNode = false;
-    protected virtual void Start()
-    {
-        for(int i = 0; i < choiceButtons.Length; i++)
-        {
-            int temp = i;
-            Debug.Log(temp);
-            choiceButtons[temp].onClick.AddListener(() => Choice(temp));
-        }
-
-        if (playOnStart)
-            LoadMainStory(stories[startStory]);
-
-        if (skipButton != null)
-        {
-            skipButton.onClick.AddListener(Skip);
-        }
-    }
 
     public void LoadMainStory(Story mainStory)
     {
         this.mainStory = mainStory;
-        for(int i = 0;i < stories.Length; i++) 
+        for (int i = 0; i < stories.Length; i++)
         {
             if (stories[i] == mainStory) SoT = i; break;
         }
         BuildDecision();
-    }
-
-    protected virtual void Update()
-    {
-        
     }
 
     public void Skip()
@@ -103,8 +64,9 @@ public class DialogueManager : MonoBehaviour
         DialogueTrigger();
     }
 
-    public void BuildDecision() {
-        
+    public void BuildDecision()
+    {
+
         Branch curBranch = new Branch();
         Branch firstBranch = new Branch();
         firstBranch.dialogues.Add(storyDialogues[0]);
@@ -121,80 +83,103 @@ public class DialogueManager : MonoBehaviour
                     break;
                 }
             }
-            if (subCount == 1) {
+            if (subCount == 1)
+            {
                 Dialogue sub = curDialogue.subDialogues[0];
+                if (CheckLoop(curBranch, sub)) continue;
                 curBranch.dialogues.Add(sub);
             }
-            else if(subCount > 1){
+            else if (subCount > 1)
+            {
                 List<Dialogue> subDialogues = curDialogue.subDialogues;
                 for (int j = 0; j < subCount; j++)
                 {
+                    //if (CheckLoop(curBranch, subDialogues[j])) continue;
                     Branch newBranch = new Branch();
                     newBranch.dialogues.Add(subDialogues[j]);
-                    
+
                     decisionBranches.Add(newBranch);
                     curBranch.subBranchs.Add(newBranch);
                 }
             }
         }
-
-        branchOnTrack = decisionBranches[0];
-        dialogueOnTrack = branchOnTrack.dialogues[0];
+        DefaultDialogueTrigger();
+    }
+    #region Connect-code
+    private bool CheckLoop(Branch curBranch, Dialogue sub)
+    {
+        if (!connectedStory) return false;
+        foreach (var branch in decisionBranches)
+        {
+            if (branch.dialogues.Contains(sub))
+            {
+                curBranch.subBranchs.Add(branch);
+                int3 pos = ConnectPos(curBranch, branch, sub);
+                connectNote.Add(pos);
+                return true;
+            }
+        }
+        return false;
+    }
+    private int3 ConnectPos(Branch curBranch, Branch connectBranch, Dialogue connectNode)
+    {
+        return new int3(decisionBranches.IndexOf(curBranch), decisionBranches.IndexOf(connectBranch), connectBranch.dialogues.IndexOf(connectNode));
+    }
+    private void SendToConnectNode()
+    {
+        foreach (var pos in connectNote)
+        {
+            if (branchOnTrack == decisionBranches[pos.x])
+            {
+                BoT = pos.y;
+                DoT = pos.z;
+                break;
+            }
+        }
         DialogueTrigger();
     }
-
-    protected void nextDialogue()
+    #endregion
+    public void nextDialogue()
     {
         DoT++;
-        if (DoT >= branchOnTrack.dialogues.Count) { Debug.Log("End"); endDialogueAction?.Invoke(); return; }
-
+        if (DoT >= branchOnTrack.dialogues.Count)
+        {
+            if (connectedStory && branchOnTrack.subBranchs.Count == 1)
+            {
+                Debug.Log("Connecting");
+                SendToConnectNode();
+            }
+            else
+            {
+                Debug.Log("End");
+                endDialogueAction?.Invoke();
+            }
+            return;
+        }
         DialogueTrigger();
     }
 
-    protected void Choice(int choice)
+    public void Choice(int choice)
     {
+        Debug.Log("Choose: " + choice);
+
         Branch choosingBranch = branchOnTrack.subBranchs[choice];
         for (int i = 0; i < decisionBranches.Count; i++)
         {
-            int temp = i;
-
-            if (decisionBranches[temp] == choosingBranch)
+            if (decisionBranches[i] == choosingBranch)
             {
-                /*
-                 * change branch story here
-                 * remove 2 changes after if neccessary
-                 */
-                BoT = temp;
+                BoT = i;
                 DoT = 0;
                 break;
             }
         }
-        
+
         DialogueTrigger();
     }
-
-    protected void ShowDialogue(Dialogue dialogue)
+    void DefaultDialogueTrigger()
     {
-        Debug.Log(dialogue.dialouge);
-        tmpCharacterName.text = dialogue.characterName;
-        tmpDialouge.text = dialogue.dialouge;
-        characterImg.sprite = dialogue.characterImage;
-
-
-        //UI coding for this dialogue
-        List<Dialogue> nextDialogues = dialogue.subDialogues;
-        if (nextDialogues.Count > 1)
-        {
-            choicesView.SetActive(true);
-            
-        }
-        else
-        {
-            if (choicesView.activeSelf)
-            {
-                choicesView.SetActive(false);
-            }
-        }
+        BoT = 0; DoT = 0;
+        DialogueTrigger();
     }
 
     void DialogueTrigger()
@@ -202,6 +187,6 @@ public class DialogueManager : MonoBehaviour
         branchOnTrack = decisionBranches[BoT];
         dialogueOnTrack = branchOnTrack.dialogues[DoT];
 
-        ShowDialogue(dialogueOnTrack);
+        showDialogue.Invoke(dialogueOnTrack);
     }
 }
