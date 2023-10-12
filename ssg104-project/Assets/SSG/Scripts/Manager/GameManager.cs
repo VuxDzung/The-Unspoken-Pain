@@ -9,11 +9,6 @@ public class GameManager : GenericSingleton<GameManager>
     //internal Dictionary<string, bool> inactiveStorySubjects = new Dictionary<string, bool>();
     internal Inventory platformerInventory;
     SourceManager source => FindObjectOfType<SourceManager>();
-    private List<GameObject> activeObject
-    {
-        get { return source.activeObject; }
-        set { activeObject = source.activeObject; }
-    }
     private GameObject[] gameViews
     {
         get { return source.gameViews; }
@@ -21,20 +16,6 @@ public class GameManager : GenericSingleton<GameManager>
     }
     private InteractiveModel curNavObj = null;
     [HideInInspector] public bool inGame = true;
-    void Start()
-    {
-        SetUpActiveObj();
-    }
-    void SetUpActiveObj()
-    {
-        InteractiveObject[] interacts = FindObjectsOfType<InteractiveObject>();
-        foreach (InteractiveObject iObj in interacts)
-        {
-            GameObject obj = iObj.gameObject;
-            if (obj == null) continue;
-            if (obj.activeSelf) activeObject.Add(obj.gameObject);
-        }
-    }
     public InteractiveView[] getAllView()
     {
         InteractiveView[] views = new InteractiveView[gameViews.Length];
@@ -44,26 +25,12 @@ public class GameManager : GenericSingleton<GameManager>
         }
         return views;
     }
-    private void SetObjInGame(int ord)
-    {
-
-        if (ord != 0)
-        {
-            foreach (var obj in activeObject) obj.SetActive(false);
-            inGame = false;
-        }    
-        else
-        {
-            foreach (var obj in activeObject) obj.SetActive(true);
-            inGame = true;
-        }
-             
-    }
     // 0: default
     // array order + 1: canvas
     public void ChangeCanvas(int ord)
     {
-        SetObjInGame(ord);
+        if (ord != 0) inGame = false;
+        else inGame = true;
         foreach (GameObject v in gameViews) 
             if (v.activeSelf) v.SetActive(false);
         foreach (GameObject v in gameViews)
@@ -101,6 +68,6 @@ public class GameManager : GenericSingleton<GameManager>
 
     public bool HadInteracted(InteractiveModel currentObject)
     {
-        return activeObject.Contains(currentObject.gameObject);
+        return false;
     }
 }
