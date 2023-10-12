@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using cherrydev;
-using VNCreator;
 public enum Category
 {
     Humanoid,
@@ -12,9 +11,7 @@ public enum Category
 
 public class InteractiveModel : InteractiveObject
 {
-    [SerializeField] private bool hasInfor;
-    [SerializeField] private DialogNodeGraph mainDialogSO;
-    [SerializeField] private DialogNodeGraph subDialogSO;
+    internal bool interactable;
     [SerializeField] private Category category;
     [SerializeField] private GameObject highline;
 
@@ -23,7 +20,7 @@ public class InteractiveModel : InteractiveObject
     private void Awake()
     {
         dialougeTrigger = FindObjectOfType<DialougeTrigger>();
-        interactAction += OnOpenView;
+        interactAction += OnOpen;
     }
     protected override void Start()
     {
@@ -55,26 +52,9 @@ public class InteractiveModel : InteractiveObject
     }
     public void OnAction()
     {
-        if (hasInfor)
+        if (!interactable)
         {
-            if (!System.Object.ReferenceEquals(mainDialogSO, null))
-            {
-                if (!GameManager.Instance.HadInteracted(this))
-                {
-                    Debug.Log("HadInteracted_mainDialogSO");
-                    interactAction?.Invoke();
-                    dialougeTrigger.OnTriggerConversation(mainDialogSO);
-                    mainDialogSO = null;
-                    return;
-                }
-            }
-            if (!System.Object.ReferenceEquals(subDialogSO, null))
-            {
-                Debug.Log("HadInteracted_subDialogSO");
-                interactAction?.Invoke();
-                dialougeTrigger.OnTriggerConversation(subDialogSO);
-                return;
-            }
+
         }
         else
         {
@@ -84,6 +64,7 @@ public class InteractiveModel : InteractiveObject
 
     public void SetInteracted()
     {
-        GameManager.Instance.AddInteractedObjects(this);
+        List<InteractiveModel> items = new List<InteractiveModel> { this };
+        GameManager.Instance.AddInteractedItems(items);
     }
 }

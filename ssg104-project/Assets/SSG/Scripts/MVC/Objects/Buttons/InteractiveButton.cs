@@ -8,6 +8,7 @@ public class InteractiveButton : InteractiveObject
     private Button button => GetComponent<Button>();
     private void Awake()
     {
-        button.onClick.AddListener(() => OnOpenView());
+        button.onClick.AddListener(() => OnOpen());
     }
+    
 }
