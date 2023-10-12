@@ -1,10 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+enum Load
+{
+    view,
+    scene
+}
 
 public class InteractiveObject : MonoBehaviour
 {
+    [SerializeField] private Load loadType;
     [SerializeField] protected InteractiveView view;
+    [SerializeField] private string scene;
     [HideInInspector] public int viewOrder = 0;
     protected virtual void Start()
     {
@@ -20,9 +29,15 @@ public class InteractiveObject : MonoBehaviour
             if (view == views[i]) viewOrder = i;
         }
     }
-    public void OnOpenView()
+    public void OnOpen()
     {
-        GameManager.Instance.ChangeCanvas(viewOrder);
+        switch (loadType)
+        {
+            case Load.view: 
+                GameManager.Instance.ChangeCanvas(viewOrder); break;
+            case Load.scene:
+                SceneManager.LoadScene(scene); break;
+        }
     }
 
     public void OnOpenDefaultView()
