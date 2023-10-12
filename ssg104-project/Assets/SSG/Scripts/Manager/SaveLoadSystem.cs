@@ -29,11 +29,10 @@ public static class SaveLoadSystem
     public static StoryData LoadStory() {
         return JsonConvert.DeserializeObject<StoryData>(PlayerPrefs.GetString("Story"));
     }
-}
+    public static void LoadingGame()
+    {
 
-public class ClientData
-{
-
+    }
 }
 
 public class StoryData
@@ -44,14 +43,9 @@ public class StoryData
 }
 
 
-public class PlatformerData : ClientData
+public class PlatformerData
 {
-    public Dictionary<string, bool> mainSubject = new Dictionary<string, bool>();
-    public Inventory inventory { get; set; }
+    public Dictionary<string, bool[]> sceneItemModels = new Dictionary<string, bool[]>();
 }
-[System.Serializable]
-public class Inventory
-{
-    public InteractiveObject[] items;
-}
+
 
