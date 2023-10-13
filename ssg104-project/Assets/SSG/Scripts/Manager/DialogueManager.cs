@@ -55,8 +55,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (stories[i] == mainStory) SoT = i; break;
         }
-        if (!mainStory.isBuilt) { BuildDecision(); Debug.Log("1"); }
-        else this.decisionBranches = mainStory.decisionBranches;
+        BuildDecision(); 
         DefaultDialogueTrigger();
     }
 
@@ -68,7 +67,6 @@ public class DialogueManager : MonoBehaviour
 
     public void BuildDecision()
     {
-
         Branch curBranch = new Branch();
         Branch firstBranch = new Branch();
         firstBranch.dialogues.Add(storyDialogues[0]);
@@ -105,8 +103,6 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
-        mainStory.decisionBranches = decisionBranches;
-        mainStory.isBuilt = true;
     }
     #region Connect-code
     private bool CheckLoop(Branch curBranch, Dialogue sub)
@@ -116,6 +112,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (branch.dialogues.Contains(sub))
             {
+                
                 curBranch.subBranchs.Add(branch);
                 int3 pos = ConnectPos(curBranch, branch, sub);
                 connectNote.Add(pos);
@@ -167,6 +164,8 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Choose: " + choice);
 
         Branch choosingBranch = branchOnTrack.subBranchs[choice];
+        Debug.Log(decisionBranches.IndexOf(branchOnTrack));
+        Debug.Log(decisionBranches.IndexOf(choosingBranch));
         for (int i = 0; i < decisionBranches.Count; i++)
         {
             if (decisionBranches[i] == choosingBranch)

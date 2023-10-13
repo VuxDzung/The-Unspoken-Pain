@@ -6,6 +6,4 @@ using UnityEngine;
 public class Story : ScriptableObject
 {
     public Dialogue[] dialogues;
-    internal List<Branch> decisionBranches = new List<Branch>();
-    internal bool isBuilt = false;
 }

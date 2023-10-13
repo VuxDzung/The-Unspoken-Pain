@@ -32,7 +32,6 @@ public class UIDialogueView : MonoBehaviour
             temp = i;
             choiceButtons[temp].onClick.AddListener(() => manager.Choice(temp));
         }
-
         if (playOnStart)
             manager.LoadMainStory(manager.stories[0]);
 
