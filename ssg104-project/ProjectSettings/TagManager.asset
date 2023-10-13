@@ -42,6 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1524450905
+    locked: 0
+  - name: Back character
+    uniqueID: 3175616793
+    locked: 0
+  - name: Props
+    uniqueID: 576881429
+    locked: 0
   - name: Highline
     uniqueID: 1802038029
+    locked: 0
+  - name: Front character
+    uniqueID: 3334533537
     locked: 0
