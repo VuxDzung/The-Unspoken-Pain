@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 enum Load
 {
@@ -36,7 +35,7 @@ public class InteractiveObject : MonoBehaviour
             case Load.view: 
                 GameManager.Instance.ChangeCanvas(viewOrder); break;
             case Load.scene:
-                SceneManager.LoadScene(scene); break;
+                GameManager.Instance.ChangeToScene(scene); break;
         }
     }
 

@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using VNCreator;
+using UnityEngine.SceneManagement;
+
 public class GameManager : GenericSingleton<GameManager>
 {
     PlayerController player => FindObjectOfType<PlayerController>();
     //internal Dictionary<string, bool> mainStorySubjects = new Dictionary<string, bool>();
     //internal Dictionary<string, bool> inactiveStorySubjects = new Dictionary<string, bool>();
-    internal Inventory platformerInventory;
+    //internal Inventory platformerInventory;
     SourceManager source => FindObjectOfType<SourceManager>();
     private GameObject[] gameViews
     {
@@ -70,4 +71,6 @@ public class GameManager : GenericSingleton<GameManager>
     {
         return false;
     }
+
+    public void ChangeToScene(string sceneName) => SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 }

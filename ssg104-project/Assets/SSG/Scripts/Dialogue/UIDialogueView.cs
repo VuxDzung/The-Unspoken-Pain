@@ -32,12 +32,23 @@ public class UIDialogueView : MonoBehaviour
             temp = i;
             choiceButtons[temp].onClick.AddListener(() => manager.Choice(temp));
         }
-        if (playOnStart)
-            manager.LoadMainStory(manager.stories[0]);
+
+        StoryData storyData = new StoryData();
+        storyData = SaveLoadSystem.LoadStory();
+        if (playOnStart && storyData != null)
+        {
+            manager.LoadMainStory(manager.stories[storyData.SoT], storyData.BoT, storyData.DoT);
+            Debug.Log($"SoT: {storyData.SoT}, BoT: {storyData.BoT}, DoT: {storyData.DoT}");
+        }
+            
 
         if (skipButton != null) skipButton.onClick.AddListener(manager.Skip);
         if (nextButton != null) nextButton.onClick.AddListener(manager.nextDialogue);
+        if (saveButton != null) saveButton.onClick.AddListener(manager.SaveStoryProgress);
     }
+
+    
+
     private void ShowDialogue(Dialogue dialogue)
     {
         tmpCharacterName.text = dialogue.characterName;

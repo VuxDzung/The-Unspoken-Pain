@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 public static class SaveLoadSystem
 {
     public static void SaveScene(string sceneName) { PlayerPrefs.SetString("Scene", sceneName); }
-    public static string LoadScene(string sceneName) { return PlayerPrefs.GetString("Scene", sceneName); }
+    public static string LoadScene() { return PlayerPrefs.GetString("Scene"); }
 
     public static void Save(string playerName) => PlayerPrefs.SetString("PlayerName", playerName);
 

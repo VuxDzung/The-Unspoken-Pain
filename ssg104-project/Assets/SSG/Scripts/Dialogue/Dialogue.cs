@@ -11,4 +11,5 @@ public class Dialogue : ScriptableObject
     public string characterName;
     public Sprite characterImage;
     public string dialogue;
+    public bool isPlayerDialogue;
 }

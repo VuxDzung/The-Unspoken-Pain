@@ -48,7 +48,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private List<int3> connectNote = new List<int3>();
 
 
-    public void LoadMainStory(Story mainStory)
+    public void LoadMainStory(Story mainStory, int BoT, int DoT)
     {
         this.mainStory = mainStory;
         for (int i = 0; i < stories.Length; i++)
@@ -56,7 +56,7 @@ public class DialogueManager : MonoBehaviour
             if (stories[i] == mainStory) SoT = i; break;
         }
         BuildDecision(); 
-        DefaultDialogueTrigger();
+        OnStartDialogueTrigger(BoT, DoT);
     }
 
     public void Skip()
@@ -161,11 +161,8 @@ public class DialogueManager : MonoBehaviour
 
     public void Choice(int choice)
     {
-        Debug.Log("Choose: " + choice);
-
         Branch choosingBranch = branchOnTrack.subBranchs[choice];
-        Debug.Log(decisionBranches.IndexOf(branchOnTrack));
-        Debug.Log(decisionBranches.IndexOf(choosingBranch));
+        
         for (int i = 0; i < decisionBranches.Count; i++)
         {
             if (decisionBranches[i] == choosingBranch)
@@ -178,9 +175,10 @@ public class DialogueManager : MonoBehaviour
 
         DialogueTrigger();
     }
-    void DefaultDialogueTrigger()
+    void OnStartDialogueTrigger(int BoT, int DoT)
     {
-        BoT = 0; DoT = 0;
+        this.BoT = BoT; 
+        this.DoT = DoT;
         DialogueTrigger();
     }
 
@@ -190,5 +188,16 @@ public class DialogueManager : MonoBehaviour
         dialogueOnTrack = branchOnTrack.dialogues[DoT];
 
         showDialogue.Invoke(dialogueOnTrack);
+    }
+
+    public void SaveStoryProgress()
+    {
+        StoryData savedData = new StoryData();
+        savedData.SoT = SoT;
+        savedData.BoT = BoT;
+        savedData.DoT = DoT;
+
+        SaveLoadSystem.Save(savedData);
+        Debug.Log("Save");
     }
 }

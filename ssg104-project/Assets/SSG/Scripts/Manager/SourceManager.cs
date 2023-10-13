@@ -31,17 +31,19 @@ public class SourceManager : MonoBehaviour
     public void LoadProcess()
     {
         PlatformerData data = SaveLoadSystem.LoadPlatformer();
-        Dictionary<string, bool[]> ditionary = data.sceneItemModels;
-        foreach (var note in ditionary)
-            if (note.Key.Equals(currentScene))
-            {
-                if (note.Value.Length == 0) return;
-                for (int i = 0; i < itemModels.Length; i++)
+        if (data != null)
+        {
+            Dictionary<string, bool[]> ditionary = data.sceneItemModels;
+            foreach (var note in ditionary)
+                if (note.Key.Equals(currentScene))
                 {
-                    if (note.Value[i]) itemModels[i].interactable = true;
+                    if (note.Value.Length == 0) return;
+                    for (int i = 0; i < itemModels.Length; i++)
+                    {
+                        if (note.Value[i]) itemModels[i].interactable = true;
+                    }
+                    break;
                 }
-                break;
-            } 
-        
+        } 
     }
 }
