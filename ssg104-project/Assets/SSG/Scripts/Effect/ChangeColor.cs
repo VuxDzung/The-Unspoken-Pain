@@ -13,8 +13,9 @@ public class ChangeColor : MonoBehaviour
     [SerializeField] private bool activate = true;
     [SerializeField] private bool setAlpha = true;
     [SerializeField] private bool setRGB = false;
+    [SerializeField] private bool autoChange = false;
     private Color[] colors;
-    float ratio = 0f;
+    internal float ratio = 0f;
     private void Awake()
     {
         List<Color> colorList = new List<Color>();
@@ -27,9 +28,9 @@ public class ChangeColor : MonoBehaviour
         activate = true;
         ratio = 0f;
     }
-    //test performing
     private void OnEnable()
     {
+        if (!autoChange) return;
         Active();
     }
     //Work per frame

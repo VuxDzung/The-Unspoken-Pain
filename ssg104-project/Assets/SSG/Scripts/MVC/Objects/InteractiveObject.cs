@@ -32,7 +32,7 @@ public class InteractiveObject : MonoBehaviour
     {
         switch (loadType)
         {
-            case Load.view: 
+            case Load.view:
                 GameManager.Instance.ChangeCanvas(viewOrder); break;
             case Load.scene:
                 GameManager.Instance.ChangeToScene(scene); break;

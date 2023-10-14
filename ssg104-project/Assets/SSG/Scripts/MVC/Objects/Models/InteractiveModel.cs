@@ -11,15 +11,13 @@ public enum Category
 
 public class InteractiveModel : InteractiveObject
 {
-    internal bool interactable = true;
+    public bool interactable = true;
     [SerializeField] private Category category;
     [SerializeField] private GameObject highline;
-
-    private DialougeTrigger dialougeTrigger;
     public Action interactAction { get; set; }
+    public Action nonInteractAction { get; set; }
     private void Awake()
     {
-        dialougeTrigger = FindObjectOfType<DialougeTrigger>();
         interactAction += OnOpen;
     }
     protected override void Start()
@@ -50,18 +48,18 @@ public class InteractiveModel : InteractiveObject
     {
         GameManager.Instance.SetMoveNavigate(this);
     }
+    //Transition
     public void OnAction()
     {
         if (!interactable)
         {
-
+            nonInteractAction?.Invoke();
         }
         else
         {
             interactAction?.Invoke();
         }
     }
-
     public void SetInteracted()
     {
         List<InteractiveModel> items = new List<InteractiveModel> { this };

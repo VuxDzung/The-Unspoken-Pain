@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subDialogues:
   - {fileID: 11400000, guid: 6791054415b3373448c8260aadc87c97, type: 2}
-  nodeID: 
-  characterName: 
+  nameOfTriggedItems: []
+  characterName: Phuc
   characterImage: {fileID: 0}
-  dialouge: End4
+  dialogue: 100

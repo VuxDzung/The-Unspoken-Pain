@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1113754701208379642, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e34bed72370ab8b47b38a2ac76110385, type: 3}
+    - target: {fileID: 1113754701208379642, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1974719831696471353, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_Size.x
       value: 0.25
@@ -71,6 +79,14 @@ PrefabInstance:
     - target: {fileID: 6033209874791115224, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752723204060319688, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752723204060319688, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9124607668569991664, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: type

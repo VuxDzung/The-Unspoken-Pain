@@ -5,8 +5,15 @@ using UnityEngine.UI;
 
 public class InteractiveView : MonoBehaviour
 {
-    private void Awake()
+    [SerializeField] private GameObject linkObject;
+    private void OnEnable()
     {
-        
+        if (linkObject == null) return;
+        linkObject.SetActive(true);
+    }
+    private void OnDisable()
+    {
+        if (linkObject == null) return;
+        linkObject.SetActive(false);
     }
 }

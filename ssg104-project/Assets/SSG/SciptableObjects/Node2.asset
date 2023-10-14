@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subDialogues:
   - {fileID: 11400000, guid: 6791054415b3373448c8260aadc87c97, type: 2}
-  nodeID: Node2
+  nameOfTriggedItems: []
   characterName: Richard
   characterImage: {fileID: 21300000, guid: 59761d37806f3244ba77b4b23f66b5a4, type: 3}
-  dialouge: Chosen1
+  dialogue: choice 1
