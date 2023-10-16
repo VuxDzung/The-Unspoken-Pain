@@ -10,11 +10,7 @@ public class InteractiveButton : InteractiveObject
 
     private void Awake()
     {
-        //Action action;
-        //action +=...
-        //UnityAction unityAction = new UnityAction(action);
-        //button.onClick.AddListener(unityAction);
-        button.onClick.AddListener(() => OnOpen());
+        button.onClick.AddListener(() => OnAction());
     }
     
 }

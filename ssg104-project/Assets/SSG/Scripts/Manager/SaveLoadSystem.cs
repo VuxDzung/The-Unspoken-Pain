@@ -45,7 +45,7 @@ public class StoryData
 
 public class PlatformerData
 {
-    public Dictionary<string, bool[]> sceneItemModels = new Dictionary<string, bool[]>();
+    public Dictionary<string, bool[]> sceneItems = new Dictionary<string, bool[]>();
 }
 
 

@@ -39,7 +39,9 @@ public class DialogueManager : MonoBehaviour
     internal int SoT = 0; //Story On Track
     internal int BoT = 0; //Branch On Track
     internal int DoT = 0; //Dialogue On Track
+    internal int BI = 1; //Branchs can Interact
 
+    public bool activeOnInteract = false; // * Only use when story have 1 break node - dialogue have more than 1 subs *
 
     protected Branch branchOnTrack;
     protected Dialogue dialogueOnTrack;

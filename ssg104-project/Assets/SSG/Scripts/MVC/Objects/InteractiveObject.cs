@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +11,17 @@ enum Load
 
 public class InteractiveObject : MonoBehaviour
 {
+    public bool interactable = true;
     [SerializeField] private Load loadType;
     [SerializeField] protected InteractiveView view;
     [SerializeField] private string scene;
     [HideInInspector] public int viewOrder = 0;
+    public Action interactAction { get; set; }
+    public Action nonInteractAction { get; set; }
+
     protected virtual void Start()
     {
+        interactAction += OnOpen;
         SetViewOrder();
     }
 
@@ -30,6 +36,7 @@ public class InteractiveObject : MonoBehaviour
     }
     public void OnOpen()
     {
+        Debug.Log("Click");
         switch (loadType)
         {
             case Load.view:
@@ -43,6 +50,15 @@ public class InteractiveObject : MonoBehaviour
     {
         GameManager.Instance.ChangeCanvas(0);
     }
-
-    
+    public void OnAction()
+    {
+        if (!interactable)
+        {
+            nonInteractAction?.Invoke();
+        }
+        else
+        {
+            interactAction?.Invoke();
+        }
+    }
 }

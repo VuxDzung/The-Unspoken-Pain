@@ -10,6 +10,10 @@ public class GameManager : GenericSingleton<GameManager>
     //internal Dictionary<string, bool> inactiveStorySubjects = new Dictionary<string, bool>();
     //internal Inventory platformerInventory;
     SourceManager source => FindObjectOfType<SourceManager>();
+    private void Awake()
+    {
+        //AddInteractedItems(SaveLoadSystem.queueItems.ToArray());
+    }
     private GameObject[] gameViews
     {
         get { return source.gameViews; }
@@ -53,11 +57,15 @@ public class GameManager : GenericSingleton<GameManager>
             curNavObj = null;
         }
     }
-    public void AddInteractedItems(List<InteractiveModel> items)
+    public void AddInteractedItems(string[] items)
     {
-        foreach(var item in items)
+        //triggering interable of obj has name in current name of trigged items
+        foreach (var name in items)
         {
-            item.interactable = true;
+            GameObject item = GameObject.Find(name);
+            //if(item == null) SaveLoadSystem.queueItems.Add(name);
+            InteractiveObject interactive = item.GetComponent<InteractiveObject>();
+            if (interactive != null) interactive.interactable = true;
         }
         Debug.Log("Added");
     }

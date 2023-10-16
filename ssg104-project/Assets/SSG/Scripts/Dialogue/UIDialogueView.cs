@@ -54,20 +54,16 @@ public class UIDialogueView : MonoBehaviour
         tmpCharacterName.text = dialogue.characterName;
         tmpDialogue.text = dialogue.dialogue;
         characterImg.sprite = dialogue.characterImage;
-        //triggering interable of obj has name in current dialogue node's name of trigged items
-        foreach(var name in dialogue.nameOfTriggedItems)
-        {
-            GameObject item = GameObject.Find(name);
-            InteractiveModel interactive = item.GetComponent<InteractiveModel>();
-            if(interactive != null) interactive.interactable = true;
-        }
 
         //UI coding for this dialogue
         List<Dialogue> subDialogues = dialogue.subDialogues;
         if (subDialogues.Count > 1)
         {
+            int choices = 0;
+            if (manager.activeOnInteract) choices = manager.BI;
+            else choices = subDialogues.Count;
             choicesView.SetActive(true);
-            for (int i = 0; i < subDialogues.Count; i++)
+            for (int i = 0; i < choices; i++)
             {
                 int temp = i;
                 TextMeshProUGUI choiceDialogue = choiceButtons[temp].transform.GetChild(0).GetComponent<TextMeshProUGUI>();

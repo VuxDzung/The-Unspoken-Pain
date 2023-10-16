@@ -7,9 +7,8 @@ using UnityEngine.UI;
 public class Dialogue : ScriptableObject
 {
     public List<Dialogue> subDialogues;
-    public string[] nameOfTriggedItems;
     public string characterName;
     public Sprite characterImage;
+    public Image backGroundImage;
     public string dialogue;
-    public bool isPlayerDialogue;
 }

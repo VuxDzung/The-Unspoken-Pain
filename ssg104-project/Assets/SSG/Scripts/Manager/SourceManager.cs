@@ -7,7 +7,15 @@ public class SourceManager : MonoBehaviour
 {
     public string currentScene;
     public GameObject[] gameViews;
-    private InteractiveModel[] itemModels => FindObjectsOfType<InteractiveModel>();
+    private InteractiveObject[] items {
+        get {
+            GameObject[] itemObjs = GameObject.FindGameObjectsWithTag("Item");
+            InteractiveObject[] items = new InteractiveObject[itemObjs.Length];
+            for (int i=0; i<itemObjs.Length; i++) items[i] = itemObjs[i].GetComponent<InteractiveObject>();
+            return items; 
+        }
+        set {}
+    }
     private void Awake()
     {
         LoadProcess();
@@ -16,13 +24,13 @@ public class SourceManager : MonoBehaviour
     public void SaveProcess()
     {
         PlatformerData data = new PlatformerData();
-        Dictionary<string, bool[]> ditionary = data.sceneItemModels;
+        Dictionary<string, bool[]> ditionary = data.sceneItems;
         foreach (var note in ditionary)
             if (note.Key.Equals(currentScene))
             {
-                for (int i = 0; i < itemModels.Length; i++)
+                for (int i = 0; i < items.Length; i++)
                 {
-                    if (itemModels[i].interactable) note.Value[i] = true;
+                    if (items[i].interactable) note.Value[i] = true;
                 }
                 break;
             }
@@ -33,14 +41,14 @@ public class SourceManager : MonoBehaviour
         PlatformerData data = SaveLoadSystem.LoadPlatformer();
         if (data != null)
         {
-            Dictionary<string, bool[]> ditionary = data.sceneItemModels;
+            Dictionary<string, bool[]> ditionary = data.sceneItems;
             foreach (var note in ditionary)
                 if (note.Key.Equals(currentScene))
                 {
                     if (note.Value.Length == 0) return;
-                    for (int i = 0; i < itemModels.Length; i++)
+                    for (int i = 0; i < items.Length; i++)
                     {
-                        if (note.Value[i]) itemModels[i].interactable = true;
+                        if (note.Value[i]) items[i].interactable = true;
                     }
                     break;
                 }
