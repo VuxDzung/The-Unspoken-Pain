@@ -23,6 +23,7 @@ public class SourceManager : MonoBehaviour
 
     public void SaveProcess()
     {
+        /*
         PlatformerData data = new PlatformerData();
         Dictionary<string, bool[]> ditionary = data.sceneItems;
         foreach (var note in ditionary)
@@ -34,11 +35,14 @@ public class SourceManager : MonoBehaviour
                 }
                 break;
             }
-        SaveLoadSystem.Save(data);
+        SaveLoadSystem.SavePlatformerVolatile(data);
+        */
+        GameManager.Instance.PlatformerSaveProcess();
     }
     public void LoadProcess()
     {
-        PlatformerData data = SaveLoadSystem.LoadPlatformer();
+        /*
+        PlatformerData data = SaveLoadSystem.LoadPlatformerVolatile();
         if (data != null)
         {
             Dictionary<string, bool[]> ditionary = data.sceneItems;
@@ -53,5 +57,14 @@ public class SourceManager : MonoBehaviour
                     break;
                 }
         } 
+        */
+
+        for(int i = 0; i < items.Length; i++)
+        {
+            if (GameManager.Instance.objectCanIneracts.objectWaits.Contains(items[i].gameObject.name) && !items[i].interactable)
+            {
+                items[i].interactable = true;
+            }
+        }
     }
 }

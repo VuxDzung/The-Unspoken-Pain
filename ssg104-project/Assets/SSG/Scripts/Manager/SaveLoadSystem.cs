@@ -5,6 +5,22 @@ using Newtonsoft.Json;
 
 public static class SaveLoadSystem
 {
+    private static string savePlaformerData = "";
+
+    public static void SavePlatformer(PlatformerData platformer)
+    {
+        savePlaformerData = JsonConvert.SerializeObject(platformer);
+        PlayerPrefs.SetString("Platformer", savePlaformerData);
+        Debug.Log($"Objects can interacted: {savePlaformerData}");
+    }
+    public static PlatformerData LoadPlatformer()
+    {
+        Debug.Log($"Objects can interacted: {PlayerPrefs.GetString("Platformer")}");
+        return JsonConvert.DeserializeObject<PlatformerData>(PlayerPrefs.GetString("Platformer"));
+    }
+
+
+    #region SAVE_NON_VOLATILE
     public static void SaveScene(string sceneName) { PlayerPrefs.SetString("Scene", sceneName); }
     public static string LoadScene() { return PlayerPrefs.GetString("Scene"); }
 
@@ -12,27 +28,16 @@ public static class SaveLoadSystem
 
     public static string LoadPlayerName() => PlayerPrefs.GetString("PlayerName");
 
-    public static void Save(PlatformerData platformer)
+    public static void Save(StoryData data)
     {
-        string saveData = JsonConvert.SerializeObject(platformer);
-        PlayerPrefs.SetString("Platformer", saveData);
-    }
-    public static PlatformerData LoadPlatformer()
-    {
-        return JsonConvert.DeserializeObject<PlatformerData>(PlayerPrefs.GetString("Platformer"));
-    }
-
-    public static void Save(StoryData data) {
         string storyData = JsonConvert.SerializeObject(data);
         PlayerPrefs.SetString("Story", storyData);
     }
+
     public static StoryData LoadStory() {
         return JsonConvert.DeserializeObject<StoryData>(PlayerPrefs.GetString("Story"));
     }
-    public static void LoadingGame()
-    {
 
-    }
     public static void SaveSettings(SettingsData settings)
     {
         PlayerPrefs.SetString("Settings", JsonConvert.SerializeObject(settings));
@@ -42,6 +47,7 @@ public static class SaveLoadSystem
     {
         return JsonConvert.DeserializeObject<SettingsData>(PlayerPrefs.GetString("Settings"));
     }
+    #endregion
 }
 
 public class StoryData
@@ -54,7 +60,7 @@ public class StoryData
 
 public class PlatformerData
 {
-    public Dictionary<string, bool[]> sceneItems = new Dictionary<string, bool[]>();
+    public List<string> objectWaits = new List<string>();
 }
 
 

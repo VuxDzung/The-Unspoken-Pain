@@ -27,10 +27,17 @@ public class GenericSingleton<T> : MonoBehaviour where T  : Component
         }
     }
 
-    
-    private void OnDisable()
+    protected virtual void Awake()
     {
-        Destroy(gameObject);
+        // create the instance
+        if (instance == null)
+        {
+            instance = this as T;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-    
 }

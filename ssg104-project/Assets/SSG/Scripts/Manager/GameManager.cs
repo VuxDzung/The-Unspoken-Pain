@@ -6,14 +6,20 @@ using UnityEngine.SceneManagement;
 public class GameManager : GenericSingleton<GameManager>
 {
     PlayerController player => FindObjectOfType<PlayerController>();
-    //internal Dictionary<string, bool> mainStorySubjects = new Dictionary<string, bool>();
-    //internal Dictionary<string, bool> inactiveStorySubjects = new Dictionary<string, bool>();
-    //internal Inventory platformerInventory;
+
+    public PlatformerData objectCanIneracts = new PlatformerData();
     SourceManager source => FindObjectOfType<SourceManager>();
-    private void Awake()
+
+    protected override void Awake()
     {
-        //AddInteractedItems(SaveLoadSystem.queueItems.ToArray());
+        base.Awake();
+        
+        if (SaveLoadSystem.LoadPlatformer() != null)
+        {
+            objectCanIneracts = SaveLoadSystem.LoadPlatformer();//Load the previous play saved items
+        }
     }
+
     private GameObject[] gameViews
     {
         get { return source.gameViews; }
@@ -59,19 +65,30 @@ public class GameManager : GenericSingleton<GameManager>
     }
     public void AddInteractedItems(string[] items)
     {
-        //triggering interable of obj has name in current name of trigged items
+        //add call object's can interacted names 
         foreach (var name in items)
         {
+            /*
             GameObject item = GameObject.Find(name);
             //if(item == null) SaveLoadSystem.queueItems.Add(name);
             InteractiveObject interactive = item.GetComponent<InteractiveObject>();
-            if (interactive != null) interactive.interactable = true;
+            
+            if (interactive != null)
+            {
+                interactive.interactable = true;
+                
+            }
+            */
+            if (objectCanIneracts.objectWaits.Contains(name)) continue;//If the list has already containned the object, then ignore it
+
+            objectCanIneracts.objectWaits.Add(name);
+            Debug.Log($"Added: {name}");
         }
-        Debug.Log("Added");
     }
     public void PlatformerSaveProcess()
     {
-        source.SaveProcess();
+        //source.SaveProcess();
+        SaveLoadSystem.SavePlatformer(objectCanIneracts);
     }
 
 
