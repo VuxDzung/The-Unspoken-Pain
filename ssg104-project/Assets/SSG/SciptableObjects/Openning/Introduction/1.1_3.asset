@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 1.1_3
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 439ace886d6869c4487be11f8206466e, type: 2}
+  characterName: "D\u1EABn truy\u1EC7n"
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 21300000, guid: 2ce6aa24af7d6b441a210b7592834578, type: 3}
+  dialogue: "V\xEC v\u1EADy, NVC lu\xF4n quan t\xE2m \u0111\u1EBFn Alex. H\u1ECD
+    v\u1EDBi nhau nh\u01B0 ng\u01B0\u1EDDi v\u1EDBi b\xF3ng, lu\xF4n quan t\xE2m,
+    gi\xFAp \u0111\u1EE1 nhau. L\u1EA7n \u0111\u1EA7u b\u01B0\u1EDBc ch\xE2n v\xE0o
+    m\xF4i tr\u01B0\u1EDDng c\u1EA5p 3, h\u1ECD ngh\u0129 m\u1ECDi chuy\u1EC7n s\u1EBD
+    di\u1EC5n ra su\xF4n s\u1EBB."

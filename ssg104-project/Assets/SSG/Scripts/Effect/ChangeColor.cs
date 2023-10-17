@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System;
 public class ChangeColor : MonoBehaviour
 {
     [SerializeField] private Image[] images;
@@ -16,6 +16,16 @@ public class ChangeColor : MonoBehaviour
     [SerializeField] private bool autoChange = false;
     private Color[] colors;
     internal float ratio = 0f;
+
+    public Action onHalfRationAction;
+
+    public bool halfwayActionInvoke { get; set; }
+    public bool Activate
+    {
+        get { return activate; }
+        set { activate = value; }
+    }
+
     private void Awake()
     {
         List<Color> colorList = new List<Color>();
@@ -51,6 +61,11 @@ public class ChangeColor : MonoBehaviour
             }
             if(i < images.Length) images[i].color = newColor;
             else texts[i - images.Length].color = newColor;
+        }
+        if (ratio >= 50 && !halfwayActionInvoke)
+        {
+            onHalfRationAction?.Invoke();
+            halfwayActionInvoke = true;
         }
         if(ratio >= 100f) activate = false;
 

@@ -33,6 +33,15 @@ public static class SaveLoadSystem
     {
 
     }
+    public static void SaveSettings(SettingsData settings)
+    {
+        PlayerPrefs.SetString("Settings", JsonConvert.SerializeObject(settings));
+    }
+
+    public static SettingsData LoadSettings()
+    {
+        return JsonConvert.DeserializeObject<SettingsData>(PlayerPrefs.GetString("Settings"));
+    }
 }
 
 public class StoryData

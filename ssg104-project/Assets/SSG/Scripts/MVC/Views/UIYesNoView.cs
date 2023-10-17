@@ -38,7 +38,7 @@ public class UIYesNoView : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(homeSceneName, LoadSceneMode.Single);
+            yesButton.onClick.AddListener(() => GameManager.Instance.ChangeToScene(homeSceneName));
         }
     }
 

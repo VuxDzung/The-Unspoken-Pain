@@ -18,6 +18,8 @@ public class Branch
 
 public class DialogueManager : MonoBehaviour
 {
+    [SerializeField] private string currentScene = "";
+    [SerializeField] private string nextScene = "";
     public Story[] stories;
     internal Story mainStory;
     private Dialogue[] storyDialogues
@@ -34,6 +36,7 @@ public class DialogueManager : MonoBehaviour
     internal Action<Dialogue> showDialogue;
     internal Action endDialogueAction;
     internal Action endMainStoryAction;
+    internal Action changeNodeAction;
 
     [SerializeField] private List<Branch> decisionBranches = new List<Branch>();
     internal int SoT = 0; //Story On Track
@@ -55,8 +58,13 @@ public class DialogueManager : MonoBehaviour
         this.mainStory = mainStory;
         for (int i = 0; i < stories.Length; i++)
         {
-            if (stories[i] == mainStory) SoT = i; break;
+            if (stories[i].Equals(mainStory))
+            {
+                SoT = i;
+                break;
+            }
         }
+
         BuildDecision(); 
         OnStartDialogueTrigger(BoT, DoT);
     }
@@ -153,12 +161,43 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("End");
                 endDialogueAction?.Invoke();
             }
             return;
         }
         DialogueTrigger();
+    }
+
+    public void nextStory()
+    {
+        // Increment the index to move to the next story
+        SoT++;
+        // Check if there is another story available
+        if (SoT <= stories.Length - 1)
+        {
+            // Reset the branch and dialogue indices for the new story
+            BoT = 0;
+            DoT = 0;
+
+            //Clear the previous story
+            decisionBranches.Clear();
+
+            // Load and build the new decision branches for the new story
+            mainStory = stories[SoT];
+            BuildDecision();
+
+            // Trigger the first dialogue of the new story
+            DialogueTrigger();
+        }
+        else
+        {
+            Debug.Log("No more stories available. End of the game or perform other actions.");
+            try
+            {
+                GameManager.Instance.ChangeToScene(nextScene);
+            }
+            catch(Exception e) { Debug.LogError(e); }
+        }
     }
 
     public void Choice(int choice)
@@ -174,7 +213,6 @@ public class DialogueManager : MonoBehaviour
                 break;
             }
         }
-
         DialogueTrigger();
     }
     void OnStartDialogueTrigger(int BoT, int DoT)
@@ -199,7 +237,7 @@ public class DialogueManager : MonoBehaviour
         savedData.BoT = BoT;
         savedData.DoT = DoT;
 
+        SaveLoadSystem.SaveScene(currentScene);
         SaveLoadSystem.Save(savedData);
-        Debug.Log("Save");
     }
 }
