@@ -6,18 +6,21 @@ using UnityEngine.SceneManagement;
 public class GameManager : GenericSingleton<GameManager>
 {
     PlayerController player => FindObjectOfType<PlayerController>();
+    public InventoryManager inventory => FindObjectOfType<InventoryManager>();
 
-    public PlatformerData objectCanIneracts = new PlatformerData();
+    public PlatformerData itemData = new PlatformerData();
     SourceManager source => FindObjectOfType<SourceManager>();
 
     protected override void Awake()
     {
         base.Awake();
+        LoadProcess();
         
-        if (SaveLoadSystem.LoadPlatformer() != null)
-        {
-            objectCanIneracts = SaveLoadSystem.LoadPlatformer();//Load the previous play saved items
-        }
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        LoadInGame();
     }
 
     private GameObject[] gameViews
@@ -33,6 +36,8 @@ public class GameManager : GenericSingleton<GameManager>
         for(int i = 0; i < gameViews.Length; i++)
         {
             views[i] = gameViews[i].GetComponent<InteractiveView>();
+            
+            //if (i != 0) views[i].gameObject.SetActive(false);
         }
         return views;
     }
@@ -47,6 +52,7 @@ public class GameManager : GenericSingleton<GameManager>
         foreach (GameObject v in gameViews)
             if (gameViews[ord] == null) continue;
             else if (gameViews[ord] == v) v.SetActive(true);
+        LoadInGame();
     }
     public void SetMoveNavigate(InteractiveModel obj)
     {
@@ -68,29 +74,39 @@ public class GameManager : GenericSingleton<GameManager>
         //add call object's can interacted names 
         foreach (var name in items)
         {
-            /*
             GameObject item = GameObject.Find(name);
-            //if(item == null) SaveLoadSystem.queueItems.Add(name);
-            InteractiveObject interactive = item.GetComponent<InteractiveObject>();
-            
-            if (interactive != null)
+            if (item != null)
             {
-                interactive.interactable = true;
-                
+                InteractiveObject interactive = item.GetComponent<InteractiveObject>();
+                if (interactive != null && !interactive.interactable) interactive.interactable = true;
+                Debug.Log($"Add {item.name}");
             }
-            */
-            if (objectCanIneracts.objectWaits.Contains(name)) continue;//If the list has already containned the object, then ignore it
-
-            objectCanIneracts.objectWaits.Add(name);
-            Debug.Log($"Added: {name}");
+            else
+            {
+                itemData.itemCanInteract.Add(name);
+            }
         }
     }
-    public void PlatformerSaveProcess()
+
+    public void SaveProcess()
     {
         //source.SaveProcess();
-        SaveLoadSystem.SavePlatformer(objectCanIneracts);
+        SaveLoadSystem.SavePlatformer(itemData);
     }
 
+    private void LoadProcess()
+    {
+        if (SaveLoadSystem.LoadPlatformer() != null)
+        {
+            itemData = SaveLoadSystem.LoadPlatformer();//Load the previous play saved items
+        }
+    }
+    private void LoadInGame()
+    {
+        Debug.Log(itemData);
+        AddInteractedItems(itemData.itemCanInteract.ToArray());
+        inventory.LoadInventory();
+    }
 
     public bool HadInteracted(InteractiveModel currentObject)
     {

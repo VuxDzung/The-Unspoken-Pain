@@ -60,7 +60,8 @@ public class StoryData
 
 public class PlatformerData
 {
-    public List<string> objectWaits = new List<string>();
+    public List<string> itemCanInteract = new List<string>();
+    public List<string> itemsInventory = new List<string>();
 }
 
 

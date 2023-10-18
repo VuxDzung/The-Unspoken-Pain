@@ -5,19 +5,14 @@ using UnityEngine;
 public class TriggeringItems : MonoBehaviour
 {
     InteractiveObject obj => GetComponent<InteractiveObject>();
-    [SerializeField] private string[] triggedItems;
+    [SerializeField] private Story objectStory;
+    [SerializeField] private string[] triggedNames;
     void Start()
     {
         obj.interactAction += Trigger;
     }
-    void Trigger() 
-    {
-        /*
-        string[] names = new string[TriggedItems.Length];
-        
-        for (int i = 0; i < TriggedItems.Length; i++)
-            names[i] = TriggedItems[i];
-        */
-        GameManager.Instance.AddInteractedItems(triggedItems);
+    void Trigger()
+    { 
+        GameManager.Instance.AddInteractedItems(triggedNames);
     }
 }
