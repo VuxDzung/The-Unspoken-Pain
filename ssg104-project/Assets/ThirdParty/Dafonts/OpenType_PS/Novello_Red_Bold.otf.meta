@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d658118508be5454bb7e737128549215
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Novello Reduced
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a03513591bfd4634ab86a4c6e9b86c00, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
