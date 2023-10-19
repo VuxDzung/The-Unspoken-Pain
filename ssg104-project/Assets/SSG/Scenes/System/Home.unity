@@ -1420,6 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821ffb7f8f063ac4a85a9f19e706b18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   loadType: 0
   view: {fileID: 0}
   scene: 
@@ -1694,6 +1695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821ffb7f8f063ac4a85a9f19e706b18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   loadType: 0
   view: {fileID: 1176302353}
   scene: 
@@ -1969,6 +1971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821ffb7f8f063ac4a85a9f19e706b18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   loadType: 0
   view: {fileID: 1915640337}
   scene: 
@@ -2108,6 +2111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821ffb7f8f063ac4a85a9f19e706b18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   loadType: 0
   view: {fileID: 552007629}
   scene: 
@@ -3054,7 +3058,7 @@ PrefabInstance:
     - target: {fileID: 6213064578282248720, guid: 28a6880cc36dcbd44b7b37016f9e617f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8231543940110774267, guid: 28a6880cc36dcbd44b7b37016f9e617f,
         type: 3}
@@ -4074,6 +4078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821ffb7f8f063ac4a85a9f19e706b18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   loadType: 0
   view: {fileID: 2104556889491042473}
   scene: 
