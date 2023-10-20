@@ -7,6 +7,7 @@ public class GameManager : GenericSingleton<GameManager>
 {
     PlayerController player => FindObjectOfType<PlayerController>();
     public InventoryManager inventory => FindObjectOfType<InventoryManager>();
+    public DialogueManager dialogueManager => FindObjectOfType<DialogueManager>();
 
     public PlatformerData itemData = new PlatformerData();
     SourceManager source => FindObjectOfType<SourceManager>();
@@ -15,7 +16,6 @@ public class GameManager : GenericSingleton<GameManager>
     {
         base.Awake();
         LoadProcess();
-        
     }
 
     private void OnLevelWasLoaded(int level)
@@ -33,11 +33,9 @@ public class GameManager : GenericSingleton<GameManager>
     public InteractiveView[] getAllView()
     {
         InteractiveView[] views = new InteractiveView[gameViews.Length];
-        for(int i = 0; i < gameViews.Length; i++)
+        for (int i = 0; i < gameViews.Length; i++)
         {
             views[i] = gameViews[i].GetComponent<InteractiveView>();
-            
-            //if (i != 0) views[i].gameObject.SetActive(false);
         }
         return views;
     }
@@ -69,23 +67,33 @@ public class GameManager : GenericSingleton<GameManager>
             curNavObj = null;
         }
     }
-    public void AddInteractedItems(string[] items)
+    public void AddInteractedItemsByName(string[] items)
     {
         //add call object's can interacted names 
         foreach (var name in items)
         {
             GameObject item = GameObject.Find(name);
-            if (item != null)
+            if (item != null)// item is in the same scene
             {
                 InteractiveObject interactive = item.GetComponent<InteractiveObject>();
                 if (interactive != null && !interactive.interactable) interactive.interactable = true;
                 Debug.Log($"Add {item.name}");
             }
-            else
+            else // item is in different scene
             {
                 itemData.itemCanInteract.Add(name);
             }
         }
+    }
+
+    public void AddInventoryItem(GameObject item)
+    {
+        inventory.AddItem(item);
+    }
+
+    public void AddInventoryItemByName(string[] itemNames)
+    {
+        inventory.AddItemByName(itemNames);
     }
 
     public void SaveProcess()
@@ -104,7 +112,7 @@ public class GameManager : GenericSingleton<GameManager>
     private void LoadInGame()
     {
         Debug.Log(itemData);
-        AddInteractedItems(itemData.itemCanInteract.ToArray());
+        AddInteractedItemsByName(itemData.itemCanInteract.ToArray());
         inventory.LoadInventory();
     }
 
@@ -114,4 +122,5 @@ public class GameManager : GenericSingleton<GameManager>
     }
 
     public void ChangeToScene(string sceneName) => SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+    public void ChangeToScene(string sceneName, LoadSceneMode loadSceneMode) => SceneManager.LoadScene(sceneName, loadSceneMode);
 }

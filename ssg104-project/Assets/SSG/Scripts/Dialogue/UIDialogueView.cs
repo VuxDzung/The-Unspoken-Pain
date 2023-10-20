@@ -37,7 +37,7 @@ public class UIDialogueView : MonoBehaviour
     {
         manager.endDialogueAction += FadingView;
         manager.showDialogue += ShowDialogue;
-        fader.onHalfRationAction += manager.nextStory;
+        //fader.onHalfRationAction += manager.nextStory;
         for (int i = 0; i < choiceButtons.Length; i++)
         {
             int temp;
@@ -95,8 +95,7 @@ public class UIDialogueView : MonoBehaviour
         if (subDialogues.Count > 1)
         {
             int choices = 0;
-            if (manager.activeOnInteract) choices = manager.BI;
-            else choices = subDialogues.Count;
+            choices = subDialogues.Count;
             choicesView.SetActive(true);
             for (int i = 0; i < choices; i++)
             {
