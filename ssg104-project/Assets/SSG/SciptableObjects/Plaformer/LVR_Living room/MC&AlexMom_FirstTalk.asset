@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
+  m_Name: MC&AlexMom_FirstTalk
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 11400000, guid: 4c5b0bf53805e104f88cb82a1bb69980, type: 2}
+  - {fileID: 11400000, guid: eac4af963796d47409cfddb0f70b66b8, type: 2}
+  - {fileID: 11400000, guid: 89b78200b7306154b8d2ca7cf1d4a1c3, type: 2}
+  - {fileID: 11400000, guid: 1fec45827c5471b43b7d144e63d1991c, type: 2}
+  - {fileID: 11400000, guid: 2abbd1d3a741d7841a03eda61775008b, type: 2}
+  - {fileID: 11400000, guid: 029e2bfeff1f2354a8393876bf5beb67, type: 2}
+  - {fileID: 11400000, guid: 7f73e84f621ee9748b1ae85a05c1e820, type: 2}
+  - {fileID: 11400000, guid: df07289a76f4f734c9a5b60b0285103c, type: 2}

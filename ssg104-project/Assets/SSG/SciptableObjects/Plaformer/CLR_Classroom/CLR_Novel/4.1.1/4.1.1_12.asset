@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 4.1.1_12
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: af00a1f67158c0e45a87f5677f38dfba, type: 2}
+  characterName: 'Erwin '
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Kh\xF4ng, t\u1EDB ch\u1EC9 c\xF3 th\u1EBF th\xF4i. C\u1EADu n\xEAn th\u1EED
+    n\xF3i chuy\u1EC7n v\u1EDBi th\u1EA7y Thompson v\u1EC1 v\u1EA5n \u0111\u1EC1
+    n\xE0y xem? T\u1EDB c\u1EA3m th\u1EA5y th\u1EA7y \u1EA5y gi\u1EA5u kh\xF4ng \xEDt
+    chuy\u1EC7n \u0111\xE2u."
+  fading: 0

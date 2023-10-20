@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 4.1.2_01
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 4f68f6e0dce33a44994b3568a9eccaba, type: 2}
+  characterName: NVC
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Ch\xE0o th\u1EA7y, c\u1EA3m \u01A1n th\u1EA7y v\xEC \u0111\xE3 d\xE0nh
+    th\u1EDDi gian v\u1EDBi em. Em \u0111ang t\xECm hi\u1EC3u chuy\u1EC7n g\xEC \u0111\xE3
+    x\u1EA3y ra v\u1EDBi Alex v\xE0 em ngh\u0129 r\u1EB1ng nguy\xEAn nh\xE2n ch\xEDnh
+    l\xE0 do b\u1EA1n b\u1ECB b\u1EAFt n\u1EA1t. Li\u1EC7u th\u1EA7y c\xF3 th\u1EC3
+    chia s\u1EBB b\u1EA5t k\u1EF3 th\xF4ng tin chi ti\u1EBFt n\xE0o m\xE0 th\u1EA7y
+    bi\u1EBFt kh\xF4ng \u1EA1?"
+  fading: 0
