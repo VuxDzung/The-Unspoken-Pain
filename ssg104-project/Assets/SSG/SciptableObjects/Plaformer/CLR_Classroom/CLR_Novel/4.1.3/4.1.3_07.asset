@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 4.1.3_07
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 3d111cfd2e7e3ff4f92c86e3b4b404c6, type: 2}
+  characterName: Mark
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "(B\u1EBB kh\u1EDBp) Tao hi\u1EC3u r\u1ED3i, c\xF3 v\u1EBB l\xE0 m\xE0y
+    mu\u1ED1n \u0111\u1ED5 m\xE1u \u1EDF \u0111\xE2y r\u1ED3i. Tao s\u1EBD chi\u1EC1u
+    m\xE0y th\u2026"
+  fading: 0

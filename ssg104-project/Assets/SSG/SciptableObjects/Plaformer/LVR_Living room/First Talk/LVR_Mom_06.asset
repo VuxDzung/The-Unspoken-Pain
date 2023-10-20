@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: LVR_Mom_06
+  m_EditorClassIdentifier: 
+  subDialogues: []
+  characterName: Alex mom
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "-Hmmm, ng\u0103n t\u1EE7 d\u01B0\u1EDBi b\xE0n m\xE1y t\xEDnh h\u1EA3?
+    M\xECnh n\xEAn ki\u1EC3m tra n\xF3-"
+  fading: 0

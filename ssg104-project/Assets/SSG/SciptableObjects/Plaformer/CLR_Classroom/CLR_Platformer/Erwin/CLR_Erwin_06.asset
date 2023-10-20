@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: CLR_Erwin_06
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 04c633861bc50a448a75fd503fd289e8, type: 2}
+  characterName: Erwin
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Ch\xFAng ta c\xF3 th\u1EC3 n\xF3i chuy\u1EC7n l\xFAc tan h\u1ECDc \u0111\u01B0\u1EE3c
+    kh\xF4ng?"
+  fading: 0

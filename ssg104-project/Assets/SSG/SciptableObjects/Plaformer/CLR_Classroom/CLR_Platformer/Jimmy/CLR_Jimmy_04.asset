@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: CLR_Jimmy_04
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: bbf66521faca70a4ca9c27c7f5bd94d8, type: 2}
+  characterName: Jimmy
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "(G\u1EADt \u0111\u1EA7u v\u1EDBi v\u1EBB m\u1EB7t lo l\u1EAFng) Bi\u1EBFt
+    ch\u1EE9, nhi\u1EC1u l\xE0 \u0111\u1EB1ng kh\xE1c. Mark lu\xF4n nh\u1EAFm v\xE0o
+    h\u1ECDc sinh y\u1EBFu th\u1EBF, khi\u1EBFn cu\u1ED9c s\u1ED1ng c\u1EE7a h\u1ECD
+    tr\u1EDF n\xEAn kh\u1ED5 s\u1EDF."
+  fading: 0

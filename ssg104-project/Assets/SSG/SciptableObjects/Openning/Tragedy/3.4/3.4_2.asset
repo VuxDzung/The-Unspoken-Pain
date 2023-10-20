@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 3.4_2
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: b3ea9ff8339ea9b4fae1d09d857b0a8a, type: 2}
+  characterName: "Bi\xEAn t\u1EADp vi\xEAn"
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Theo th\xF4ng tin m\u1EDBi nh\u1EA5t, th\xEC \u1EDF tr\u01B0\u1EDDng
+    X x\u1EA3y ra m\u1ED9t v\u1EE5 h\u1ECDc sinh treo c\u1ED5. Theo \u0111i\u1EC1u
+    tra th\xEC em h\u1ECDc sinh \u0111\xF3 \u0111\xE3 m\u1EA5t v\xE0o l\xFAc 7h t\u1ED1i.
+    Hi\u1EC7n t\u1EA1i c\xF4ng an v\u1EABn \u0111ang t\xEDch c\u1EF1c \u0111i\u1EC1u
+    tra v\u1EC1 v\u1EE5 vi\u1EC7c tr\xEAn."
+  fading: 0

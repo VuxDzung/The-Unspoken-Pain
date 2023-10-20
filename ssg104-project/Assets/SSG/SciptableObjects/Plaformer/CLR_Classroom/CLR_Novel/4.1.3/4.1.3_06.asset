@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 4.1.3_06
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: c3bba5e0f59b34644855daf8590b091a, type: 2}
+  characterName: NVC
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Tao s\u1EBD kh\xF4ng b\u1ECB \u0111e d\u1ECDa b\u1EDFi nh\u1EEFng k\u1EBB
+    b\u1EAFt n\u1EA1t nh\u01B0 b\u1EA1n \u0111\xE2u. Alex x\u1EE9ng \u0111\xE1ng
+    \u0111\u01B0\u1EE3c t\u1ED1t h\u01A1n v\xE0 tao s\u1EBD kh\xF4ng \u0111\u1EC3
+    m\xE0y tho\xE1t kh\u1ECFi nh\u1EEFng g\xEC m\xE0y \u0111\xE3 l\xE0m."
+  fading: 0

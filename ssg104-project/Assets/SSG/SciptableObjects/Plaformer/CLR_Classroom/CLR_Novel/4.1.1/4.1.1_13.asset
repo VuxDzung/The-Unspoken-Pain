@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 4.1.1_13
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 2fd0d13cb9c434e4da9fa4dffe446023, type: 2}
+  characterName: NVC
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Th\u1EA7y ch\u1EE7 nhi\u1EC7m \xE1? T\u1EDB s\u1EBD h\u1EB9n v\xE0 n\xF3i
+    chuy\u1EC7n v\u1EDBi th\u1EA7y \u1EA5y. C\u1EA3m \u01A1n c\u1EADu \u0111\xE3
+    chia s\u1EBB th\xF4ng tin cho t\u1EDB."
+  fading: 0
