@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: BDR_Book_04_02
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: d99aabed13d3143428e29913b56db413, type: 2}
+  characterName: Book
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Ch\u1EEF in hoa l\xE0 ch\xECa kh\xF3a"
+  fading: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: BDR_UV_13_07
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 8aef761ed35b74d429a6b57883ff525b, type: 2}
+  characterName: NVC
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "\u0110\xE2y r\u1ED3i, \u0111\xE8n pin UV! \u0110\u1EC3 xem Alex vi\u1EBFt
+    g\xEC cho m\xECnh n\xE0o"
+  fading: 0

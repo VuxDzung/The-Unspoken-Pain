@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: BDR_UV_13_04
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: e2f1d5122a094ad49a2a0c7bcd5d55ed, type: 2}
+  characterName: "M\u1EB9 Alex"
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "\u0110\xE8n pin UV h\u1EA3. B\xE1c c\u0169ng kh\xF4ng r\xF5 n\u1EEFa.
+    C\u0169ng l\xE2u r\u1ED3i b\xE1c ch\u01B0a d\u1ECDn l\u1EA1i nh\xE0 k\u1EC3 t\u1EEB
+    khi \u2026 (s\u1EE5t s\xF9i)"
+  fading: 0
