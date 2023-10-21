@@ -11,5 +11,4 @@ public class Dialogue : ScriptableObject
     public Sprite characterImage;
     public Sprite backGroundImage;
     public string dialogue;
-    public bool fading;
 }
