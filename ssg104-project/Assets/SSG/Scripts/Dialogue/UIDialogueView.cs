@@ -34,7 +34,6 @@ public class UIDialogueView : MonoBehaviour
 
     private void Start()
     {
-        manager.endDialogueAction += FadingView;
         manager.showDialogue += ShowDialogue;
         for (int i = 0; i < choiceButtons.Length; i++)
         {
@@ -114,9 +113,9 @@ public class UIDialogueView : MonoBehaviour
     private void FadingView()
     {
         if (!manager.changeStory) return;
-        if (fader != null || fadingActive)
+        if (fader != null && fadingActive)
         {
-            fader.Activate = true;
+            fader.Active();
             fadingActive = false;
         }
         if(fader.ratio >= 50f)

@@ -16,11 +16,6 @@ public class ChangeColor : MonoBehaviour
     [SerializeField] private bool autoChange = false;
     private Color[] colors;
     internal float ratio = 0f;
-    public bool Activate
-    {
-        get { return activate; }
-        set { activate = value; }
-    }
 
     private void Awake()
     {
@@ -31,8 +26,8 @@ public class ChangeColor : MonoBehaviour
     }
     public void Active()
     {
-        activate = true;
         ratio = 0f;
+        activate = true;
     }
     private void OnEnable()
     {

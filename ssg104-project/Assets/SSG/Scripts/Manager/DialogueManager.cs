@@ -34,9 +34,6 @@ public class DialogueManager : MonoBehaviour
     }
 
     internal Action<Dialogue> showDialogue;
-    internal Action endDialogueAction;
-    internal Action endMainStoryAction;
-    internal Action changeNodeAction;
 
     [SerializeField] private List<Branch> decisionBranches = new List<Branch>();
     internal int SoT = 0; //Story On Track
@@ -52,7 +49,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float skipDelay = 0.8f;
     internal bool onSkip = false;
     internal bool changeStory = false;
-
     public void LoadMainStory(Story mainStory, int BoT, int DoT)
     {
         this.mainStory = mainStory;
@@ -159,15 +155,11 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
-                endDialogueAction?.Invoke();
+                changeStory = true;
             }
             return;
         }
-        if(DoT == branchOnTrack.dialogues.Count - 1)
-        {
-            changeStory = true;
-        }
-        else DialogueTrigger();
+        DialogueTrigger();
 
     }
 
@@ -216,7 +208,7 @@ public class DialogueManager : MonoBehaviour
     {
         nextDialogue();
         yield return new WaitForSeconds(skipDelay);
-        if (DoT == branchOnTrack.dialogues.Count - 2) onSkip = false;
+        if (DoT == branchOnTrack.dialogues.Count - 1) onSkip = false;
         else StartCoroutine(SkipStep());
     }
 

@@ -13,7 +13,7 @@ public class TextAppearing : MonoBehaviour
     }
     void Appearing(GameObject obj)
     {
-        textCotroller.Activate = true;
+        textCotroller.Active();
         item.interactable = false;
     }
 }
