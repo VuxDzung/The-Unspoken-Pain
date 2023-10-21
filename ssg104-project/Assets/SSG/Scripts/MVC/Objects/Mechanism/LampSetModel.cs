@@ -12,7 +12,7 @@ public class LampSetModel : MonoBehaviour
         model.interactAction += TurnLight;
         model.nonInteractAction += TurnLight;
     }
-    void TurnLight()
+    void TurnLight(GameObject obj)
     {
         try
         {

@@ -49,6 +49,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private bool connectedStory;
     [SerializeField] private List<int3> connectNote = new List<int3>();
 
+    [SerializeField] private float skipDelay = 0.8f;
+    internal bool onSkip = false;
+    internal bool changeStory = false;
 
     public void LoadMainStory(Story mainStory, int BoT, int DoT)
     {
@@ -65,13 +68,6 @@ public class DialogueManager : MonoBehaviour
         BuildDecision(); 
         OnStartDialogueTrigger(BoT, DoT);
     }
-
-    public void Skip()
-    {
-        DoT = branchOnTrack.dialogues.Count - 1;
-        DialogueTrigger();
-    }
-
     public void BuildDecision()
     {
         Branch curBranch = new Branch();
@@ -146,6 +142,11 @@ public class DialogueManager : MonoBehaviour
         DialogueTrigger();
     }
     #endregion
+    public void nextDialogueByButton()
+    {
+        if (onSkip) return;
+        nextDialogue();
+    }
     public void nextDialogue()
     {
         DoT++;
@@ -162,7 +163,12 @@ public class DialogueManager : MonoBehaviour
             }
             return;
         }
-        DialogueTrigger();
+        if(DoT == branchOnTrack.dialogues.Count - 1)
+        {
+            changeStory = true;
+        }
+        else DialogueTrigger();
+
     }
 
     public void nextStory()
@@ -200,6 +206,19 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+    public void Skip()
+    {
+        if (onSkip) return;
+        onSkip = true;
+        StartCoroutine(SkipStep());
+    }
+    private IEnumerator SkipStep()
+    {
+        nextDialogue();
+        yield return new WaitForSeconds(skipDelay);
+        if (DoT == branchOnTrack.dialogues.Count - 2) onSkip = false;
+        else StartCoroutine(SkipStep());
+    }
 
     public void Choice(int choice)
     {
@@ -233,6 +252,7 @@ public class DialogueManager : MonoBehaviour
 
     public void SaveStoryProgress()
     {
+        if (onSkip) return;
         StoryData savedData = new StoryData();
         savedData.SoT = SoT;
         savedData.BoT = BoT;

@@ -25,7 +25,6 @@ public class UIDialogueView : MonoBehaviour
     [SerializeField] private Button[] choiceButtons;
 
     private string playerName = "";
-    private bool hasChanged = false;
     private ChangeColor fader => GetComponent<ChangeColor>();
 
     private void Awake()
@@ -37,7 +36,6 @@ public class UIDialogueView : MonoBehaviour
     {
         manager.endDialogueAction += FadingView;
         manager.showDialogue += ShowDialogue;
-        //fader.onHalfRationAction += manager.nextStory;
         for (int i = 0; i < choiceButtons.Length; i++)
         {
             int temp;
@@ -46,7 +44,7 @@ public class UIDialogueView : MonoBehaviour
         }
 
         StoryData storyData = new StoryData();
-        storyData = SaveLoadSystem.LoadStory();
+        //storyData = SaveLoadSystem.LoadStory();
         if (playOnStart && storyData != null)
         {
             manager.LoadMainStory(manager.stories[storyData.SoT], storyData.BoT, storyData.DoT);
@@ -55,7 +53,7 @@ public class UIDialogueView : MonoBehaviour
             
 
         if (skipButton != null) skipButton.onClick.AddListener(manager.Skip);
-        if (nextButton != null) nextButton.onClick.AddListener(manager.nextDialogue);
+        if (nextButton != null) nextButton.onClick.AddListener(manager.nextDialogueByButton);
         if (saveButton != null) saveButton.onClick.AddListener(manager.SaveStoryProgress);
         if (backToHome != null) backToHome.onClick.AddListener(() => GameManager.Instance.ChangeToScene("Home"));
     }
@@ -112,14 +110,22 @@ public class UIDialogueView : MonoBehaviour
             }
         }
     }
-
+    bool fadingActive = true;
     private void FadingView()
     {
-        if (fader != null)
+        if (!manager.changeStory) return;
+        if (fader != null || fadingActive)
         {
             fader.Activate = true;
-            fader.halfwayActionInvoke = false;
+            fadingActive = false;
         }
+        if(fader.ratio >= 50f)
+        {
+            manager.nextStory();
+            fadingActive = true;
+            manager.changeStory = false;
+        }
+        
     }
 
     private void Update()
@@ -128,5 +134,6 @@ public class UIDialogueView : MonoBehaviour
         {
             manager.nextDialogue();
         }
+        FadingView();
     }
 }

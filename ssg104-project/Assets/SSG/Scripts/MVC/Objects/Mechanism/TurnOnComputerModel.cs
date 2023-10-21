@@ -13,7 +13,7 @@ public class TurnOnComputerModel : MonoBehaviour
         model.interactAction += TurnOnComputer;
         offComputerButton.button.onClick.AddListener(() => TurnOffComputer());
     }
-    private void TurnOnComputer()
+    private void TurnOnComputer(GameObject obj)
     {
         screenColor.Active();   
     }

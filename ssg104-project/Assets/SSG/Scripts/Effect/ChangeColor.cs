@@ -16,10 +16,6 @@ public class ChangeColor : MonoBehaviour
     [SerializeField] private bool autoChange = false;
     private Color[] colors;
     internal float ratio = 0f;
-
-    public Action onHalfRationAction;
-
-    public bool halfwayActionInvoke { get; set; }
     public bool Activate
     {
         get { return activate; }
@@ -61,11 +57,6 @@ public class ChangeColor : MonoBehaviour
             }
             if(i < images.Length) images[i].color = newColor;
             else texts[i - images.Length].color = newColor;
-        }
-        if (ratio >= 50 && !halfwayActionInvoke)
-        {
-            onHalfRationAction?.Invoke();
-            halfwayActionInvoke = true;
         }
         if(ratio >= 100f) activate = false;
 

@@ -16,8 +16,8 @@ public class InteractiveObject : MonoBehaviour
     [SerializeField] protected InteractiveView view;
     [SerializeField] private string scene;
     [HideInInspector] public int viewOrder = 0;
-    public Action interactAction { get; set; }
-    public Action nonInteractAction { get; set; }
+    public Action<GameObject> interactAction { get; set; }
+    public Action<GameObject> nonInteractAction { get; set; }
 
     protected virtual void Start()
     {
@@ -34,7 +34,7 @@ public class InteractiveObject : MonoBehaviour
             if (view == views[i]) viewOrder = i;
         }
     }
-    public void OnOpen()
+    public void OnOpen(GameObject obj)
     {
         Debug.Log("Click");
         switch (loadType)
@@ -54,11 +54,11 @@ public class InteractiveObject : MonoBehaviour
     {
         if (!interactable)
         {
-            nonInteractAction?.Invoke();
+            nonInteractAction?.Invoke(this.gameObject);
         }
         else
         {
-            interactAction?.Invoke();
+            interactAction?.Invoke(this.gameObject);
         }
     }
 }

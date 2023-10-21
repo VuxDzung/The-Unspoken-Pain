@@ -15,7 +15,7 @@ public class TriggeringItems : MonoBehaviour
     {
         obj.interactAction += Trigger;
     }
-    void Trigger()
+    void Trigger(GameObject obj)
     { 
         GameManager.Instance.AddInteractedItemsByName(triggedNames);
 

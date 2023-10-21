@@ -81,6 +81,7 @@ public class GameManager : GenericSingleton<GameManager>
             }
             else // item is in different scene
             {
+                if (itemData.itemCanInteract.Contains(name)) return;
                 itemData.itemCanInteract.Add(name);
             }
         }
