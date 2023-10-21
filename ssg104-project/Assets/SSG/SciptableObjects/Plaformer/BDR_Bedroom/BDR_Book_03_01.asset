@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: BDR_Book_03_01
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 14076c10e152711479c9665003fdfff0, type: 2}
+  characterName: Book
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Quy\u1EC3n s\xE1ch c\u1EA7n \u0111\u1ECDc: Th\xE1m t\u1EED th\xF4ng
+    th\xE1i v\xE0 chuy\u1EBFn t\xE0u b\xED \u1EA9n, trang 69"
+  fading: 0

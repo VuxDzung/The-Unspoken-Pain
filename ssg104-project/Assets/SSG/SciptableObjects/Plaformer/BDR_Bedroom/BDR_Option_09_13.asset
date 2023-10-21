@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: BDR_Option_09_13
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 04c0058801d0faf4c9eba987cc4ee115, type: 2}
+  characterName: NVC
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Tr\xEAn m\xE1y t\xEDnh \xE0? B\xE1c bi\u1EBFt b\u1EA1n \u1EA5y \u0111ang
+    l\xE0m g\xEC tr\xEAn \u0111\u1EA5y kh\xF4ng?"
+  fading: 0

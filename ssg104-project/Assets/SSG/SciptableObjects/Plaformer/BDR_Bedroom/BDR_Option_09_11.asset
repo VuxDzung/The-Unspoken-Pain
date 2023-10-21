@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: BDR_Option_09_11
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: af7700aecf5c46544bcff9cafab49575, type: 2}
+  characterName: "M\u1EB9 Alex"
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "\xC0, d\u1EA1o n\xE0y b\xE1c th\u1EA5y Alex d\xE0nh nhi\u1EC1u th\u1EDDi
+    gian h\u01A1n tr\xEAn m\xE1y t\xEDnh"
+  fading: 0

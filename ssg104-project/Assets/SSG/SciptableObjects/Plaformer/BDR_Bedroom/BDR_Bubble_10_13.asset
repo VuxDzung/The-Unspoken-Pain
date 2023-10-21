@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: BDR_Bubble_10_13
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: bb82020e41165084cb4e2fc997d2f82e, type: 2}
+  characterName: Sis
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 0}
+  dialogue: "Alex, em c\xF3 th\u1EC3 n\xF3i cho ch\u1ECB bi\u1EBFt. Ch\u1ECB l\xE0
+    ch\u1ECB c\u1EE7a em m\xE0. Bi\u1EBFt \u0111\xE2u ch\u1ECB c\xF3 th\u1EC3 gi\xFAp
+    \u0111\u01B0\u1EE3c em!"
+  fading: 0
