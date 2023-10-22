@@ -11,6 +11,7 @@ public class GameManager : GenericSingleton<GameManager>
 
     public PlatformerData itemData = new PlatformerData();
     SourceManager source => FindObjectOfType<SourceManager>();
+    private int dialogueViewOrder;
 
     protected override void Awake()
     {
@@ -21,6 +22,8 @@ public class GameManager : GenericSingleton<GameManager>
     private void OnLevelWasLoaded(int level)
     {
         LoadInGame();
+        GetDialogueView();
+        ChangeCanvas(0);
     }
 
     private GameObject[] gameViews
@@ -30,6 +33,17 @@ public class GameManager : GenericSingleton<GameManager>
     }
     private InteractiveModel curNavObj = null;
     [HideInInspector] public bool inGame = true;
+    private void GetDialogueView()
+    {
+        GameObject viewObj = GameObject.FindGameObjectWithTag("DialogueView");
+        if (viewObj == null) return;
+        InteractiveView view = viewObj.GetComponent<InteractiveView>();
+        InteractiveView[] views = getAllView();
+        for (int i = 0; i < views.Length; i++)
+        {
+            if (view == views[i]) dialogueViewOrder = i;
+        }
+    }
     public InteractiveView[] getAllView()
     {
         InteractiveView[] views = new InteractiveView[gameViews.Length];
@@ -51,6 +65,10 @@ public class GameManager : GenericSingleton<GameManager>
             if (gameViews[ord] == null) continue;
             else if (gameViews[ord] == v) v.SetActive(true);
         LoadInGame();
+    }
+    public void ChangeToDialogueView()
+    {
+        ChangeCanvas(dialogueViewOrder);
     }
     public void SetMoveNavigate(InteractiveModel obj)
     {
@@ -115,11 +133,6 @@ public class GameManager : GenericSingleton<GameManager>
         Debug.Log(itemData);
         AddInteractedItemsByName(itemData.itemCanInteract.ToArray());
         inventory.LoadInventory();
-    }
-
-    public bool HadInteracted(InteractiveModel currentObject)
-    {
-        return false;
     }
 
     public void ChangeToScene(string sceneName) => SceneManager.LoadScene(sceneName, LoadSceneMode.Single);

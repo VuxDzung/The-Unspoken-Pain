@@ -62,7 +62,7 @@ public class UIDialogueView : MonoBehaviour
         
     }
 
-    private void ShowDialogue(Dialogue dialogue)
+    public void ShowDialogue(Dialogue dialogue)
     {
         if (tmpCharacterName != null)
         {

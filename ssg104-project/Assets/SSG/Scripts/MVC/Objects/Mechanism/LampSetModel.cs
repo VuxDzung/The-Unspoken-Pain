@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LampSetModel : MonoBehaviour
 {
-    [SerializeField] private new Light light;
+    [SerializeField] private new Light[] lights;
     InteractiveModel model => GetComponent<InteractiveModel>();
     void Start()
     {
@@ -14,17 +14,20 @@ public class LampSetModel : MonoBehaviour
     }
     void TurnLight(GameObject obj)
     {
+        if(model.interactable) model.interactable = false;
+        else model.interactable = true;
+
+        foreach(var light in lights)
         try
         {
             if (light.enabled == false)
             {
                 light.enabled = true;
-                model.interactable = true;
+
             }
             else
             {
                 light.enabled = false;
-                model.interactable = false;
             }
         }
         catch (InvalidOperationException e) { Debug.LogError(e); }

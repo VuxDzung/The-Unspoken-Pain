@@ -29,6 +29,10 @@ public class ChangeColor : MonoBehaviour
         ratio = 0f;
         activate = true;
     }
+    public void SetToDefault()
+    {
+        ChangeValue(0f);
+    }
     private void OnEnable()
     {
         if (!autoChange) return;
@@ -40,21 +44,25 @@ public class ChangeColor : MonoBehaviour
         if (!activate) return;
         // ratio = total(1f) / numOfPartOfTimes
         ratio += 100 * Time.deltaTime / timeSet;
+        ChangeValue(ratio);
+        if(ratio >= 100f) activate = false;
+
+    }
+    void ChangeValue(float ratio)
+    {
         for (int i = 0; i < colors.Length; i++)
         {
             Color newColor = colors[i];
-            if(setAlpha) newColor.a = gradient.Evaluate(ratio / 100f).a;
-            if(setRGB)
+            if (setAlpha) newColor.a = gradient.Evaluate(ratio / 100f).a;
+            if (setRGB)
             {
                 newColor.r = gradient.Evaluate(ratio / 100f).r;
                 newColor.g = gradient.Evaluate(ratio / 100f).g;
                 newColor.b = gradient.Evaluate(ratio / 100f).b;
             }
-            if(i < images.Length) images[i].color = newColor;
+            if (i < images.Length) images[i].color = newColor;
             else texts[i - images.Length].color = newColor;
         }
-        if(ratio >= 100f) activate = false;
-
     }
 
     // Update is called once per frame

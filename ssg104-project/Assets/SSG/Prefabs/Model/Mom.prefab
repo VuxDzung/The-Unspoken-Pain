@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3329286190401829455, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_Name
-      value: Mom Variant
+      value: Mom
       objectReference: {fileID: 0}
     - target: {fileID: 6033209874791115224, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_RootOrder
@@ -67,6 +67,10 @@ PrefabInstance:
     - target: {fileID: 6033209874791115224, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124607668569991664, guid: 3dc44dcad275efd4aa6b3c64970aee74, type: 3}
+      propertyPath: loadType
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

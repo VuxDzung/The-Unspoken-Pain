@@ -11,9 +11,11 @@ public class NumericPassword : MonoBehaviour
     [SerializeField] private int password;
     void Start()
     {
-        enterButton.nonInteractAction += CheckPassWord;
         foreach (var button in digitButtons)
+        {
             button.interactAction += Press;
+            button.interactAction += CheckPassWord;
+        }   
     }
 
     public void Press(GameObject button)
@@ -29,8 +31,12 @@ public class NumericPassword : MonoBehaviour
         {
             InteractiveButton button = digitButtons[i];
             int digit = int.Parse(button.GetComponentInChildren<TextMeshProUGUI>().text);
-            int correctDigit = (int) (password / Math.Pow(10, i)) % 10;
-            if (digit != correctDigit) return;
+            int correctDigit = (int) (password / Math.Pow(10, digitButtons.Length - i - 1)) % 10;
+            if (digit != correctDigit)
+            {
+                enterButton.interactable = false;
+                return;
+            }
         }
         enterButton.interactable = true;
         enterButton.OnAction();

@@ -6,7 +6,8 @@ using UnityEngine;
 enum Load
 {
     view,
-    scene
+    scene,
+    none
 }
 
 public class InteractiveObject : MonoBehaviour
@@ -15,7 +16,7 @@ public class InteractiveObject : MonoBehaviour
     [SerializeField] private Load loadType;
     [SerializeField] protected InteractiveView view;
     [SerializeField] private string scene;
-    [HideInInspector] public int viewOrder = 0;
+    internal int viewOrder = 0;
     public Action<GameObject> interactAction { get; set; }
     public Action<GameObject> nonInteractAction { get; set; }
 
@@ -36,13 +37,13 @@ public class InteractiveObject : MonoBehaviour
     }
     public void OnOpen(GameObject obj)
     {
-        Debug.Log("Click");
         switch (loadType)
         {
             case Load.view:
                 GameManager.Instance.ChangeCanvas(viewOrder); break;
             case Load.scene:
                 GameManager.Instance.ChangeToScene(scene); break;
+            case Load.none: break;
         }
     }
 
@@ -61,4 +62,5 @@ public class InteractiveObject : MonoBehaviour
             interactAction?.Invoke(this.gameObject);
         }
     }
+
 }

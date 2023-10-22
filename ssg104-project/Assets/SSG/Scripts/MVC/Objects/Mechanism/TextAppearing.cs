@@ -10,10 +10,20 @@ public class TextAppearing : MonoBehaviour
     void Start()
     {
         item.interactAction += Appearing;
+        item.nonInteractAction += Appearing;
     }
     void Appearing(GameObject obj)
     {
-        textCotroller.Active();
-        item.interactable = false;
+        if (item.interactable)
+        {
+            textCotroller.Active();
+            item.interactable = false;
+        }
+        else
+        {
+            textCotroller.SetToDefault();
+            item.interactable = true;
+        }
+        
     }
 }

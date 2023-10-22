@@ -190,7 +190,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("No more stories available. End of the game or perform other actions.");
             if (nextScene.Length == 0)
             {
-                this.gameObject.SetActive(false);
+                GameManager.Instance.ChangeCanvas(0);
             }
             else
             {

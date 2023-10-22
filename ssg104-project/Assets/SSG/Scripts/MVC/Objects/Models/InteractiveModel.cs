@@ -22,7 +22,7 @@ public class InteractiveModel : InteractiveObject
     public void SetMouseOn(bool active) 
     {
         if(highline == null) return;
-        highline.SetActive(active);
+        highline.SetActive(active & interactable);
     }
 
     public void DisplayConsoleMessage()
