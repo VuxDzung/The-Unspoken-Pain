@@ -29,7 +29,12 @@ public class GameManager : GenericSingleton<GameManager>
     private GameObject[] gameViews
     {
         get { return source.gameViews; }
-        set { gameViews = source.gameViews; }
+        set {}
+    }
+    private GameObject[] externalViews
+    {
+        get { return source.externalViews; }
+        set {}
     }
     private InteractiveModel curNavObj = null;
     [HideInInspector] public bool inGame = true;
@@ -46,10 +51,11 @@ public class GameManager : GenericSingleton<GameManager>
     }
     public InteractiveView[] getAllView()
     {
-        InteractiveView[] views = new InteractiveView[gameViews.Length];
-        for (int i = 0; i < gameViews.Length; i++)
+        InteractiveView[] views = new InteractiveView[gameViews.Length + externalViews.Length];
+        for (int i = 0; i < gameViews.Length + externalViews.Length; i++)
         {
-            views[i] = gameViews[i].GetComponent<InteractiveView>();
+            if (i < gameViews.Length) views[i] = gameViews[i].GetComponent<InteractiveView>();
+            else views[i] = externalViews[i - gameViews.Length].GetComponent<InteractiveView>();
         }
         return views;
     }
@@ -59,12 +65,22 @@ public class GameManager : GenericSingleton<GameManager>
     {
         if (ord != 0) inGame = false;
         else inGame = true;
-        foreach (GameObject v in gameViews) 
-            if (v.activeSelf) v.SetActive(false);
-        foreach (GameObject v in gameViews)
-            if (gameViews[ord] == null) continue;
-            else if (gameViews[ord] == v) v.SetActive(true);
+
+        if (ord < gameViews.Length) ActiveViews(gameViews, ord);
+        else
+        {
+            ActiveViews(externalViews, ord - gameViews.Length);
+            return;
+        }
         LoadInGame();
+    }
+    private void ActiveViews(GameObject[] views, int ord)
+    {
+        foreach (GameObject v in views)
+            if (v.activeSelf) v.SetActive(false);
+        foreach (GameObject v in views)
+            if (views[ord] == null) continue;
+            else if (views[ord] == v) v.SetActive(true);
     }
     public void ChangeToDialogueView()
     {

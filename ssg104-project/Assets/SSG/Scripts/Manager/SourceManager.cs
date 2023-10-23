@@ -7,4 +7,5 @@ public class SourceManager : MonoBehaviour
 {
     public string currentScene;
     public GameObject[] gameViews;
+    public GameObject[] externalViews;
 }
