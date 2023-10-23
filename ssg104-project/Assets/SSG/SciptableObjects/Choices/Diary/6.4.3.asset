@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 6.4.3
+  m_EditorClassIdentifier: 
+  subDialogues: []
+  characterName: Alex
+  characterImage: {fileID: 21300000, guid: 7a6d502970a790347ba05b723703e5a6, type: 3}
+  backGroundImage: {fileID: 21300000, guid: 5662b493d47aec14d9e2cbb69d6f06a2, type: 3}
+  dialogue: "Suy ngh\u0129 n\xE0y l\xE0m t\xF4i \u0111au \u0111\u1EA7u. C\xF3 l\u1EBD,
+    t\xF4i n\xEAn t\xECm n\u01A1i n\xE0o \u0111\xF3 y\xEAn l\u1EB7ng \u0111\u1EC3
+    suy ngh\u0129 th\xEAm."

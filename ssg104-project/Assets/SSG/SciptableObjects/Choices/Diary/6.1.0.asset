@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
-  m_Name: BDR_Draft_11_06
+  m_Name: 6.1.0
   m_EditorClassIdentifier: 
   subDialogues: []
-  characterName: NVC
-  characterImage: {fileID: 0}
-  backGroundImage: {fileID: 0}
-  dialogue: "\xD4 th\u1EE9 ba l\xE0 s\u1ED1 b\u1ED1n! M\xECnh n\xEAn note l\u1EA1i"
+  characterName: Alex
+  characterImage: {fileID: 21300000, guid: 7a6d502970a790347ba05b723703e5a6, type: 3}
+  backGroundImage: {fileID: 21300000, guid: d4d1b73d21544614a96a8c377c45fdc7, type: 3}
+  dialogue: "Ng\xE0y 1365:"
