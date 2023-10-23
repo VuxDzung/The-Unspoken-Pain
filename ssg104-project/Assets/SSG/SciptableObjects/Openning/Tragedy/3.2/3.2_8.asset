@@ -12,12 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
   m_Name: 3.2_8
   m_EditorClassIdentifier: 
-  subDialogues:
-  - {fileID: 11400000, guid: fb3b4fc5c6f7ffa468960eb0fe46faf9, type: 2}
+  subDialogues: []
   characterName: NVC
   characterImage: {fileID: 0}
   backGroundImage: {fileID: 21300000, guid: e27a7c91426273540892f67d31872c44, type: 3}
-  dialogue: "Sao nhi\u1EC1u ng\u01B0\u1EDDi t\u1EADp trung \u1EDF l\u1EA1i l\u1EDBp
-    m\xECnh v\u1EADy? Hay l\xE0 \u2026 \u0111\u1EEBng l\xE0 v\u1EADy .. \u0111\u1EEBng
-    \u2026"
-  fading: 0
+  dialogue: ALEXXXX!!!!!

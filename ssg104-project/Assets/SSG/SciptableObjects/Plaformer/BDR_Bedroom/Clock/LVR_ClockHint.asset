@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
+  m_Name: LVR_ClockHint
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 11400000, guid: 3644d997fa2017a4d8c69e0b8a5a04c7, type: 2}
+  - {fileID: 11400000, guid: 05d9b44f5e8d4544eba5f764b2ef4960, type: 2}
+  - {fileID: 11400000, guid: 615a6f2d61fba6f4496f4b8751b0244b, type: 2}
+  - {fileID: 11400000, guid: 91a4767a770425942bebd35091f08821, type: 2}
+  - {fileID: 11400000, guid: 2f7083ed993ad39419d91578fa7d8577, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
+  m_Name: Openning_3_5
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 11400000, guid: 09ba26c998d806744909a953a0933403, type: 2}
+  - {fileID: 11400000, guid: 097ba5d4ee3889443be92fd6b27a074e, type: 2}
+  - {fileID: 11400000, guid: 61cd6ce01f4111245be40c13fb3eb218, type: 2}
+  - {fileID: 11400000, guid: b4bd883212f50a94a9911b84b6858ba3, type: 2}
+  - {fileID: 11400000, guid: 66a462b81a9e4114a938c78ed7d3d889, type: 2}

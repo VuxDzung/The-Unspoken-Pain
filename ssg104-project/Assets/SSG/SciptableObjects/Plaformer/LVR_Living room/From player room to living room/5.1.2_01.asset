@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subDialogues:
   - {fileID: 11400000, guid: 54732199ea026094092b4d74fb759cf3, type: 2}
-  characterName: 
+  characterName: "B\u1EE9c th\u01B0 t\u1EEB Alex"
   characterImage: {fileID: 0}
-  backGroundImage: {fileID: 0}
+  backGroundImage: {fileID: 21300000, guid: 7fbe5240cab181e4eae61362107cb2b1, type: 3}
   dialogue: "\"NVC \xE0, c\u1EADu ng\u1ED1c th\u1EADt. T\u1EDB th\u1EADt s\u1EF1
     kh\xF4ng mu\u1ED1n c\u1EADu d\xEDnh v\xE0o chuy\u1EC7n n\xE0y, nh\u01B0ng v\u1EDBi
     c\xE1i t\xEDnh c\xE1ch c\u1EE7a c\u1EADu th\xEC ai c\u1EA3n n\u1ED5i nh\u1EC9?
@@ -26,4 +26,3 @@ MonoBehaviour:
     c\u1EADu c\u1EA7n t\xECm. Th\xE2n, Alex. P.S: N\u1EBFu m\u1EB9 t\u1EDB c\xF3
     h\u1ECFi th\xEC c\u1EE9 \u0111\u01B0a b\u1EE9c th\u01B0 n\xE0y cho m\u1EB9 t\u1EDB.
     M\u1EB9 t\u1EDB s\u1EBD hi\u1EC3u th\xF4i.\" "
-  fading: 0

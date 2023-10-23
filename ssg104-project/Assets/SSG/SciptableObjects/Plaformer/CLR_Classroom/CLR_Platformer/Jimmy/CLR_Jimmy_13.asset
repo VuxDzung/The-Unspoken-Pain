@@ -15,9 +15,8 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: d1e4ed0a9b623bd43b5d66609d32b3a8, type: 2}
   characterName: NVC
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "(nh\u0103n m\u1EB7t) Chuy\u1EC7n n\xE0y kh\xF4ng th\u1EC3 ti\u1EBFp
     t\u1EE5c \u0111\u01B0\u1EE3c. B\u1EA1n c\xF3 bi\u1EBFt v\u1EC1 c\xE2u chuy\u1EC7n
     c\u1EE5 th\u1EC3 n\xE0o kh\xF4ng?"
-  fading: 0

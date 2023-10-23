@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
   m_Name: CLR_Jimmy_11
   m_EditorClassIdentifier: 
-  subDialogues: []
+  subDialogues:
+  - {fileID: 11400000, guid: 316e4e6f0574af34ba1a342d8f5e5a24, type: 2}
   characterName: Jimmy
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: 04a5783d61ca71042a5cfc51f0588533, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "M\u1ECDi ng\u01B0\u1EDDi \u0111\xE3 b\xE1o c\xE1o l\u1EA1i r\u1ED3i,
     nh\u01B0ng c\xF3 v\u1EBB ch\u1EB3ng c\xF3 g\xEC thay \u0111\u1ED5i c\u1EA3. Th\u1EADm
     ch\xED m\u1ED9t s\u1ED1 ng\u01B0\u1EDDi l\xE0m v\u1EADy c\xF2n b\u1ECB h\u1EAFn
     \u0111\xE1nh d\xE3 man h\u01A1n c\u01A1."
-  fading: 0

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
+  m_Name: CLR_Story_4.1.3
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 11400000, guid: ed913a0b923439041a51184b2ac42abf, type: 2}
+  - {fileID: 11400000, guid: 659c845f0c418c149962ec951f29f81b, type: 2}
+  - {fileID: 11400000, guid: 390602b1149f4734d9fc0141fbac55af, type: 2}
+  - {fileID: 11400000, guid: fe3b198ddeda79b48aa501c7c5542dda, type: 2}
+  - {fileID: 11400000, guid: 31036d66fedb11d43807a30a74451d20, type: 2}
+  - {fileID: 11400000, guid: dafe86290ed6c64478fa7219146db61e, type: 2}
+  - {fileID: 11400000, guid: c3bba5e0f59b34644855daf8590b091a, type: 2}
+  - {fileID: 11400000, guid: 3d111cfd2e7e3ff4f92c86e3b4b404c6, type: 2}
+  - {fileID: 11400000, guid: 7ca0ef60cbc45f74da6549a73eab037b, type: 2}

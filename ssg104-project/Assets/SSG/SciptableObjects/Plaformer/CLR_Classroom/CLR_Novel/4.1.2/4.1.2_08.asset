@@ -16,9 +16,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9b4dd37f2e7b3e04c9e3981c30182277, type: 2}
   characterName: NVC
   characterImage: {fileID: 0}
-  backGroundImage: {fileID: 0}
+  backGroundImage: {fileID: 21300000, guid: b822d54b1fa68b04e92e9f2855e2ccfd, type: 3}
   dialogue: "Nh\u01B0ng th\u1EA7y \u01A1i, Alex \u0111\xE3 \u0111i r\u1ED3i, v\xE0
     em c\u1EA7n ph\u1EA3i bi\u1EBFt l\xFD do, \u0111\u1EC3 l\u1EA5y l\u1EA1i c\xF4ng
     l\xFD cho b\u1EA1n. Em th\u1EADt s\u1EF1 c\u1EA7n s\u1EF1 gi\xFAp \u0111\u1EE1
     c\u1EE7a th\u1EA7y!"
-  fading: 0

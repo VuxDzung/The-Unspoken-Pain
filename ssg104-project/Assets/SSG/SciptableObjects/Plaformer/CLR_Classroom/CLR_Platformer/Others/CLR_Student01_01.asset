@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: CLR_Student01_01
   m_EditorClassIdentifier: 
   subDialogues: []
-  characterName: "H\u1ECDc sinh"
+  characterName: 
   characterImage: {fileID: 0}
   backGroundImage: {fileID: 0}
   dialogue: "C\u1EADu ta qu\xE1 ch\xFA t\xE2m v\xE0o s\xE1ch thay v\xEC \u0111\u1EC3
     \xFD \u0111\u1EBFn b\u1EA1n"
-  fading: 0

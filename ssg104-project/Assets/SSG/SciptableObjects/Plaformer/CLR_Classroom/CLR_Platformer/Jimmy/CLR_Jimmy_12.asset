@@ -15,8 +15,7 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: dd6475289a35bb444a1d61666767cb52, type: 2}
   characterName: Jimmy
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: 04a5783d61ca71042a5cfc51f0588533, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "Th\u1EBF n\xEAn kh\xF4ng m\u1ED9t ai \u0111\u1EE7 d\u0169ng c\u1EA3m
     \u0111\u1EC3 l\xEAn ti\u1EBFng n\u1EEFa"
-  fading: 0

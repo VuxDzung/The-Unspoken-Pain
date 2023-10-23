@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subDialogues: []
   characterName: NVC
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "(suy ngh\u0129) Ch\u1EAFc h\u1EB3n h\u1EAFn ta \u0111\xE3 l\xE0m vi\u1EC7c
     g\xEC kinh kh\u1EE7ng l\u1EAFm \u0111\u1EBFn m\u1EE9c c\u1EADu \u1EA5y ph\u1EA3i
     s\u1EE3 h\xE3i \u0111\u1EBFn v\u1EADy."
-  fading: 0

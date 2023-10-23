@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
   m_Name: CRL_Story_Tilly
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 3ad5f83e04f5f7247bcd9195240fd9f4, type: 2}
+  - {fileID: 11400000, guid: ff4ffb4efc843e746b802f5af9ac2498, type: 2}
+  - {fileID: 11400000, guid: 4175438f413616640984a532a55c7cfa, type: 2}
+  - {fileID: 11400000, guid: da088363deea3d54eb5b7d12cd442046, type: 2}
+  - {fileID: 11400000, guid: 6cf5f7df83331404ab294bd11cc5f961, type: 2}
+  - {fileID: 11400000, guid: ba0a00f96f735f04e977c058d8d13235, type: 2}

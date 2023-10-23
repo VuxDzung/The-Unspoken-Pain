@@ -15,7 +15,6 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: 7ca0ef60cbc45f74da6549a73eab037b, type: 2}
   characterName: "B\u1EA3o v\u1EC7"
-  characterImage: {fileID: 0}
-  backGroundImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: bfe4d8be04f3f114ca6e36766c5b8b0b, type: 3}
+  backGroundImage: {fileID: 21300000, guid: 26ffab22515044442a676f083cedf8f7, type: 3}
   dialogue: "(Qu\xE1t to) N\xE0y n\xE0y, ch\xFAng m\xE0y \u0111ang l\xE0m g\xEC \u0111\u1EA5y?"
-  fading: 0

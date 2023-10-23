@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
   m_Name: CLR_Tilly_02
   m_EditorClassIdentifier: 
-  subDialogues: []
+  subDialogues:
+  - {fileID: 11400000, guid: 4175438f413616640984a532a55c7cfa, type: 2}
   characterName: NVC
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "T\u1EDB mu\u1ED1n bi\u1EBFt m\u1ED9t ch\xFAt th\xF4ng tin v\u1EC1 Mark
     \u1EDF ch\u1ED7 c\u1EADu, c\xF3 \u0111\u01B0\u1EE3c kh\xF4ng?"
-  fading: 0

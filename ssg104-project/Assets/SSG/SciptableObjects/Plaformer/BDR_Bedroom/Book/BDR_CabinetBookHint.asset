@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
+  m_Name: BDR_CabinetBookHint
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 11400000, guid: 86547a8e0cd0f0140bb6549a5a997416, type: 2}
+  - {fileID: 11400000, guid: 683552c1878d0f74a80813f37c5eef25, type: 2}

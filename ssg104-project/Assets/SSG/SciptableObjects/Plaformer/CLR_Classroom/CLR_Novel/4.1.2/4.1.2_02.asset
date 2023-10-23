@@ -15,10 +15,9 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: 4f6e6175621d449408b1ed8bc44a369b, type: 2}
   characterName: "Th\u1EA7y Thompson"
-  characterImage: {fileID: 0}
-  backGroundImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: 1fa180e3e4a5de443a956baf4a1cd573, type: 3}
+  backGroundImage: {fileID: 21300000, guid: b822d54b1fa68b04e92e9f2855e2ccfd, type: 3}
   dialogue: "(G\u1EADt \u0111\u1EA7u c\u01B0\u1EDDi g\u01B0\u1EE3ng) T\u1EA5t nhi\xEAn
     r\u1ED3i NVC. Vi\u1EC7c Alex ra \u0111i l\xE0 m\u1ED9t s\u1EF1 vi\u1EC7c r\u1EA5t
     \u0111au bu\u1ED3n kh\xF4ng ch\u1EC9 trong l\u1EDBp ch\xFAng ta m\xE0 c\xF2n
     v\u1EDBi c\u1EA3 tr\u01B0\u1EDDng."
-  fading: 0

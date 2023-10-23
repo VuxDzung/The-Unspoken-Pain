@@ -15,10 +15,9 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: dafe86290ed6c64478fa7219146db61e, type: 2}
   characterName: Mark
-  characterImage: {fileID: 0}
-  backGroundImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: dbc0fbdd9b13cfb4fb0cb7ced3d24166, type: 3}
+  backGroundImage: {fileID: 21300000, guid: 26ffab22515044442a676f083cedf8f7, type: 3}
   dialogue: "(C\u01B0\u1EDDi \u0111\u1EC3u) M\xE0y kh\xF4ng hi\u1EC3u ph\u1EA3i kh\xF4ng?
     H\xE3y tr\xE1nh xa chuy\u1EC7n n\xE0y n\u1EBFu m\xE0y c\xF2n mu\u1ED1n y\xEAn
     \u1ED5n. \u1EDE \u0111\xE2y, nghe theo tao th\xEC s\u1ED1ng, c\xF2n kh\xF4ng
     th\xEC h\u1EADu qu\u1EA3 t\u1EF1 ch\u1ECBu!"
-  fading: 0

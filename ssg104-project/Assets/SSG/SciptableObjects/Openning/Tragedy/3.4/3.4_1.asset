@@ -16,7 +16,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 64c826639fd5e0d4d957acfd3ec4f314, type: 2}
   characterName: "Bi\xEAn t\u1EADp vi\xEAn"
   characterImage: {fileID: 0}
-  backGroundImage: {fileID: 0}
+  backGroundImage: {fileID: 21300000, guid: 2107d2a8e2befb04bb91d1c737c678f2, type: 3}
   dialogue: "Ch\xE0o qu\xFD kh\xE1n gi\u1EA3 \u0111\u1EBFn v\u1EDBi ch\u01B0\u01A1ng
     tr\xECnh th\u1EDDi s\u1EF1 th\u01B0\u1EDDng ng\xE0y."
-  fading: 0

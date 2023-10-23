@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
   m_Name: CRL_Story_Erwin
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 1b95cf46aa2559a489a24615cdad060e, type: 2}
+  - {fileID: 11400000, guid: 66aa4a85562b5e04881fc8f4f94a270b, type: 2}
+  - {fileID: 11400000, guid: 792f0f9a669559a47a115f20dba2a311, type: 2}
+  - {fileID: 11400000, guid: 40ac460d9918fb040a99ad4524b6a05d, type: 2}
+  - {fileID: 11400000, guid: 0e3161ae99a0e9440bccf050e0f0cf72, type: 2}
+  - {fileID: 11400000, guid: e9997cb9b61ec2741983844e46b4f018, type: 2}
+  - {fileID: 11400000, guid: 04c633861bc50a448a75fd503fd289e8, type: 2}
+  - {fileID: 11400000, guid: 1082fcfa104c3a24ba7a2c12f432fcc7, type: 2}
+  - {fileID: 11400000, guid: 8e304676257449d49b5d4ef8b515e4df, type: 2}

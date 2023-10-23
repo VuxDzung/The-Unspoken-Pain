@@ -15,10 +15,9 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: 4e219b76318709c4399339f64de719cb, type: 2}
   characterName: Erwin
-  characterImage: {fileID: 0}
-  backGroundImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: a22abfe2a00067849939f6c1faf391c0, type: 3}
+  backGroundImage: {fileID: 21300000, guid: f73a65555ae004a4285bf2f9bc00240c, type: 3}
   dialogue: "\u1EEA. N\xF3 \u0111\xE3 khi\u1EBFn cu\u1ED9c s\u1ED1ng c\u1EE7a t\u1EDB
     tr\u1EDF th\xE0nh \u0111\u1ECBa ng\u1EE5c trong kho\u1EA3ng th\u1EDDi gian d\xE0i.
     N\xF3 \u0111\xE1nh t\u1EDB th\u1EADm t\u1EC7, x\xFAc ph\u1EA1m t\u1EDB v\xE0
     gia \u0111\xECnh t\u1EDB, nhi\u1EC1u l\u1EAFm \u2026"
-  fading: 0

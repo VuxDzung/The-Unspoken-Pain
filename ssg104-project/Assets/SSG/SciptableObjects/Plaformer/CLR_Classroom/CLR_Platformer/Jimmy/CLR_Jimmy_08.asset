@@ -15,10 +15,9 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: b01ecc9d8a701df448fc6b296be7e01c, type: 2}
   characterName: Jimmy
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: 04a5783d61ca71042a5cfc51f0588533, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "H\u1EAFn ta bi\u1EBFt c\xE1ch x\xFAc ph\u1EA1m, l\xE0m nh\u1EE5c n\u1EA1n
     nh\xE2n. H\u1EAFn ta tr\u1EA5n l\u1ED9t ti\u1EC1n, b\u1EAFt ph\u1EA3i lao \u0111\u1ED9ng
     cho h\u1EAFn. H\u1EAFn ta l\xE0 m\u1ED9t k\u1EBB man r\u1EE3 v\xE0 \u0111\u1EA7y
     quy\u1EC1n l\u1EF1c."
-  fading: 0
