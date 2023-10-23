@@ -15,7 +15,6 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: 89be4c633eb76e44fb8ac6023c061c08, type: 2}
   characterName: Alex
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: 7a6d502970a790347ba05b723703e5a6, type: 3}
   backGroundImage: {fileID: 21300000, guid: 5a7171ae21c4550438a83cf63b8a89ff, type: 3}
   dialogue: "T\xF4i kh\xF4ng c\xF3 \u0111\u1ED3ng n\xE0o c\u1EA3"
-  fading: 0

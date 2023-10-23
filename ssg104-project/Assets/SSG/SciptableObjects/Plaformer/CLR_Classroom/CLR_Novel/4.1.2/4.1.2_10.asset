@@ -15,7 +15,7 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: 97487e258eb34954298ac3d7a2a3992e, type: 2}
   characterName: NVC
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 21300000, guid: b822d54b1fa68b04e92e9f2855e2ccfd, type: 3}
   dialogue: "Th\u1EA7y! Em bi\u1EBFt vi\u1EC7c Alex t\u1EF1 s\xE1t s\u1EBD kh\xF4ng
     ph\u1EA3i tr\u01B0\u1EDDng h\u1EE3p \u0111\u1EA7u ti\xEAn. Ch\xFAng ta c\u1EA7n

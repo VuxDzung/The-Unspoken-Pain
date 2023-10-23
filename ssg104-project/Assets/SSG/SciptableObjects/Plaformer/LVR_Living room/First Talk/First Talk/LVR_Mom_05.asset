@@ -15,11 +15,10 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: df07289a76f4f734c9a5b60b0285103c, type: 2}
   characterName: Alex mom
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: aa745d9763a9a9344a102ca206123108, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "Nh\u01B0ng b\xE1c \u0111o\xE1n l\xE0 trong c\xE1i ng\u0103n t\u1EE7
     d\u01B0\u1EDBi b\xE0n m\xE1y t\xEDnh. H\u1ED3i m\u1EDBi mua b\xE0n h\u1ECDc cho
     Alex, b\u1EA1n \u1EA5y \u0111\xF2i b\xE1c ph\u1EA3i mua cho b\u1EB1ng \u0111\u01B0\u1EE3c
     c\xE1i b\xE0n c\xF3 kh\xF3a m\u1EADt m\xE3 \u0111\u1EA5y. Ch\u1EAFc l\xE0 v\xEC
     l\xED do v\u1EADy."
-  fading: 0

@@ -12,11 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
   m_Name: BDR_UV_13_10
   m_EditorClassIdentifier: 
-  subDialogues:
-  - {fileID: 11400000, guid: 84b34af246fd77742a848bc85cb00bc1, type: 2}
+  subDialogues: []
   characterName: NVC
   characterImage: {fileID: 0}
   backGroundImage: {fileID: 0}
   dialogue: "N\xF3 \u0111\xE2y r\u1ED3i, cu\u1ED1n nh\u1EADt k\xFD c\u1EE7a Alex.
     M\xECnh n\xEAn mang n\xF3 v\u1EC1 ph\xF2ng m\xECnh r\u1ED3i \u0111\u1ECDc"
-  fading: 0
