@@ -5,9 +5,8 @@ using UnityEngine;
 public class TriggeringItems : MonoBehaviour
 {
     InteractiveObject obj => GetComponent<InteractiveObject>();
-    [SerializeField] private Story objectStory;
-    [SerializeField] private string[] triggedNames;
-    [SerializeField] private string[] triggedItems;
+    [SerializeField] private string[] triggedInteractiveObjects;
+    [SerializeField] private string[] triggedInventoryItems;
 
     private int currentBranch = -1;
 
@@ -17,8 +16,10 @@ public class TriggeringItems : MonoBehaviour
     }
     void Trigger(GameObject obj)
     { 
-        GameManager.Instance.AddInteractedItemsByName(triggedNames);
+        if (triggedInteractiveObjects.Length > 0)
+            GameManager.Instance.AddInteractedItemsByName(triggedInteractiveObjects);
 
-        GameManager.Instance.AddInventoryItemByName(triggedItems);
+        if (triggedInventoryItems.Length > 0)
+            GameManager.Instance.AddInventoryItemByName(triggedInventoryItems);
     }
 }

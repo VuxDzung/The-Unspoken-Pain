@@ -11,12 +11,18 @@ public class GameManager : GenericSingleton<GameManager>
 
     public PlatformerData itemData = new PlatformerData();
     SourceManager source => FindObjectOfType<SourceManager>();
-    private int dialogueViewOrder;
+    private int dialogueViewOrder = -1;
 
     protected override void Awake()
     {
         base.Awake();
         LoadProcess();
+    }
+
+    private void Start()
+    {
+        GetDialogueView();
+        ChangeCanvas(0);
     }
 
     private void OnLevelWasLoaded(int level)
@@ -40,14 +46,16 @@ public class GameManager : GenericSingleton<GameManager>
     [HideInInspector] public bool inGame = true;
     private void GetDialogueView()
     {
-        GameObject viewObj = GameObject.FindGameObjectWithTag("DialogueView");
+        GameObject viewObj = FindObjectOfType<UIDialogueView>().gameObject;
+
         if (viewObj == null) return;
+
+        viewObj.SetActive(false);
         InteractiveView view = viewObj.GetComponent<InteractiveView>();
         InteractiveView[] views = getAllView();
+
         for (int i = 0; i < views.Length; i++)
-        {
             if (view == views[i]) dialogueViewOrder = i;
-        }
     }
     public InteractiveView[] getAllView()
     {
@@ -92,6 +100,7 @@ public class GameManager : GenericSingleton<GameManager>
         player.SetNavigate(obj.transform.position.x);
         curNavObj = obj;
     }
+
     void Update()
     {
         if (!inGame) return;
@@ -133,7 +142,6 @@ public class GameManager : GenericSingleton<GameManager>
 
     public void SaveProcess()
     {
-        //source.SaveProcess();
         SaveLoadSystem.SavePlatformer(itemData);
     }
 
@@ -146,9 +154,9 @@ public class GameManager : GenericSingleton<GameManager>
     }
     private void LoadInGame()
     {
-        Debug.Log(itemData);
         AddInteractedItemsByName(itemData.itemCanInteract.ToArray());
-        inventory.LoadInventory();
+
+        if (inventory != null) inventory.LoadInventory();
     }
 
     public void ChangeToScene(string sceneName) => SceneManager.LoadScene(sceneName, LoadSceneMode.Single);

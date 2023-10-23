@@ -187,7 +187,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             //if the next scene is null, then the dialogue view will turn off
-            Debug.Log("No more stories available. End of the game or perform other actions.");
+            Debug.LogWarning("No more stories available. End of the game or perform other actions.");
             if (nextScene.Length == 0)
             {
                 GameManager.Instance.ChangeCanvas(0);

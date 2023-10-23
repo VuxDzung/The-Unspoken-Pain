@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 public class UIDialogueView : MonoBehaviour
 {
-    private DialogueManager manager => GetComponent<DialogueManager>();
+    private DialogueManager manager => GetComponentInParent<DialogueManager>();
 
     [SerializeField] protected bool playOnStart = false;
     [Header("Character View")]
@@ -30,11 +30,8 @@ public class UIDialogueView : MonoBehaviour
     private void Awake()
     {
         playerName = SaveLoadSystem.LoadPlayerName();
-    }
-
-    private void Start()
-    {
         manager.showDialogue += ShowDialogue;
+
         for (int i = 0; i < choiceButtons.Length; i++)
         {
             int temp;
@@ -42,19 +39,24 @@ public class UIDialogueView : MonoBehaviour
             choiceButtons[temp].onClick.AddListener(() => manager.Choice(temp));
         }
 
+        if (skipButton != null) skipButton.onClick.AddListener(manager.Skip);
+
+        if (nextButton != null) nextButton.onClick.AddListener(manager.nextDialogueByButton);
+
+        if (saveButton != null) saveButton.onClick.AddListener(manager.SaveStoryProgress);
+
+        if (backToHome != null) backToHome.onClick.AddListener(() => GameManager.Instance.ChangeToScene("Home"));
+    }
+
+    private void Start()
+    {
         StoryData storyData = new StoryData();
-        //storyData = SaveLoadSystem.LoadStory();
+        storyData = SaveLoadSystem.LoadStory();
         if (playOnStart && storyData != null)
         {
             manager.LoadMainStory(manager.stories[storyData.SoT], storyData.BoT, storyData.DoT);
             Debug.Log($"SoT: {storyData.SoT}, BoT: {storyData.BoT}, DoT: {storyData.DoT}");
         }
-            
-
-        if (skipButton != null) skipButton.onClick.AddListener(manager.Skip);
-        if (nextButton != null) nextButton.onClick.AddListener(manager.nextDialogueByButton);
-        if (saveButton != null) saveButton.onClick.AddListener(manager.SaveStoryProgress);
-        if (backToHome != null) backToHome.onClick.AddListener(() => GameManager.Instance.ChangeToScene("Home"));
     }
 
     private void OnDisable()
