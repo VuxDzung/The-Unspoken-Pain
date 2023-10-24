@@ -10,7 +10,7 @@ public class GameManager : GenericSingleton<GameManager>
     public DialogueManager dialogueManager => FindObjectOfType<DialogueManager>();
 
     public PlatformerData itemData = new PlatformerData();
-    SourceManager source => FindObjectOfType<SourceManager>();
+    public SourceManager source => FindObjectOfType<SourceManager>();
     private int dialogueViewOrder = -1;
 
     protected override void Awake()
