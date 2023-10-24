@@ -59,10 +59,12 @@ public class GameManager : GenericSingleton<GameManager>
     // array order + 1: canvas
     public void ChangeCanvas(int ord)
     {
-        if (ord != 0) inGame = false;
-        else inGame = true;
-
-        if (ord < gameViews.Length) ActiveViews(gameViews, ord);
+        if (ord < gameViews.Length)
+        {
+            if (ord != 0) inGame = false;
+            else inGame = true;
+            ActiveViews(gameViews, ord);
+        }
         else
         {
             ActiveViews(externalViews, ord - gameViews.Length);

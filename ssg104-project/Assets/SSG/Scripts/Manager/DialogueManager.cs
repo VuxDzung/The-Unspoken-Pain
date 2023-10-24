@@ -153,8 +153,13 @@ public class DialogueManager : MonoBehaviour
                 Debug.Log("Connecting");
                 SendToConnectNode();
             }
-            else
+            else if(branchOnTrack.subBranchs.Count == 0)
             {
+                if(stories.Length == 0)
+                {
+                    GameManager.Instance.ChangeCanvas(GameManager.Instance.source.gameViews.Length);
+                    return;
+                }
                 changeStory = true;
             }
             return;

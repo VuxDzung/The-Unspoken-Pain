@@ -8,14 +8,13 @@ public class InputPassword : MonoBehaviour
     private InteractiveObject enterButton => GetComponent<InteractiveObject>();
     [SerializeField] private TMP_InputField input;
     [SerializeField] private string password;
-    void Start()
+    public void CheckPassWord(GameObject obj)
     {
-        enterButton.nonInteractAction += CheckPassWord;
-    }
-    private void CheckPassWord(GameObject obj)
-    {
-        if (input.text != password) return;
-        enterButton.interactable = true;
-        enterButton.OnAction();
+        if (input.text != password) enterButton.interactable = false;
+        else
+        {
+            enterButton.interactable = true;
+            enterButton.OnAction();
+        }
     }
 }
