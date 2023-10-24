@@ -8,6 +8,8 @@ public class UIDialogueView : MonoBehaviour
     private DialogueManager manager => GetComponentInParent<DialogueManager>();
 
     [SerializeField] protected bool playOnStart = false;
+    
+    private GameObject dialogueBox => GameObject.FindGameObjectWithTag("DialogueBox");
     [Header("Character View")]
     [SerializeField] private Image characterImg;
     [SerializeField] private TextMeshProUGUI tmpCharacterName;
@@ -23,6 +25,10 @@ public class UIDialogueView : MonoBehaviour
     [SerializeField] private Button skipButton;
     [SerializeField] private Button saveButton;
     [SerializeField] private Button[] choiceButtons;
+
+    [Header("SFX")]
+    [SerializeField] private AudioSource sourceSFX;
+    
 
     private string playerName = "";
     private ChangeColor fader => GetComponent<ChangeColor>();
@@ -66,6 +72,18 @@ public class UIDialogueView : MonoBehaviour
 
     public void ShowDialogue(Dialogue dialogue)
     {
+        if (dialogue.nodeSFX != null) sourceSFX.PlayOneShot(dialogue.nodeSFX, sourceSFX.volume);
+
+        if (dialogue.dialogue.Length == 0)
+        {
+            dialogueBox.SetActive(false);
+            return;
+        }
+        else
+        {
+            if (!dialogueBox.activeSelf) dialogueBox.SetActive(true);
+        }
+
         if (tmpCharacterName != null)
         {
             string rawName = dialogue.characterName;

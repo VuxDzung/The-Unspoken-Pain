@@ -21,14 +21,14 @@ public class GameManager : GenericSingleton<GameManager>
 
     private void Start()
     {
-        GetDialogueView();
         ChangeCanvas(0);
+        dialogueViewOrder = gameViews.Length + 1;
     }
 
     private void OnLevelWasLoaded(int level)
     {
         LoadInGame();
-        GetDialogueView();
+        dialogueViewOrder = gameViews.Length + 1;
         ChangeCanvas(0);
     }
 
@@ -44,19 +44,7 @@ public class GameManager : GenericSingleton<GameManager>
     }
     private InteractiveModel curNavObj = null;
     [HideInInspector] public bool inGame = true;
-    private void GetDialogueView()
-    {
-        GameObject viewObj = FindObjectOfType<UIDialogueView>().gameObject;
 
-        if (viewObj == null) return;
-
-        viewObj.SetActive(false);
-        InteractiveView view = viewObj.GetComponent<InteractiveView>();
-        InteractiveView[] views = getAllView();
-
-        for (int i = 0; i < views.Length; i++)
-            if (view == views[i]) dialogueViewOrder = i;
-    }
     public InteractiveView[] getAllView()
     {
         InteractiveView[] views = new InteractiveView[gameViews.Length + externalViews.Length];
@@ -142,6 +130,7 @@ public class GameManager : GenericSingleton<GameManager>
 
     public void SaveProcess()
     {
+        SaveLoadSystem.SaveScene(source.currentScene);
         SaveLoadSystem.SavePlatformer(itemData);
     }
 

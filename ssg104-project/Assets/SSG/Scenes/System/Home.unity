@@ -1424,7 +1424,7 @@ MonoBehaviour:
   loadType: 0
   view: {fileID: 0}
   scene: 
-  viewOrder: 0
+  isSaveBtn: 0
 --- !u!114 &690046277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1699,7 +1699,7 @@ MonoBehaviour:
   loadType: 0
   view: {fileID: 1176302353}
   scene: 
-  viewOrder: 0
+  isSaveBtn: 0
 --- !u!1 &885948688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,7 +1975,7 @@ MonoBehaviour:
   loadType: 0
   view: {fileID: 1915640337}
   scene: 
-  viewOrder: 0
+  isSaveBtn: 0
 --- !u!1 &946972832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,7 +2115,7 @@ MonoBehaviour:
   loadType: 0
   view: {fileID: 552007629}
   scene: 
-  viewOrder: 0
+  isSaveBtn: 0
 --- !u!114 &1043104201 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2631238117873799494, guid: e0cb16883dbe1924788405379af033e2,
@@ -3058,7 +3058,7 @@ PrefabInstance:
     - target: {fileID: 6213064578282248720, guid: 28a6880cc36dcbd44b7b37016f9e617f,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8231543940110774267, guid: 28a6880cc36dcbd44b7b37016f9e617f,
         type: 3}
@@ -4082,7 +4082,7 @@ MonoBehaviour:
   loadType: 0
   view: {fileID: 2104556889491042473}
   scene: 
-  viewOrder: 0
+  isSaveBtn: 0
 --- !u!82 &6359816209482308729
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4303,6 +4303,7 @@ MonoBehaviour:
   - {fileID: 552007624}
   - {fileID: 211099172}
   - {fileID: 6359816209482308730}
+  externalViews: []
 --- !u!224 &8055989918389900823
 RectTransform:
   m_ObjectHideFlags: 0

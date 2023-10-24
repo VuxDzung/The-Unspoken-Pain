@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class InteractiveButton : InteractiveObject
 {
+    [SerializeField] private bool isSaveBtn = false;
     internal Button button => GetComponent<Button>();
     private Image image => GetComponent<Image>();
     private TextMeshProUGUI text => GetComponentInChildren<TextMeshProUGUI>();
@@ -14,6 +15,8 @@ public class InteractiveButton : InteractiveObject
     private void Awake()
     {
         button.onClick.AddListener(() => OnAction());
+
+        if (isSaveBtn) button.onClick.AddListener(SaveProcess);
     }
     private void ActiveColor()
     {
@@ -35,4 +38,8 @@ public class InteractiveButton : InteractiveObject
         ActiveColor();
     }
     
+    public void SaveProcess()
+    {
+        GameManager.Instance.SaveProcess();
+    }
 }
