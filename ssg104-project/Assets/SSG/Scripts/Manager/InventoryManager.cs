@@ -9,6 +9,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private RectTransform itemsHolder;
     [SerializeField] private RectTransform momChoiceHolder;
     [SerializeField] private RectTransform noteLineHolder;
+    [SerializeField] private RectTransform letterHolder;
     internal List<string> inventoryItems = new List<string>();
 
     private void Awake()
@@ -24,6 +25,11 @@ public class InventoryManager : MonoBehaviour
             item.GetComponent<TextMeshProUGUI>().enabled = true;
             item.GetComponent<RectTransform>().SetParent(noteLineHolder);
         }
+        else if (item.name.Contains("Letter_"))
+        {
+            item.GetComponent<RectTransform>().SetParent(letterHolder);
+        }
+
         else if (item.name.Contains("MomChoice_")) //mom choices
         {
             item.GetComponent<Button>().enabled = true;

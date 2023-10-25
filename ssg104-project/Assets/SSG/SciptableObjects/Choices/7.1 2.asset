@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
   m_Name: 7.1 2
   m_EditorClassIdentifier: 
-  subDialogues: []
+  subDialogues:
+  - {fileID: 11400000, guid: 1c3091975a1570c479aceac0de6de610, type: 2}
   characterName: NVC
-  characterImage: {fileID: 0}
-  backGroundImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  backGroundImage: {fileID: 21300000, guid: 5cb36c9974cab4c43998125958f48168, type: 3}
   dialogue: "Mark, m\xE0y s\u1EBD ph\u1EA3i tr\u1EA3 gi\xE1 cho h\xE0nh \u0111\u1ED9ng
     c\u1EE7a m\xE0y"
-  fading: 0

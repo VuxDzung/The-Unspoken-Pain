@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
+  m_Name: Diary_6.3
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 11400000, guid: fa1cb9759d63d0b43a91361740c82e4d, type: 2}
+  - {fileID: 11400000, guid: 9599ec41b361e3a419caa751c4ef6028, type: 2}
+  - {fileID: 11400000, guid: 8823569bb0c4ba24b979a51102a557de, type: 2}
+  - {fileID: 11400000, guid: 3b171f4b9b99d614cb5fe5963a1bd5d8, type: 2}
+  - {fileID: 11400000, guid: abfc837008ab88940a8dab412912f84e, type: 2}
+  - {fileID: 11400000, guid: 6401574c6b0a02c4ca7a42112f8c69f5, type: 2}
+  - {fileID: 11400000, guid: abb97b847524a8848a69ed3fa660368a, type: 2}
+  - {fileID: 11400000, guid: 64bd490d5ad706e4ca1db424a4e38559, type: 2}
+  - {fileID: 11400000, guid: 42ded997222539242b1350d427fab035, type: 2}

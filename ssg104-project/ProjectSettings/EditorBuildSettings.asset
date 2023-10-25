@@ -6,6 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  m_configObjects: {}
+    path: Assets/SSG/Scenes/System/Home.unity
+    guid: 7918c57060b51a14d803863965d70441
+  - enabled: 1
+    path: Assets/SSG/Scenes/Visual Novel/Chapter I/OpeningScene.unity
+    guid: 721d879be4cacd54294cfcdb1511d5f0
+  - enabled: 1
+    path: Assets/SSG/Scenes/Visual Novel/Chapter II_Tragedy/TragedyScene.unity
+    guid: bb289d904c98d4f4fa819408313862ff
+  - enabled: 1
+    path: Assets/SSG/Scenes/Classroom.unity
+    guid: 539ef118fce62304e9f5c571e434b013
+  - enabled: 1
+    path: Assets/SSG/Scenes/Visual Novel/Chapter III_The Search For Answer/AfterSchoolScene.unity
+    guid: ae40a29715e842042b4997becdf1867a
+  - enabled: 1
+    path: Assets/SSG/Scenes/Living room.unity
+    guid: 61adaecf859701644a0b5c7e25d56b35
+  - enabled: 1
+    path: Assets/SSG/Scenes/Bedroom.unity
+    guid: c700098afc69c5944bedf49401152651
+  - enabled: 1
+    path: Assets/SSG/Scenes/Visual Novel/Ending/Ending_GraveYard.unity
+    guid: 618cb20552983e548959c7908a152bff
+  - enabled: 1
+    path: Assets/SSG/Scenes/Visual Novel/Ending/Ending_Letter.unity
+    guid: 4395f07fb14306741be7ca35d9da910d
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: a671745b0d4453441836e70ca4be5a1b,
+      type: 2}

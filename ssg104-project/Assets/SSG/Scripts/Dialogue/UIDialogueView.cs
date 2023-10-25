@@ -74,6 +74,10 @@ public class UIDialogueView : MonoBehaviour
     {
         if (dialogue.nodeSFX != null) sourceSFX.PlayOneShot(dialogue.nodeSFX, sourceSFX.volume);
 
+        if (characterImg != null) characterImg.sprite = dialogue.characterImage;
+
+        if (background != null) background.sprite = dialogue.backGroundImage;
+
         if (dialogue.dialogue.Length == 0)
         {
             dialogueBox.SetActive(false);
@@ -101,11 +105,7 @@ public class UIDialogueView : MonoBehaviour
         }
             
 
-        if (characterImg != null)
-            characterImg.sprite = dialogue.characterImage;
-
-        if (background != null)
-            background.sprite = dialogue.backGroundImage;
+        
 
         //UI coding for this dialogue
         List<Dialogue> subDialogues = dialogue.subDialogues;
