@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
+  m_Name: BDR_Start_Task
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 11400000, guid: b7ab1b7fa56b76d4890ea02c7d7bb9b1, type: 2}
+  - {fileID: 11400000, guid: 416f2df52d72c1840948f6ed158baf06, type: 2}
+  - {fileID: 11400000, guid: d900339a223564a4fa092c504343696d, type: 2}
+  - {fileID: 11400000, guid: 327d26d7bb3c0d448a7fdc959a2e5751, type: 2}

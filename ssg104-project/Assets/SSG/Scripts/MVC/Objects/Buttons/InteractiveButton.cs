@@ -10,7 +10,15 @@ public class InteractiveButton : InteractiveObject
     [SerializeField] private bool isSaveBtn = false;
     internal Button button => GetComponent<Button>();
     private Image image => GetComponent<Image>();
-    private TextMeshProUGUI text => GetComponentInChildren<TextMeshProUGUI>();
+    private TextMeshProUGUI text
+    {
+        get { TextMeshProUGUI _text = GetComponentInChildren<TextMeshProUGUI>();
+            if (GetComponentInChildren<InteractiveButton>() != null)
+                return null;
+            else return _text;
+        }
+    } 
+        
 
     private void Awake()
     {

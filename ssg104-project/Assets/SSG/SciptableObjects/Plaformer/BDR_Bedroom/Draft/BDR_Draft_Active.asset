@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
-  m_Name: BDR_CabinetBookHint
+  m_Name: BDR_Draft_Active
   m_EditorClassIdentifier: 
   dialogues:
-  - {fileID: 11400000, guid: 86547a8e0cd0f0140bb6549a5a997416, type: 2}
-  - {fileID: 11400000, guid: 683552c1878d0f74a80813f37c5eef25, type: 2}
+  - {fileID: 11400000, guid: bfefaa5c285fa9d4086e5dbcd3b67e3e, type: 2}
+  - {fileID: 11400000, guid: 029da5f09993c044b84962affadf6615, type: 2}
+  - {fileID: 11400000, guid: e870e6f5d1e64c948b0c41ed94808210, type: 2}
+  - {fileID: 11400000, guid: 9ec78b6e546551f45bd4ade59623bd77, type: 2}
+  - {fileID: 11400000, guid: 4880497dd8ebc8142a39e67eb515076c, type: 2}

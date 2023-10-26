@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
-  m_Name: BDR_01_01
+  m_Name: BDR_01_02
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: c6acca2dfbf0dc647904a7f5ac78b929, type: 2}
+  - {fileID: 11400000, guid: d900339a223564a4fa092c504343696d, type: 2}
   characterName: NVC
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "Ch\u1EAFc h\u1EB3n cu\u1ED1n nh\u1EADt k\xFD ph\u1EA3i \u1EDF trong
-    n\xE0y. \u0110\u01B0\u1EE3c r\u1ED3i, m\xECnh c\u1EA7n 4 s\u1ED1 \u0111\u1EC3
-    m\u1EDF kh\xF3a, nh\u01B0ng n\xF3 \u1EDF \u0111\xE2u? M\xECnh n\xEAn note l\u1EA1i
-    \u2026"
-  fading: 0
+    n\xE0y."
+  nodeSFX: {fileID: 0}

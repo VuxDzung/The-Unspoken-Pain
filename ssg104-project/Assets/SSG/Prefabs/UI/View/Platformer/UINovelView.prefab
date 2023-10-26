@@ -111,9 +111,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2070037404308656172, guid: 84b154b26fc6bda4da4cd2f3a1f2973d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8947563422747039817}
-    - targetCorrespondingSourceObject: {fileID: 2070037404308656172, guid: 84b154b26fc6bda4da4cd2f3a1f2973d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4163933882218283739}
   m_SourcePrefab: {fileID: 100100000, guid: 84b154b26fc6bda4da4cd2f3a1f2973d, type: 3}
 --- !u!224 &1211260527312991379 stripped
 RectTransform:
@@ -139,20 +136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactStory: {fileID: 11400000, guid: 02280b55c263457499865fb74b309ca7, type: 2}
   noninteractStory: {fileID: 0}
---- !u!114 &4163933882218283739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6762348887391616520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7ceaefd418b584c86166868d6b9fd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggedInteractiveObjects: []
-  triggedInventoryItems: []
 --- !u!1001 &7877746760857434842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -179,7 +162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6704897713165383262, guid: d756aac7e6545c244bd35565cf1682ee, type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6704897713165383262, guid: d756aac7e6545c244bd35565cf1682ee, type: 3}
       propertyPath: m_AnchorMax.x

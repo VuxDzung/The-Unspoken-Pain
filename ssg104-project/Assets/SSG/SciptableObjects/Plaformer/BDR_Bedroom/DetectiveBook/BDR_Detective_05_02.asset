@@ -17,6 +17,6 @@ MonoBehaviour:
   characterName: 
   characterImage: {fileID: 0}
   backGroundImage: {fileID: 0}
-  dialogue: "Th\u1EBF \xF4ng ta l\xFAc r\u1EDDi \u0111i \u0111\xE3 l\xEAn toa t\xE0u
-    n\xE0o c\u1EE7a c\u1ED5ng n\xE0o"
-  fading: 0
+  dialogue: "\"Th\u1EBF \xF4ng ta l\xFAc r\u1EDDi \u0111i \u0111\xE3 l\xEAn toa t\xE0u
+    n\xE0o c\u1EE7a c\u1ED5ng n\xE0o?\""
+  nodeSFX: {fileID: 0}

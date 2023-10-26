@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
-  m_Name: BDR_06_01
+  m_Name: BDR_01_03
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: fb2ddff878d12ca4fafbb473eb150491, type: 2}
+  - {fileID: 11400000, guid: 327d26d7bb3c0d448a7fdc959a2e5751, type: 2}
   characterName: NVC
   characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "Toa s\u1ED1 4, c\u1ED5ng s\u1ED1 7..."
+  dialogue: "\u0110\u01B0\u1EE3c r\u1ED3i, m\xECnh c\u1EA7n m\xE3 g\u1ED3m 4 s\u1ED1
+    \u0111\u1EC3 m\u1EDF kh\xF3a, nh\u01B0ng n\xF3 \u1EDF \u0111\xE2u nh\u1EC9?"
   nodeSFX: {fileID: 0}

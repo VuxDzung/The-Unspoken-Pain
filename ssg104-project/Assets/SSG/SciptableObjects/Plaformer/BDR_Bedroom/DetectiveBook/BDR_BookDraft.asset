@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: BDR_BookDraft
   m_EditorClassIdentifier: 
   dialogues:
+  - {fileID: 11400000, guid: 002cc69a57ee218408b45853dbafbb06, type: 2}
+  - {fileID: 11400000, guid: 34f6876e349615649ae905a698a56f88, type: 2}
+  - {fileID: 11400000, guid: e783305296da850449f2bc46b33cb645, type: 2}
   - {fileID: 11400000, guid: 552a4e4970ba2da44822afec94b563db, type: 2}
+  - {fileID: 11400000, guid: fb2ddff878d12ca4fafbb473eb150491, type: 2}
+  - {fileID: 11400000, guid: 1c043fd1a5456ee478d7f7731e09f3f7, type: 2}

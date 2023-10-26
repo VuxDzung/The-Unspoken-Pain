@@ -51,6 +51,8 @@ public class DialogueManager : MonoBehaviour
     internal bool changeStory = false;
     public void LoadMainStory(Story mainStory, int BoT, int DoT)
     {
+        //Clear the previous story
+        decisionBranches.Clear();
         this.mainStory = mainStory;
         for (int i = 0; i < stories.Length; i++)
         {
