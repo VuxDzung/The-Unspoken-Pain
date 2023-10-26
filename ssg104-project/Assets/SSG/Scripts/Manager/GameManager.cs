@@ -110,12 +110,13 @@ public class GameManager : GenericSingleton<GameManager>
             {
                 InteractiveObject interactive = item.GetComponent<InteractiveObject>();
                 if (interactive != null && !interactive.interactable) interactive.interactable = true;
-                Debug.Log($"Add {item.name}");
+                Debug.Log($"Add {item.name} in {source.currentScene}");
             }
             else // item is in different scene
             {
-                if (itemData.itemCanInteract.Contains(name)) return;
+                if (itemData.itemCanInteract.Contains(name)) continue;
                 itemData.itemCanInteract.Add(name);
+                Debug.LogError($"Add in RAM: {name}");
             }
         }
     }
@@ -146,7 +147,6 @@ public class GameManager : GenericSingleton<GameManager>
     private void LoadInGame()
     {
         AddInteractedItemsByName(itemData.itemCanInteract.ToArray());
-
         if (inventory != null) inventory.LoadInventory();
     }
 
