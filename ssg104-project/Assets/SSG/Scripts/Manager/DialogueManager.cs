@@ -258,6 +258,6 @@ public class DialogueManager : MonoBehaviour
         savedData.DoT = DoT;
 
         SaveLoadSystem.SaveScene(currentScene);
-        SaveLoadSystem.Save(savedData);
+        SaveLoadSystem.SaveStory(savedData);
     }
 }

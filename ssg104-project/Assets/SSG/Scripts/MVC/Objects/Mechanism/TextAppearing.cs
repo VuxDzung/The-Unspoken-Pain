@@ -9,21 +9,15 @@ public class TextAppearing : MonoBehaviour
     [SerializeField] private ChangeColor textCotroller;
     void Start()
     {
+        if (!item.interactable)
+            textCotroller.SetToDefault();
+
         item.interactAction += Appearing;
-        item.nonInteractAction += Appearing;
     }
     void Appearing(GameObject obj)
     {
-        if (item.interactable)
-        {
-            textCotroller.Active();
-            item.interactable = false;
-        }
-        else
-        {
-            textCotroller.SetToDefault();
-            item.interactable = true;
-        }
+        if (!textCotroller.gameObject.activeSelf) { Debug.Log("1"); return; }
         
+        textCotroller.Active();
     }
 }

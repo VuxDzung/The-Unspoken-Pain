@@ -19,16 +19,21 @@ public static class SaveLoadSystem
         return JsonConvert.DeserializeObject<PlatformerData>(PlayerPrefs.GetString("Platformer"));
     }
 
+    public static bool HasPlayerData()
+    {
+        return LoadScene().Length != 0 && LoadPlayerName().Length != 0;
+    }
+
 
     #region SAVE_NON_VOLATILE
     public static void SaveScene(string sceneName) { PlayerPrefs.SetString("Scene", sceneName); }
     public static string LoadScene() { return PlayerPrefs.GetString("Scene"); }
 
-    public static void Save(string playerName) => PlayerPrefs.SetString("PlayerName", playerName);
+    public static void SavePlayerName(string playerName) => PlayerPrefs.SetString("PlayerName", playerName);
 
     public static string LoadPlayerName() => PlayerPrefs.GetString("PlayerName");
 
-    public static void Save(StoryData data)
+    public static void SaveStory(StoryData data)
     {
         string storyData = JsonConvert.SerializeObject(data);
         PlayerPrefs.SetString("Story", storyData);

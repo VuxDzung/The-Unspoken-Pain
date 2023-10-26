@@ -58,11 +58,20 @@ public class UIDialogueView : MonoBehaviour
     {
         StoryData storyData = new StoryData();
         storyData = SaveLoadSystem.LoadStory();
-        if (playOnStart && storyData != null)
+        if (playOnStart)
         {
-            manager.LoadMainStory(manager.stories[storyData.SoT], storyData.BoT, storyData.DoT);
-            Debug.Log($"SoT: {storyData.SoT}, BoT: {storyData.BoT}, DoT: {storyData.DoT}");
+            if (storyData != null)
+            {
+                manager.LoadMainStory(manager.stories[storyData.SoT], storyData.BoT, storyData.DoT);
+                Debug.Log($"Load SoT: {storyData.SoT}, BoT: {storyData.BoT}, DoT: {storyData.DoT}");
+            }
+            else
+            {
+                manager.LoadMainStory(manager.stories[0], 0, 0);
+                Debug.Log($"Load new story");
+            }
         }
+
     }
 
     private void OnDisable()
