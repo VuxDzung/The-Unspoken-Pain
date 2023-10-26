@@ -2981,7 +2981,7 @@ PrefabInstance:
       objectReference: {fileID: 353932214}
     - target: {fileID: 4426723093432200435, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
       propertyPath: interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4522687199216291684, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
       propertyPath: m_Layer
@@ -5587,6 +5587,14 @@ PrefabInstance:
     - target: {fileID: 6715599927711370064, guid: af00a6f17bc911a4eb38dcf7f5c39bb8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7076837264766491655, guid: af00a6f17bc911a4eb38dcf7f5c39bb8, type: 3}
+      propertyPath: m_Name
+      value: Door_0002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8974934323239315260, guid: af00a6f17bc911a4eb38dcf7f5c39bb8, type: 3}
+      propertyPath: m_Name
+      value: Door_0001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
