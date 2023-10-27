@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BDR_Clock_07_04
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: 2f7083ed993ad39419d91578fa7d8577, type: 2}
+  - {fileID: 11400000, guid: 615a6f2d61fba6f4496f4b8751b0244b, type: 2}
   characterName: NVC
   characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "Th\u1EBF c\xF3 ngh\u0129a l\xE0 \u2026 \u0110\xFAng r\u1ED3i! \u0110\u1ED3ng
-    h\u1ED3 \u0111ang ch\u1EC9 1 gi\u1EDD, m\xE0 th\u1EDDi gian quan tr\u1ECDng nh\u1EA5t"
+  dialogue: "Li\u1EC7u n\xF3 c\xF3 g\u1EE3i \xFD \u0111i\u1EC1u g\xEC kh\xF4ng?"
+  nodeSFX: {fileID: 0}

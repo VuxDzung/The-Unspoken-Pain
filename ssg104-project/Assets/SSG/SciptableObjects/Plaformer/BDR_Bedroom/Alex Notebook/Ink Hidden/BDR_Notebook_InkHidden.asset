@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e2b891749ae2647afa1e13a0260eab, type: 3}
+  m_Name: BDR_Notebook_InkHidden
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 11400000, guid: fc1dd2295e6e84a4eb4b010c4475b239, type: 2}
+  - {fileID: 11400000, guid: 75badd4e7925a5044970683d35a958dd, type: 2}
+  - {fileID: 11400000, guid: fed7ff9f8d05188429277c5a7c74e722, type: 2}
+  - {fileID: 11400000, guid: b365b718ec078a245b48168252509846, type: 2}

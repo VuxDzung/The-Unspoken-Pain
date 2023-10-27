@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: LVR_MomChoice00_03
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: a199bcd2569fb054980b400afdbdcd2c, type: 2}
+  characterName: "M\u1EB9 Alex"
+  characterImage: {fileID: 21300000, guid: aa745d9763a9a9344a102ca206123108, type: 3}
+  backGroundImage: {fileID: 0}
+  dialogue: "Nh\u01B0ng b\xE1c \u0111o\xE1n l\xE0 trong c\xE1i ng\u0103n t\u1EE7
+    d\u01B0\u1EDBi b\xE0n m\xE1y t\xEDnh."
+  nodeSFX: {fileID: 0}

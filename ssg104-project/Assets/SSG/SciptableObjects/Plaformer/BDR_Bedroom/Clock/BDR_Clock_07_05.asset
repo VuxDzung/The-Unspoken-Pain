@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
   m_Name: BDR_Clock_07_05
   m_EditorClassIdentifier: 
-  subDialogues: []
+  subDialogues:
+  - {fileID: 11400000, guid: 91a4767a770425942bebd35091f08821, type: 2}
   characterName: NVC
   characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "T\u1EE9c l\xE0 \xF4 th\u1EE9 nh\u1EA5t c\u1EE7a m\u1EADt m\xE3 l\xE0
-    s\u1ED1 1! M\xECnh n\xEAn note l\u1EA1i \u2026"
+  dialogue: "\"\u0110\u1ED3ng h\u1ED3 _XXX\""
   nodeSFX: {fileID: 0}

@@ -17,6 +17,8 @@ MonoBehaviour:
   characterName: "M\u1EB9 Alex"
   characterImage: {fileID: 21300000, guid: aa745d9763a9a9344a102ca206123108, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "li\u1EC7u c\xF3 \u0111i\u1EC1u g\xEC \u1EDF \u0111\xF3 c\xF3 th\u1EC3
-    gi\u1EA3i th\xEDch \u0111\u01B0\u1EE3c chuy\u1EC7n \u0111\xE3 x\u1EA3y ra hay
-    kh\xF4ng"
+  dialogue: "B\xE1c hi\u1EC3u, nh\u01B0ng b\xE2y gi\u1EDD b\xE1c kh\xF4ng th\u1EC3
+    kh\xF4ng t\u1EF1 h\u1ECFi li\u1EC7u c\xF3 \u0111i\u1EC1u g\xEC \u1EDF \u0111\xF3
+    c\xF3 th\u1EC3 gi\u1EA3i th\xEDch \u0111\u01B0\u1EE3c chuy\u1EC7n \u0111\xE3
+    x\u1EA3y ra hay kh\xF4ng ..."
+  nodeSFX: {fileID: 0}

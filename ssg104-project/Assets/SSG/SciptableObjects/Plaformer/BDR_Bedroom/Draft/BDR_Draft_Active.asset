@@ -13,8 +13,16 @@ MonoBehaviour:
   m_Name: BDR_Draft_Active
   m_EditorClassIdentifier: 
   dialogues:
+  - {fileID: 11400000, guid: 4b274b13508f74b499e4b1c31688e29c, type: 2}
   - {fileID: 11400000, guid: bfefaa5c285fa9d4086e5dbcd3b67e3e, type: 2}
   - {fileID: 11400000, guid: 029da5f09993c044b84962affadf6615, type: 2}
   - {fileID: 11400000, guid: e870e6f5d1e64c948b0c41ed94808210, type: 2}
   - {fileID: 11400000, guid: 9ec78b6e546551f45bd4ade59623bd77, type: 2}
   - {fileID: 11400000, guid: 4880497dd8ebc8142a39e67eb515076c, type: 2}
+  - {fileID: 11400000, guid: f2cc51edd8d70c247858c4a38127becd, type: 2}
+  - {fileID: 11400000, guid: 24207af004ce9cb48b0d7c180aa4c204, type: 2}
+  - {fileID: 11400000, guid: 088fdcba512c39641961e588776e6de4, type: 2}
+  - {fileID: 11400000, guid: ca867228e25d09b43912afc56fb55315, type: 2}
+  - {fileID: 11400000, guid: 5f3073b5495e9054caf459ac9c0a2d74, type: 2}
+  - {fileID: 11400000, guid: b6210b868323e484d9ce82f41efea6c3, type: 2}
+  - {fileID: 11400000, guid: 786f3dea618104e4fb5a6a7aa09b3e11, type: 2}

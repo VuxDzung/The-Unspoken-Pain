@@ -18,5 +18,6 @@ MonoBehaviour:
   characterImage: {fileID: 21300000, guid: aa745d9763a9a9344a102ca206123108, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "(Th\u1EDF d\xE0i) B\xE1c c\u0169ng c\xF3 h\u1ECFi v\xE0o l\xFAc c\u01A1m
-    t\u1ED1i, nh\u01B0ng Alex lu\xF4n k\xEDn ti\u1EBFng v\xE0 g\u1EAFt l\xEAn m\u1ED7i
-    l\u1EA7n b\xE1c \u0111\u1EC1 c\u1EADp \u0111\u1EBFn"
+    t\u1ED1i, nh\u01B0ng Alex lu\xF4n k\xEDn ti\u1EBFng v\xE0 g\u1EAFt g\u1ECFng
+    m\u1ED7i l\u1EA7n b\xE1c \u0111\u1EC1 c\u1EADp \u0111\u1EBFn."
+  nodeSFX: {fileID: 0}

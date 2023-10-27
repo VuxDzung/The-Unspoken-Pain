@@ -17,4 +17,6 @@ MonoBehaviour:
   characterName: NVC
   characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "\xC0, hay m\xECnh th\u1EED t\xE1ch ch\u1EEF in hoa ra"
+  dialogue: "\xC0, hay l\xE0 Alex mu\u1ED1n truy\u1EC1n th\xF4ng \u0111i\u1EC7p g\xEC
+    \u0111\xF3? M\xECnh th\u1EED t\xE1ch c\xE1c ch\u1EE9 hoa ra xem,"
+  nodeSFX: {fileID: 0}

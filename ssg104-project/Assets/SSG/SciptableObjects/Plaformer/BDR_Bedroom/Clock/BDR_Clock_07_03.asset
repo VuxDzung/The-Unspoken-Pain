@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: BDR_Clock_07_03
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: 91a4767a770425942bebd35091f08821, type: 2}
+  - {fileID: 11400000, guid: 42fa6fcdfab30b8438eedb853c1533aa, type: 2}
   characterName: NVC
   characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "C\u1EE5 th\u1EC3 l\xE0 th\u1EEB nh\u1EA5t \u2026"
+  dialogue: "... t\u1EE9c l\xE0 \u0111\u1ED3ng h\u1ED3 kh\xF4ng c\xF2n ho\u1EA1t
+    \u0111\u1ED9ng n\u1EEFa r\u1ED3i. L\u1EA1 nh\u1EC9?"
+  nodeSFX: {fileID: 0}

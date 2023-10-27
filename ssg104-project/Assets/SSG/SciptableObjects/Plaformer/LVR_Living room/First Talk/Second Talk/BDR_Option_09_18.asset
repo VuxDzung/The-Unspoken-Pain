@@ -17,4 +17,5 @@ MonoBehaviour:
   characterName: NVC
   characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "(\u0111\u1EE9ng d\u1EADy) V\xE2ng, ch\xE1u c\u1EA3m \u01A1n b\xE1c \u1EA1!"
+  dialogue: "V\xE2ng, ch\xE1u c\u1EA3m \u01A1n b\xE1c \u1EA1!"
+  nodeSFX: {fileID: 0}

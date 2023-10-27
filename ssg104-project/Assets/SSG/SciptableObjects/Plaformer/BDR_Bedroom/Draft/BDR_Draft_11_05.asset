@@ -17,4 +17,5 @@ MonoBehaviour:
   characterName: NVC
   characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: O THU BA LA SO BON
+  dialogue: O ...
+  nodeSFX: {fileID: 0}

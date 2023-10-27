@@ -16,5 +16,6 @@ MonoBehaviour:
   characterName: NVC
   characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "(suy ngh\u0129) Hi v\u1ECDng m\xE1y t\xEDnh c\u1EE7a Alex s\u1EBD ch\u1EE9a
-    manh m\u1ED1i quan tr\u1ECDng n\xE0o \u0111\xF3"
+  dialogue: "(Suy ngh\u0129) Hi v\u1ECDng m\xE1y t\xEDnh c\u1EE7a Alex s\u1EBD ch\u1EE9a
+    manh m\u1ED1i quan tr\u1ECDng n\xE0o \u0111\xF3."
+  nodeSFX: {fileID: 0}
