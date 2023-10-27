@@ -646,6 +646,26 @@ MonoBehaviour:
   triggedInteractiveObjects: []
   triggedInventoryItems:
   - Items/NoteLines/NoteLine_3
+--- !u!1 &293360429 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1367662461084146735, guid: 5e6127b45ef5c5041943a0d3b0575266, type: 3}
+  m_PrefabInstance: {fileID: 379469423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &293360436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293360429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7ceaefd418b584c86166868d6b9fd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggedInteractiveObjects:
+  - Collisions_Living_room/Door 2
+  triggedInventoryItems: []
 --- !u!1001 &307123103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1001,7 +1021,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1367662461084146735, guid: 5e6127b45ef5c5041943a0d3b0575266, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 293360436}
   m_SourcePrefab: {fileID: 100100000, guid: 5e6127b45ef5c5041943a0d3b0575266, type: 3}
 --- !u!1 &379469424 stripped
 GameObject:
@@ -1118,26 +1141,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6145167746746878326, guid: be9d74edf3056e14aa8c5de54417f17f, type: 3}
   m_PrefabInstance: {fileID: 2116844381}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &412012051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5388019020500827560, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
-  m_PrefabInstance: {fileID: 900717583}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &412012053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 412012051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7ceaefd418b584c86166868d6b9fd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggedInteractiveObjects: []
-  triggedInventoryItems:
-  - FlashLight
 --- !u!1001 &437356526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3169,9 +3172,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 595120021191101575, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 900717585}
     - targetCorrespondingSourceObject: {fileID: 5557603696722614668, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1649125409}
@@ -3184,40 +3184,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7077058365836313851, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1386062521}
-    - targetCorrespondingSourceObject: {fileID: 5388019020500827560, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 412012053}
     - targetCorrespondingSourceObject: {fileID: 5250290556344782883, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1318675568}
   m_SourcePrefab: {fileID: 100100000, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
---- !u!1 &900717584 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 595120021191101575, guid: 42d08382cde3f9142999028eedb82bd3, type: 3}
-  m_PrefabInstance: {fileID: 900717583}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &900717585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900717584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7ceaefd418b584c86166868d6b9fd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggedInteractiveObjects:
-  - Bookshelves
-  - DeskCabinet
-  - Bookshelves
-  - Cabinet
-  - Clock
-  - Computer
-  - Cabinet_LivingRoom
-  triggedInventoryItems:
-  - MomChoice_1
 --- !u!1001 &929300608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4443,30 +4413,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6372985451892168907, guid: 75e1e52c12370484e929fc6ce9d0fc26, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1481877351}
-    - targetCorrespondingSourceObject: {fileID: 6372985451892168907, guid: 75e1e52c12370484e929fc6ce9d0fc26, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1481877350}
   m_SourcePrefab: {fileID: 100100000, guid: 75e1e52c12370484e929fc6ce9d0fc26, type: 3}
 --- !u!1 &1481877349 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6372985451892168907, guid: 75e1e52c12370484e929fc6ce9d0fc26, type: 3}
   m_PrefabInstance: {fileID: 1481877348}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1481877350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481877349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7ceaefd418b584c86166868d6b9fd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggedInteractiveObjects:
-  - Collisions_Living_room/Door 2
-  triggedInventoryItems: []
 --- !u!114 &1481877351
 MonoBehaviour:
   m_ObjectHideFlags: 0
