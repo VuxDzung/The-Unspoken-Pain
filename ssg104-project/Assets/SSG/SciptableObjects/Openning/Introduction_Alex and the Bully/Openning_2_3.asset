@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Openning_2_3
   m_EditorClassIdentifier: 
   dialogues:
-  - {fileID: 11400000, guid: ff120f14f64d99c478bfa8cb5f821be7, type: 2}
   - {fileID: 11400000, guid: 2f3eed5ab2254a542aa2414585aae2e5, type: 2}
   - {fileID: 11400000, guid: 963cde6bffc83094eb2f2e64dd6046b5, type: 2}
   - {fileID: 11400000, guid: 2b81d768b80103246a708b5065be9abb, type: 2}

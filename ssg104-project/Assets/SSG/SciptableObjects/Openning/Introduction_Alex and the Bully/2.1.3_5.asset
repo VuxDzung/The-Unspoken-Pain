@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
   m_Name: 2.1.3_5
   m_EditorClassIdentifier: 
-  subDialogues:
-  - {fileID: 11400000, guid: 2f3eed5ab2254a542aa2414585aae2e5, type: 2}
+  subDialogues: []
   characterName: "D\u1EABn truy\u1EC7n"
   characterImage: {fileID: 0}
   backGroundImage: {fileID: 21300000, guid: 5a7171ae21c4550438a83cf63b8a89ff, type: 3}
@@ -22,4 +21,4 @@ MonoBehaviour:
     lu\xF4n b\u1ECB Mark h\xE0nh hung, x\xFAc ph\u1EA1m kh\xF4ng ch\u1EC9 trong m\xE0
     c\xF2n ngo\xE0i tr\u01B0\u1EDDng. Sau m\u1ED7i l\u1EA7n nh\u01B0 v\u1EADy, Alex
     lu\xF4n c\u1ED1 t\u1ECF ra b\xECnh th\u01B0\u1EDDng v\u1EDBi NVC."
-  fading: 0
+  nodeSFX: {fileID: 0}
