@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TextAppearing : MonoBehaviour
 {
     //Use for the item
     InteractiveButton item => GetComponent<InteractiveButton>();
+    [SerializeField] private string[] correctTexts;
     [SerializeField] private ChangeColor textCotroller;
     void Start()
     {
@@ -16,8 +18,9 @@ public class TextAppearing : MonoBehaviour
     }
     void Appearing(GameObject obj)
     {
-        if (!textCotroller.gameObject.activeSelf) { Debug.Log("1"); return; }
-        
+        if (!textCotroller.gameObject.activeSelf) return;
+        TextMeshProUGUI[] wrongTexts = textCotroller.texts;
+        for (int i = 0; i < wrongTexts.Length; i++) wrongTexts[i].text = correctTexts[i];
         textCotroller.Active();
     }
 }

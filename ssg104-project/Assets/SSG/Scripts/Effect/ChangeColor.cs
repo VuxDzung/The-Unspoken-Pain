@@ -6,8 +6,8 @@ using UnityEngine.UI;
 using System;
 public class ChangeColor : MonoBehaviour
 {
-    [SerializeField] private Image[] images;
-    [SerializeField] private TextMeshProUGUI[] texts;
+    public Image[] images;
+    public TextMeshProUGUI[] texts;
     [SerializeField] Gradient gradient;
     [SerializeField] private float timeSet;
     [SerializeField] private bool activate = true;

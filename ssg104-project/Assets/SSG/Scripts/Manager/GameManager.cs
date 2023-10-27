@@ -80,6 +80,10 @@ public class GameManager : GenericSingleton<GameManager>
             if (views[ord] == null) continue;
             else if (views[ord] == v) v.SetActive(true);
     }
+    public void OutExternalView()
+    {
+        ChangeCanvas(gameViews.Length);
+    }
     public void ChangeToDialogueView()
     {
         ChangeCanvas(dialogueViewOrder);
@@ -109,7 +113,11 @@ public class GameManager : GenericSingleton<GameManager>
             if (item != null)// item is in the same scene
             {
                 InteractiveObject interactive = item.GetComponent<InteractiveObject>();
-                if (interactive != null && !interactive.interactable) interactive.interactable = true;
+                if (interactive != null && !interactive.interactable)
+                {
+                    interactive.interactable = true;
+                    if (!itemData.itemCanInteract.Contains(name)) itemData.itemCanInteract.Add(name);
+                }
                 Debug.Log($"Add {item.name} in {source.currentScene}");
             }
             else // item is in different scene

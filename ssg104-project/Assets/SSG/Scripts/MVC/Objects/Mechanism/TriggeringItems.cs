@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggeringItems : MonoBehaviour
 {
-    InteractiveObject obj => GetComponent<InteractiveObject>();
+    InteractiveObject itemObj => GetComponent<InteractiveObject>();
     [SerializeField] private string[] triggedInteractiveObjects;
     [SerializeField] private string[] triggedInventoryItems;
 
@@ -12,7 +12,7 @@ public class TriggeringItems : MonoBehaviour
 
     void Start()
     {
-        obj.interactAction += Trigger;
+        itemObj.interactAction += Trigger;
     }
     void Trigger(GameObject obj)
     { 
@@ -24,5 +24,6 @@ public class TriggeringItems : MonoBehaviour
 
         if (triggedInventoryItems.Length > 0)
             GameManager.Instance.AddInventoryItemByName(triggedInventoryItems);
+        itemObj.interactAction -= Trigger;
     }
 }

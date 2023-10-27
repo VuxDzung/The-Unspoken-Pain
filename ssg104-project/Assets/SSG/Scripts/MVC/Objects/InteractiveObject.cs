@@ -16,6 +16,7 @@ public class InteractiveObject : MonoBehaviour
     [SerializeField] private Load loadType;
     [SerializeField] protected InteractiveView view;
     [SerializeField] private string scene;
+    [SerializeField] private bool outExternalView;
     internal int viewOrder = 0;
     public Action<GameObject> interactAction { get; set; }
     public Action<GameObject> nonInteractAction { get; set; }
@@ -40,7 +41,9 @@ public class InteractiveObject : MonoBehaviour
         switch (loadType)
         {
             case Load.view:
-                GameManager.Instance.ChangeCanvas(viewOrder); break;
+                GameManager.Instance.ChangeCanvas(viewOrder);
+                if (outExternalView) GameManager.Instance.OutExternalView();
+                break;
             case Load.scene:
                 GameManager.Instance.ChangeToScene(scene); break;
             case Load.none: break;

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BDR_Clock_07_02
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: 05d9b44f5e8d4544eba5f764b2ef4960, type: 2}
+  - {fileID: 11400000, guid: 615a6f2d61fba6f4496f4b8751b0244b, type: 2}
   characterName: NVC
   characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
   backGroundImage: {fileID: 0}
