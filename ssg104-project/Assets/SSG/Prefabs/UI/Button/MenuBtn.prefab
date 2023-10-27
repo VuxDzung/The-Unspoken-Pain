@@ -39,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 35, y: -35}
-  m_SizeDelta: {x: 75, y: 75}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &8597531822009256497
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   loadType: 0
   view: {fileID: 0}
   scene: 
-  viewOrder: 0
+  isSaveBtn: 0
 --- !u!114 &5058957422513615400
 MonoBehaviour:
   m_ObjectHideFlags: 0
