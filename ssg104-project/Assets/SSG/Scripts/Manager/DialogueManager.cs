@@ -263,4 +263,9 @@ public class DialogueManager : MonoBehaviour
         SaveLoadSystem.SaveScene(currentScene);
         SaveLoadSystem.SaveStory(savedData);
     }
+
+    public bool ReachEndOfStory()
+    {
+        return DoT >= branchOnTrack.dialogues.Count - 1;
+    }
 }

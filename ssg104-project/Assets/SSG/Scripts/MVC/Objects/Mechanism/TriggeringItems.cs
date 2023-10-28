@@ -17,10 +17,7 @@ public class TriggeringItems : MonoBehaviour
     void Trigger(GameObject obj)
     { 
         if (triggedInteractiveObjects.Length > 0)
-        {
             GameManager.Instance.AddInteractedItemsByName(triggedInteractiveObjects);
-            Debug.LogError("Add object");
-        }
 
         if (triggedInventoryItems.Length > 0)
             GameManager.Instance.AddInventoryItemByName(triggedInventoryItems);

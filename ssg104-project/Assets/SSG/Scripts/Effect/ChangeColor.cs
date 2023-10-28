@@ -14,6 +14,7 @@ public class ChangeColor : MonoBehaviour
     [SerializeField] private bool setAlpha = true;
     [SerializeField] private bool setRGB = false;
     [SerializeField] private bool autoChange = false;
+    [SerializeField] private bool turnOffTextAfterFading = false;
     private Color[] colors;
     internal float ratio = 0f;
 
@@ -45,7 +46,15 @@ public class ChangeColor : MonoBehaviour
         // ratio = total(1f) / numOfPartOfTimes
         ratio += 100 * Time.deltaTime / timeSet;
         ChangeValue(ratio);
-        if(ratio >= 100f) activate = false;
+        if(ratio >= 100f)
+        {
+            activate = false;
+            if (turnOffTextAfterFading)
+            {
+                foreach (var text in texts)
+                    text.enabled = false;
+            }
+        }
 
     }
     void ChangeValue(float ratio)

@@ -2042,6 +2042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 239a579e4a49a8844b8133ed543758af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultHolder: {fileID: 164630023}
   itemsHolder: {fileID: 0}
   momChoiceHolder: {fileID: 0}
   noteLineHolder: {fileID: 0}
@@ -2062,6 +2063,7 @@ MonoBehaviour:
   loadType: 1
   view: {fileID: 0}
   scene: Home
+  outExternalView: 0
   isSaveBtn: 0
 --- !u!224 &7108383320140006328
 RectTransform:

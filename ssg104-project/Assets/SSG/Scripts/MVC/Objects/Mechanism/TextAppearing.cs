@@ -20,7 +20,13 @@ public class TextAppearing : MonoBehaviour
     {
         if (!textCotroller.gameObject.activeSelf) return;
         TextMeshProUGUI[] wrongTexts = textCotroller.texts;
-        for (int i = 0; i < wrongTexts.Length; i++) wrongTexts[i].text = correctTexts[i];
+        for (int i = 0; i < wrongTexts.Length; i++)
+        {
+            wrongTexts[i].text = correctTexts[i];
+            InteractiveButton item = wrongTexts[i].GetComponentInParent<InteractiveButton>();
+            item.interactable = false;
+        }
+
         textCotroller.Active();
     }
 }

@@ -6,6 +6,7 @@ using TMPro;
 
 public class InventoryManager : MonoBehaviour
 {
+    [SerializeField] private RectTransform defaultHolder;
     [SerializeField] private RectTransform itemsHolder;
     [SerializeField] private RectTransform momChoiceHolder;
     [SerializeField] private RectTransform noteLineHolder;
@@ -22,12 +23,30 @@ public class InventoryManager : MonoBehaviour
     {
         if (item.name.Contains("NoteLine_")) //player note
         {
-            item.GetComponent<TextMeshProUGUI>().enabled = true;
-            item.GetComponent<RectTransform>().SetParent(noteLineHolder);
+            if (noteLineHolder != null)
+            {
+                item.GetComponent<TextMeshProUGUI>().enabled = true;
+                item.GetComponent<RectTransform>().SetParent(noteLineHolder);
+            }
         }
         else if (item.name.Contains("Letter_"))
         {
-            item.GetComponent<RectTransform>().SetParent(letterHolder);
+            if (letterHolder != null)
+            {
+                if (letterHolder.childCount > 0 && defaultHolder != null)
+                {
+                    for (int i = 0; i < letterHolder.childCount; i++)
+                    {
+                        GameObject letter = letterHolder.GetChild(i).gameObject;
+                        letter.transform.GetComponent<RectTransform>().SetParent(letterHolder);
+                        if (inventoryItems.Contains(letter.name))
+                        {
+                            inventoryItems.Remove(letter.name);
+                        }
+                    }
+                }
+                item.GetComponent<RectTransform>().SetParent(letterHolder);
+            }
         }
 
         else if (item.name.Contains("MomChoice_")) //mom choices

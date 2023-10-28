@@ -173,7 +173,18 @@ public class UIDialogueView : MonoBehaviour
     }
 
     private void Update()
-    {   
+    {
+        if (manager.ReachEndOfStory())
+        {
+            skipButton.gameObject.SetActive(false);
+            nextButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Close";
+        }
+        else
+        {
+            skipButton.gameObject.SetActive(true);
+            nextButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Next";
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             manager.nextDialogue();

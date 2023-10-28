@@ -242,7 +242,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3453055783024269916}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -251,11 +251,11 @@ RectTransform:
   m_Father: {fileID: 794864627250985057}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -486.21}
-  m_SizeDelta: {x: 250, y: 75}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 21.2, y: 374.5}
+  m_SizeDelta: {x: 150, y: 50}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &6030391246680733491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -280,6 +280,7 @@ MonoBehaviour:
   loadType: 0
   view: {fileID: 0}
   scene: 
+  outExternalView: 0
   isSaveBtn: 0
 --- !u!114 &2640908948950413626
 MonoBehaviour:
@@ -575,7 +576,7 @@ PrefabInstance:
     - target: {fileID: 1917977934864242288, guid: 32067d07b93307f4798a01ea130fb062,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1917977934864242288, guid: 32067d07b93307f4798a01ea130fb062,
         type: 3}
