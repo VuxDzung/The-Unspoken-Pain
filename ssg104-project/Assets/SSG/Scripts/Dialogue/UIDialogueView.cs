@@ -35,6 +35,8 @@ public class UIDialogueView : MonoBehaviour
     private string playerName = "";
     private ChangeColor fader => GetComponent<ChangeColor>();
 
+    private AudioClip currentClip;
+
     private void Awake()
     {
         playerName = SaveLoadSystem.LoadPlayerName();
@@ -93,8 +95,12 @@ public class UIDialogueView : MonoBehaviour
 
         if (dialogue.themeSFX != null && sourceMusic != null)
         {
-            sourceMusic.clip = dialogue.themeSFX;
-            sourceMusic.Play();
+            if (!dialogue.themeSFX.Equals(currentClip))
+            {
+                sourceMusic.clip = dialogue.themeSFX;
+                currentClip = dialogue.themeSFX;
+                sourceMusic.Play();
+            }
         }
 
         if (characterImg != null) characterImg.sprite = dialogue.characterImage;
