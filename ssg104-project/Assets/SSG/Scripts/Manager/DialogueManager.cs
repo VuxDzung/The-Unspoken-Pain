@@ -20,6 +20,9 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private string currentScene = "";
     [SerializeField] private string nextScene = "";
+
+    public string CurrentScene => currentScene;
+
     public Story[] stories;
     internal Story mainStory;
     private Dialogue[] storyDialogues

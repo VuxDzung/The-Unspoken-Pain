@@ -8,8 +8,8 @@ public class UIDialogueView : MonoBehaviour
     private DialogueManager manager => GetComponentInParent<DialogueManager>();
 
     [SerializeField] protected bool playOnStart = false;
-    
-    private GameObject dialogueBox => GameObject.FindGameObjectWithTag("DialogueBox");
+
+    private GameObject dialogueBox; //=> GameObject.FindGameObjectWithTag("DialogueBox");
     [Header("Character View")]
     [SerializeField] private Image characterImg;
     [SerializeField] private TextMeshProUGUI tmpCharacterName;
@@ -18,6 +18,7 @@ public class UIDialogueView : MonoBehaviour
     [Header("Dialogue view")]
     [SerializeField] private GameObject choicesView;
     [SerializeField] private TextMeshProUGUI tmpDialogue;
+    [SerializeField] private TextMeshProUGUI spaceToContinue;
 
     [Header("Buttons")]
     [SerializeField] private Button backToHome;
@@ -28,6 +29,7 @@ public class UIDialogueView : MonoBehaviour
 
     [Header("SFX")]
     [SerializeField] private AudioSource sourceSFX;
+    [SerializeField] private AudioSource sourceMusic;
     
 
     private string playerName = "";
@@ -37,6 +39,8 @@ public class UIDialogueView : MonoBehaviour
     {
         playerName = SaveLoadSystem.LoadPlayerName();
         manager.showDialogue += ShowDialogue;
+
+        dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
 
         for (int i = 0; i < choiceButtons.Length; i++)
         {
@@ -60,7 +64,7 @@ public class UIDialogueView : MonoBehaviour
         storyData = SaveLoadSystem.LoadStory();
         if (playOnStart)
         {
-            if (storyData != null)
+            if (storyData != null && manager.CurrentScene == SaveLoadSystem.LoadScene())
             {
                 manager.LoadMainStory(manager.stories[storyData.SoT], storyData.BoT, storyData.DoT);
                 Debug.Log($"Load SoT: {storyData.SoT}, BoT: {storyData.BoT}, DoT: {storyData.DoT}");
@@ -81,7 +85,17 @@ public class UIDialogueView : MonoBehaviour
 
     public void ShowDialogue(Dialogue dialogue)
     {
-        if (dialogue.nodeSFX != null) sourceSFX.PlayOneShot(dialogue.nodeSFX, sourceSFX.volume);
+        if (dialogue.nodeSFX != null && sourceSFX != null)
+        {
+            sourceSFX.clip = dialogue.nodeSFX;
+            sourceSFX.Play();
+        }
+
+        if (dialogue.themeSFX != null && sourceMusic != null)
+        {
+            sourceMusic.clip = dialogue.themeSFX;
+            sourceMusic.Play();
+        }
 
         if (characterImg != null) characterImg.sprite = dialogue.characterImage;
 
@@ -90,11 +104,13 @@ public class UIDialogueView : MonoBehaviour
         if (dialogue.dialogue.Length == 0)
         {
             dialogueBox.SetActive(false);
+            spaceToContinue.enabled = true;
             return;
         }
         else
         {
-            if (!dialogueBox.activeSelf) dialogueBox.SetActive(true);
+            dialogueBox.SetActive(true);
+            spaceToContinue.enabled = false;
         }
 
         if (tmpCharacterName != null)

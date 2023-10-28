@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 963cde6bffc83094eb2f2e64dd6046b5, type: 2}
   characterName: "D\u1EABn truy\u1EC7n"
   characterImage: {fileID: 0}
-  backGroundImage: {fileID: 21300000, guid: 5a7171ae21c4550438a83cf63b8a89ff, type: 3}
+  backGroundImage: {fileID: 21300000, guid: 5a7e191491771184892e923f1133b626, type: 3}
   dialogue: "Linh c\u1EA3m c\xF3 chuy\u1EC7n g\xEC kh\xF4ng \u1ED5n. M\u1ED9t bu\u1ED5i
     chi\u1EC1u n\u1ECD, NVC b\xE8n h\u1ECFi chuy\u1EC7n Alex"
-  fading: 0
+  nodeSFX: {fileID: 0}

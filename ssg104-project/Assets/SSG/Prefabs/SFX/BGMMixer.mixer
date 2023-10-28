@@ -17,7 +17,7 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: 15a2584d60369504dab830b205c6f057
-    name: volume_BGM
+    name: volumeBGM
   m_AudioMixerGroupViews:
   - guids:
     - faaf19a9a78749e47a8f3959e0acc418
@@ -67,5 +67,5 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 78e2c01a361d2c94b9cd0b6982f5442e
   m_FloatValues:
-    15a2584d60369504dab830b205c6f057: -8.362404
+    15a2584d60369504dab830b205c6f057: 0
   m_TransitionOverrides: {}

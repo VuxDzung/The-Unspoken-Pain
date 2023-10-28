@@ -17,3 +17,5 @@ MonoBehaviour:
   characterImage: {fileID: 0}
   backGroundImage: {fileID: 21300000, guid: c2f8a4607bffb9849ab7697dc714939f, type: 3}
   dialogue: 
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: bacca571bc1252c4193015b2c4b282d3, type: 3}

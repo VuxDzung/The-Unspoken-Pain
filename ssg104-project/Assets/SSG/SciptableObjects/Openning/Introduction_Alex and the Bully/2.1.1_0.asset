@@ -22,4 +22,5 @@ MonoBehaviour:
     th\xEC \u0111\u1ED9t nhi\xEAn Mark, m\u1ED9t k\u1EBB m\xE1u m\u1EB7t, chuy\xEAn
     \u0111i tr\u1EA5n l\u1ED9t, b\u1EAFt n\u1EA1t c\xE1c h\u1ECDc sinh y\u1EBFu th\u1EBF
     kh\xE1c trong tr\u01B0\u1EDDng, ti\u1EBFn \u0111\u1EBFn"
-  fading: 0
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 5b6ea6e8600ffb8498c87dc72a762bce, type: 3}

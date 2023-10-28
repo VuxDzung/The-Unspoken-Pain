@@ -118,7 +118,7 @@ public class GameManager : GenericSingleton<GameManager>
                     interactive.interactable = true;
                     if (!itemData.itemCanInteract.Contains(name)) itemData.itemCanInteract.Add(name);
                 }
-                Debug.Log($"Add {item.name} in {source.currentScene}");
+                Debug.Log($"Add {item.name} in {dialogueManager.CurrentScene}");
             }
             else // item is in different scene
             {
@@ -141,7 +141,7 @@ public class GameManager : GenericSingleton<GameManager>
 
     public void SaveProcess()
     {
-        SaveLoadSystem.SaveScene(source.currentScene);
+        SaveLoadSystem.SaveScene(dialogueManager.CurrentScene);
         SaveLoadSystem.SavePlatformer(itemData);
     }
 

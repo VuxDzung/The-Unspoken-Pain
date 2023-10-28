@@ -21,3 +21,5 @@ MonoBehaviour:
     y\u1EBFu th\u1EBF r\u1ED3i. N\u1EBFu nh\xE0 tr\u01B0\u1EDDng kh\xF4ng th\u1EC3
     gi\u1EA3i quy\u1EBFt \u0111\u01B0\u1EE3c h\u1EAFn th\xEC t\u1EF1 tay m\xECnh
     s\u1EBD l\xE0m!"
+  nodeSFX: {fileID: 8300000, guid: 93f7805cee28ecc47bd5cc3999ebe058, type: 3}
+  themeSFX: {fileID: 0}

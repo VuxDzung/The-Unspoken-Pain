@@ -25,10 +25,7 @@ public class UISettingsView : MonoBehaviour
 
         if (saveButton != null)
             saveButton.onClick.AddListener(SaveSettings);
-    }
 
-    private void Start()
-    {
         //Load previous settings
         SettingsData settings = new SettingsData();
         settings = SaveLoadSystem.LoadSettings();
@@ -40,11 +37,12 @@ public class UISettingsView : MonoBehaviour
             qualityDropdown.value = settings.qualityDropdownValue;
         }
     }
+
     #endregion
     #region Settings Methods
     public void SetEffectVolume(float volume) => effectMixer.SetFloat("volume_effect", volume);
 
-    public void SetBGMVolume(float volume) => BGMMixer.SetFloat("volume_BGM", volume);
+    public void SetBGMVolume(float volume) => BGMMixer.SetFloat("volumeBGM", volume);
 
     public void SetQuality(int qualityIndex) => QualitySettings.SetQualityLevel(qualityIndex);
 

@@ -45,7 +45,7 @@ public class InventoryManager : MonoBehaviour
 
         if (inventoryItems.Contains(item.name)) return;
         inventoryItems.Add(item.name);
-        Debug.Log($"Add: {item.name}");
+        Debug.Log($"Add Item: {item.name}");
         GameManager.Instance.itemData.itemsInventory = inventoryItems;
     }
 
