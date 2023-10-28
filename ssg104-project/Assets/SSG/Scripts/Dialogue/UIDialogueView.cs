@@ -183,12 +183,10 @@ public class UIDialogueView : MonoBehaviour
         if (manager.ReachEndOfStory())
         {
             skipButton.gameObject.SetActive(false);
-            nextButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Close";
         }
         else
         {
             skipButton.gameObject.SetActive(true);
-            nextButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Next";
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
