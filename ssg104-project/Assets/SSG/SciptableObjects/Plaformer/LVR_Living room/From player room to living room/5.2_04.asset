@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: 5.2_04
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: ee0a1ef4921cc7c4e98a85353acc87bd, type: 2}
+  - {fileID: 11400000, guid: c7edf206cdb6ef54f8ba33760c0553ca, type: 2}
   characterName: "M\u1EB9 Alex"
   characterImage: {fileID: 21300000, guid: aa745d9763a9a9344a102ca206123108, type: 3}
   backGroundImage: {fileID: 21300000, guid: eb3e1a691f97ac344bd37870e2d182ba, type: 3}
-  dialogue: "(s\u1EE5t s\xF9i) \xD4i Alex \u2026 \u0110\u01B0\u1EE3c r\u1ED3i, ch\xE1u
-    l\xEAn ph\xF2ng n\xF3 \u0111i. C\xF3 g\xEC th\xEC ch\xE1u c\u1EE9 h\u1ECFi b\xE1c.
-    B\xE1c ng\u1ED3i d\u01B0\u1EDBi ph\xF2ng kh\xE1ch \u2026"
+  dialogue: "\xD4i Alex \u2026 (S\u1EE5t s\xF9i)"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 1d80ebc015af26a4198f57488ad8568b, type: 3}

@@ -17,5 +17,7 @@ MonoBehaviour:
   characterName: 'Mark '
   characterImage: {fileID: 21300000, guid: dbc0fbdd9b13cfb4fb0cb7ced3d24166, type: 3}
   backGroundImage: {fileID: 21300000, guid: 26ffab22515044442a676f083cedf8f7, type: 3}
-  dialogue: "Ch\xE0, nh\xECn xem ai \u0111ang c\u1ED1 ch\xFAi m\u0169i v\xE0o vi\u1EC7c
-    c\u1EE7a ng\u01B0\u1EDDi kh\xE1c n\xE0y."
+  dialogue: "Nh\xECn xem ai \u0111ang c\u1ED1 ch\xFAi m\u0169i v\xE0o vi\u1EC7c c\u1EE7a
+    ng\u01B0\u1EDDi kh\xE1c n\xE0y."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 36e2d69d25fa6884981abf66980c33dc, type: 3}

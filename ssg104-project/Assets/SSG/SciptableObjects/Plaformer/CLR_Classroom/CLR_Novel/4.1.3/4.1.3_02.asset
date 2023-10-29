@@ -15,6 +15,8 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: 390602b1149f4734d9fc0141fbac55af, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 21300000, guid: 26ffab22515044442a676f083cedf8f7, type: 3}
   dialogue: "Mark! M\xE0y mu\u1ED1n g\xEC?"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 36e2d69d25fa6884981abf66980c33dc, type: 3}

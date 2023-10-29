@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: CLR_Jimmy_17
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: 9aa6a87a90ee2874095fe44b533a1225, type: 2}
+  - {fileID: 11400000, guid: 7a0864276790d7d4eaab66f548573059, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "Th\u1EADt t\u1ED3i t\u1EC7. V\xEC th\u1EBF ch\xFAng ta kh\xF4ng th\u1EC3
-    \u0111\u1EC3 h\u1EAFn ti\u1EBFp t\u1EE5c nh\u01B0 n\xE0y n\u1EEFa."
+  dialogue: "(Nh\u0103n m\u1EB7t) Th\u1EADt t\u1ED3i t\u1EC7 ..."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

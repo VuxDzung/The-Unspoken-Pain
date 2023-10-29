@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: CLR_Jimmy_05
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: 658860669326ee04aa89a4faa45efc9a, type: 2}
-  characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  - {fileID: 11400000, guid: bbf66521faca70a4ca9c27c7f5bd94d8, type: 2}
+  characterName: Jimmy
+  characterImage: {fileID: 21300000, guid: 04a5783d61ca71042a5cfc51f0588533, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "H\u1EAFn \u0111\xE3 l\xE0m nh\u1EEFng vi\u1EC7c g\xEC v\u1EADy?"
+  dialogue: "Mark lu\xF4n nh\u1EAFm v\xE0o h\u1ECDc sinh y\u1EBFu th\u1EBF, khi\u1EBFn
+    cu\u1ED9c s\u1ED1ng c\u1EE7a h\u1ECD tr\u1EDF n\xEAn kh\u1ED5 s\u1EDF."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

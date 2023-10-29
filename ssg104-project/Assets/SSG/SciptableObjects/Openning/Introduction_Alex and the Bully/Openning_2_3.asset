@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: Openning_2_3
   m_EditorClassIdentifier: 
   dialogues:
-  - {fileID: 11400000, guid: 2f3eed5ab2254a542aa2414585aae2e5, type: 2}
-  - {fileID: 11400000, guid: 963cde6bffc83094eb2f2e64dd6046b5, type: 2}
-  - {fileID: 11400000, guid: 2b81d768b80103246a708b5065be9abb, type: 2}
-  - {fileID: 11400000, guid: 5c310115d303e8042a56285980c88971, type: 2}
+  - {fileID: 11400000, guid: 09f3a75f34cbfb74dbd4e73aa60b51a1, type: 2}
+  - {fileID: 11400000, guid: 6aaa5f18230f1e244872541e37d9c9e7, type: 2}
+  - {fileID: 11400000, guid: 52f2808518b128843aa6957b6562a05b, type: 2}
+  - {fileID: 11400000, guid: 4ccde2fbc102b3d49839a21cfc40abd7, type: 2}
+  - {fileID: 11400000, guid: 13d0079c7c208f44aa9647597610c4a1, type: 2}
+  - {fileID: 11400000, guid: 12a73904640cd8f49aa0f5421250f364, type: 2}
+  - {fileID: 11400000, guid: e0b3c1591467ee24293f02e648eddb07, type: 2}
+  - {fileID: 11400000, guid: a7cd6e1bbaf4900439c9cb3147b658ad, type: 2}
+  - {fileID: 11400000, guid: 128ed2e50c123d94fb75426ee91925da, type: 2}
+  - {fileID: 11400000, guid: fe80d67a276b3a440b0ee003c40c2d30, type: 2}
+  - {fileID: 11400000, guid: ac9aa0c4ee343c84aa3aefc557bb4b56, type: 2}

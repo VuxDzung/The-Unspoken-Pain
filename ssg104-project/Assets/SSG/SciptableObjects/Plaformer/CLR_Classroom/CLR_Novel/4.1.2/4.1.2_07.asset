@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: 4.1.2_07
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: 86c7a2c14b537ae46892955fff4f91c2, type: 2}
+  - {fileID: 11400000, guid: f89d5cbdf4806a84d9d4577188481b0c, type: 2}
   characterName: "Th\u1EA7y Thompson"
   characterImage: {fileID: 21300000, guid: 1fa180e3e4a5de443a956baf4a1cd573, type: 3}
   backGroundImage: {fileID: 21300000, guid: b822d54b1fa68b04e92e9f2855e2ccfd, type: 3}
-  dialogue: "Th\u1EA7y c\xF3 l\u1EAFng nghe \u0111\u1EBFn nhu c\u1EA7u c\u1EE7a t\u1EA5t
-    c\u1EA3 c\xE1c b\u1EA1n. Tuy nhi\xEAn, th\u1EA7y kh\xF4ng th\u1EC3 chia s\u1EBB
-    c\xE2u chuy\u1EC7n \u0111\xF3 v\u1EDBi em \u0111\u01B0\u1EE3c."
+  dialogue: "Th\u1EA7y bi\u1EBFt, v\xE0 th\u1EA7y \u0111\xE3 c\xF3 h\u01B0\u1EDBng
+    gi\u1EA3i quy\u1EBFt r\u1ED3i."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 1d80ebc015af26a4198f57488ad8568b, type: 3}

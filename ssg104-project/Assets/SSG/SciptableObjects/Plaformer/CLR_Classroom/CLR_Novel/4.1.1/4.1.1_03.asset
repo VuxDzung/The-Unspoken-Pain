@@ -17,4 +17,6 @@ MonoBehaviour:
   characterName: Erwin
   characterImage: {fileID: 21300000, guid: a22abfe2a00067849939f6c1faf391c0, type: 3}
   backGroundImage: {fileID: 21300000, guid: f73a65555ae004a4285bf2f9bc00240c, type: 3}
-  dialogue: "(th\u1EDF d\xE0i)"
+  dialogue: "(Th\u1EDF d\xE0i)"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 73cf34e58db290345b4a41f50b521511, type: 3}

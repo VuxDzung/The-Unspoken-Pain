@@ -17,4 +17,6 @@ MonoBehaviour:
   characterImage: {fileID: 0}
   backGroundImage: {fileID: 21300000, guid: 43bd2d4c28b9ba649bac8916a8ca4dc7, type: 3}
   dialogue: "\u0110\u1EA7u ti\xEAn, NVC s\u1EBD t\xECm ki\u1EBFm manh m\u1ED1i qua
-    c\xE1c b\u1EA1n c\xF9ng l\u1EDBp."
+    c\xE1c b\u1EA1n c\xF9ng l\u1EDBp ..."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 09616fb98ee40f94ab479c17c67ae80a, type: 3}

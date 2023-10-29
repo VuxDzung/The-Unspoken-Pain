@@ -13,13 +13,10 @@ MonoBehaviour:
   m_Name: 5.1.1_01
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: de79c156e9af0f9418107f170d7b6fdf, type: 2}
+  - {fileID: 11400000, guid: 7d483193482fca743918c47f96697e73, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 21300000, guid: 5a15f90809279e44eb94d41b89d54798, type: 3}
-  dialogue: "M\u1EC7t qu\xE1. Kh\xF4ng sao, h\xF4m nay m\xECnh c\u0169ng thu th\u1EADp
-    \u0111\u01B0\u1EE3c kha kh\xE1 manh m\u1ED1i. Nh\u01B0 v\u1EADy Mark ch\u1EAFc
-    ch\u1EAFn li\xEAn quan g\xEC \u0111\u1EA5y \u0111\u1EBFn c\xE1i ch\u1EBFt c\u1EE7a
-    Alex, v\xE0 th\u1EA7y Thompson c\u0169ng \u0111ang c\u1ED1 g\u1EAFng che gi\u1EA5u
-    \u0111i\u1EC1u \u0111\u1EA5y. Hmm, v\u1EADy t\u1EA1i sao Alex l\u1EA1i gi\u1EA5u
-    m\xECnh?"
+  dialogue: "(Th\u1EDF g\u1EA5p) M\u1EC7t qu\xE1 ..."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 73cf34e58db290345b4a41f50b521511, type: 3}

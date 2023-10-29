@@ -20,3 +20,5 @@ MonoBehaviour:
   dialogue: "C\xF2n Alex l\xE0 m\u1ED9t ng\u01B0\u1EDDi nh\u1EA1y c\u1EA3m, tr\u1EA7m
     t\xEDnh v\xEC t\u1EEB nh\u1ECF b\u1ED1 c\u1EADu m\u1EA5t s\u1EDBm, ch\u1EC9 c\xF3
     m\u1EB9 nu\xF4i n\u1EA5ng ch\u0103m s\xF3c c\u1EADu."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 24eec23381ae65e499bd5cf46aaf1dbd, type: 3}

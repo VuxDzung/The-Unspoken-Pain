@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: 4.1.2_06
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: a5415c1b4e261414fb1e2da58a558a95, type: 2}
+  - {fileID: 11400000, guid: 5059d92f444fd734298e3883df17c980, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 21300000, guid: b822d54b1fa68b04e92e9f2855e2ccfd, type: 3}
   dialogue: "D\u1EA1 em c\u1EA3m \u01A1n th\u1EA7y, nh\u01B0ng em tin th\u1EA7y c\xF3
-    th\u1EC3 gi\xFAp \u0111\u01B0\u1EE3c nhi\u1EC1u h\u01A1n th\u1EBF. Th\u1EA7y
-    c\xF3 bi\u1EBFt v\u1EC1 m\u1EE9c \u0111\u1ED9 nghi\xEAm tr\u1ECDng c\u1EE7a vi\u1EC7c
-    b\u1EAFt n\u1EA1t m\xE0 b\u1EA1n Alex \u1EA5y ph\u1EA3i \u0111\u1ED1i m\u1EB7t
-    kh\xF4ng \u1EA1?"
+    th\u1EC3 gi\xFAp \u0111\u01B0\u1EE3c nhi\u1EC1u h\u01A1n th\u1EBF."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 1d80ebc015af26a4198f57488ad8568b, type: 3}

@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: 5.1.1_02
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: a0a254a111c14e54b9de851770d1417d, type: 2}
+  - {fileID: 11400000, guid: 6a0ab14b5eb548447a8f63004fe89792, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 21300000, guid: 5a15f90809279e44eb94d41b89d54798, type: 3}
-  dialogue: "\u1EE6a l\xFAc s\xE1ng l\xE0m g\xEC c\xF3 b\u1EE9c th\u01B0 n\xE0y tr\xEAn
-    b\xE0n nh\u1EC9. Tr\xEAn \u0111\u1EA5y ghi l\xE0 d\xE0nh cho m\xECnh. N\xE9t
-    b\xFAt n\xE0y gi\u1ED1ng c\u1EE7a \u2026 Alex?"
+  dialogue: "\u1EE6a m\xE0 l\xFAc s\xE1ng l\xE0m g\xEC c\xF3 b\u1EE9c th\u01B0 n\xE0y
+    tr\xEAn b\xE0n nh\u1EC9."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 73cf34e58db290345b4a41f50b521511, type: 3}

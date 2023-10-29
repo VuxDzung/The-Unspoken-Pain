@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 4.1.1_08_1
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 394eece8135062c4c8b337057a717b41, type: 2}
+  characterName: Erwin
+  characterImage: {fileID: 21300000, guid: a22abfe2a00067849939f6c1faf391c0, type: 3}
+  backGroundImage: {fileID: 21300000, guid: f73a65555ae004a4285bf2f9bc00240c, type: 3}
+  dialogue: "T\u1EDB kh\xF4ng r\xF5 h\u1ECD \u0111\xE3 n\xF3i g\xEC."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 73cf34e58db290345b4a41f50b521511, type: 3}

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 4.1.3_06
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: c3bba5e0f59b34644855daf8590b091a, type: 2}
+  - {fileID: 11400000, guid: d0124781b0d8bfd4aad66db5ff1fe193, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 21300000, guid: 26ffab22515044442a676f083cedf8f7, type: 3}
-  dialogue: "Tao s\u1EBD kh\xF4ng b\u1ECB \u0111e d\u1ECDa b\u1EDFi nh\u1EEFng k\u1EBB
-    b\u1EAFt n\u1EA1t nh\u01B0 b\u1EA1n \u0111\xE2u. Alex x\u1EE9ng \u0111\xE1ng
-    \u0111\u01B0\u1EE3c t\u1ED1t h\u01A1n v\xE0 tao s\u1EBD kh\xF4ng \u0111\u1EC3
-    m\xE0y tho\xE1t kh\u1ECFi nh\u1EEFng g\xEC m\xE0y \u0111\xE3 l\xE0m."
+  dialogue: "Tao s\u1EBD kh\xF4ng b\u1ECB \u0111e d\u1ECDa b\u1EDFi nh\u1EEFng th\u1EB1ng
+    nh\u01B0 m\xE0y \u0111\xE2u!"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 36e2d69d25fa6884981abf66980c33dc, type: 3}

@@ -13,14 +13,11 @@ MonoBehaviour:
   m_Name: 4.1.2_04
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: 71dd27cc84a749041b655fc50cc12d37, type: 2}
+  - {fileID: 11400000, guid: bb2656001607278499fd39b973d8bb2b, type: 2}
   characterName: "Th\u1EA7y Thompson"
   characterImage: {fileID: 21300000, guid: 1fa180e3e4a5de443a956baf4a1cd573, type: 3}
   backGroundImage: {fileID: 21300000, guid: b822d54b1fa68b04e92e9f2855e2ccfd, type: 3}
-  dialogue: "\u1ED2, th\u1EA7y bi\u1EBFt c\xF3 m\u1ED9t s\u1ED1 xung \u0111\u1ED9t
-    c\xE1 nh\xE2n gi\u1EEFa c\xE1c h\u1ECDc sinh. N\xF3 kh\xF4ng ph\u1EA3i l\xE0
-    hi\u1EBFm trong m\xF4i tr\u01B0\u1EDDng h\u1ECDc \u0111\u01B0\u1EDDng. Th\u1EA7y
-    \u0111\xE3 b\xE1o c\xE1o vi\u1EC7c n\xE0y cho ban gi\xE1m hi\u1EC7u nh\xE0 tr\u01B0\u1EDDng,
-    l\xE0m vi\u1EC7c v\u1EDBi c\xE1c sinh vi\xEAn c\xF3 li\xEAn quan \u0111\u1EC3
-    th\xFAc \u0111\u1EA9y m\u1ED9t m\xF4i tr\u01B0\u1EDDng l\xE0nh m\u1EA1nh v\xE0
-    an to\xE0n cho c\xE1c em."
+  dialogue: "\u1ED2, th\u1EA7y bi\u1EBFt c\xF3 x\u1EA3y ra m\u1ED9t s\u1ED1 xung
+    \u0111\u1ED9t c\xE1 nh\xE2n gi\u1EEFa c\xE1c h\u1ECDc sinh."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 1d80ebc015af26a4198f57488ad8568b, type: 3}

@@ -15,7 +15,8 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: a09560a4932e4ad44bfea637d965c980, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "Nh\xE0 b\xE1c c\xF3 \u0111\xE8n pin UV kh\xF4ng \u1EA1?"
   nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

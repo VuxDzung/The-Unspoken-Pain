@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 5.1.3_02
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: ec5b14c1e5620ce4184a66104ed56681, type: 2}
-  characterName: "M\u1EB9 Alex"
-  characterImage: {fileID: 21300000, guid: aa745d9763a9a9344a102ca206123108, type: 3}
-  backGroundImage: {fileID: 21300000, guid: eb3e1a691f97ac344bd37870e2d182ba, type: 3}
-  dialogue: "NVC \xE0, v\xE0o \u0111i!"
+  - {fileID: 11400000, guid: 1942c18ebca18384da5e8e1679a9e47c, type: 2}
+  characterName: NVC
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
+  backGroundImage: {fileID: 21300000, guid: da6ac1eceacb97a49bbbeed0e8e1e0d6, type: 3}
+  dialogue: "B\xE1c Christine \u01A1i!"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

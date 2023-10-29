@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subDialogues:
   - {fileID: 11400000, guid: 6771551469ee8e94995aef37540dcaf3, type: 2}
-  characterName: "B\xE1c Andreson"
+  characterName: "M\u1EB9 Alex"
   characterImage: {fileID: 21300000, guid: aa745d9763a9a9344a102ca206123108, type: 3}
   backGroundImage: {fileID: 21300000, guid: b2aa1daf13ecc3349a330294f2f2d1dc, type: 3}
   dialogue: "H\xF4m nay Alex c\xF3 \u0111i v\u1EC1 c\xF9ng v\u1EDBi ch\xE1u kh\xF4ng?"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 8d464d53520c63e438b0c9093f38498d, type: 3}

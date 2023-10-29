@@ -19,3 +19,5 @@ MonoBehaviour:
   backGroundImage: {fileID: 21300000, guid: f73a65555ae004a4285bf2f9bc00240c, type: 3}
   dialogue: "Kh\xF4ng c\xF3 g\xEC, l\xFD do m\xE0 ph\u1EA3i \u0111\u1EBFn b\xE2y
     gi\u1EDD t\u1EDB m\u1EDBi n\xF3i l\xE0 v\xEC \u2026"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 73cf34e58db290345b4a41f50b521511, type: 3}

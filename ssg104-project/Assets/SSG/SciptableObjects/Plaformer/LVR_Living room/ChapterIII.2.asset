@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: ChapterIII.2
   m_EditorClassIdentifier: 
   dialogues:
+  - {fileID: 11400000, guid: 7083dd2b8a19dc44a82b0094fd37f300, type: 2}
+  - {fileID: 11400000, guid: 4585c67486fa9ff438d1dded206693e3, type: 2}
   - {fileID: 11400000, guid: 4f9f7c830ee762645b7d52d4310f8efa, type: 2}
+  - {fileID: 11400000, guid: 7d483193482fca743918c47f96697e73, type: 2}
+  - {fileID: 11400000, guid: 7f5280d853e7ac24898f9cc371bb30b4, type: 2}
+  - {fileID: 11400000, guid: 3cce690a06bc51f4189704d31b85b90f, type: 2}
+  - {fileID: 11400000, guid: 11368039502628b45b48770e863fd477, type: 2}
   - {fileID: 11400000, guid: de79c156e9af0f9418107f170d7b6fdf, type: 2}
-  - {fileID: 11400000, guid: a0a254a111c14e54b9de851770d1417d, type: 2}
-  - {fileID: 11400000, guid: 54732199ea026094092b4d74fb759cf3, type: 2}
-  - {fileID: 11400000, guid: a884e62f770298a48a21f50ad6e4a9da, type: 2}
-  - {fileID: 11400000, guid: ec5b14c1e5620ce4184a66104ed56681, type: 2}
-  - {fileID: 11400000, guid: 904eed15b9e37f042b04a2ebd2133b7d, type: 2}
-  - {fileID: 11400000, guid: 55b5ea3e21ddcd4409a3f6542f9851f5, type: 2}
-  - {fileID: 11400000, guid: da1017cc7603bd84f892cf8638c1a3ae, type: 2}
-  - {fileID: 11400000, guid: ee0a1ef4921cc7c4e98a85353acc87bd, type: 2}
+  - {fileID: 11400000, guid: 6a0ab14b5eb548447a8f63004fe89792, type: 2}
+  - {fileID: 11400000, guid: 110c8d0cf00ddd04aa0583d8bddf7cbe, type: 2}

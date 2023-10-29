@@ -15,6 +15,8 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: ba0a00f96f735f04e977c058d8d13235, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "Uh. Xin l\u1ED7i v\xEC \u0111\xE3 l\xE0m phi\u1EC1n c\u1EADu."
+  dialogue: "\u1EEA. Xin l\u1ED7i v\xEC \u0111\xE3 l\xE0m phi\u1EC1n c\u1EADu."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

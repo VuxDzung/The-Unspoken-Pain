@@ -18,3 +18,5 @@ MonoBehaviour:
   characterImage: {fileID: 21300000, guid: aa745d9763a9a9344a102ca206123108, type: 3}
   backGroundImage: {fileID: 21300000, guid: eb3e1a691f97ac344bd37870e2d182ba, type: 3}
   dialogue: "Ch\xE1u \u0111\u1EBFn \u0111\xE2y c\xF3 vi\u1EC7c g\xEC v\u1EADy?"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 1d80ebc015af26a4198f57488ad8568b, type: 3}

@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: 4.1.1_07
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: c6be702598e2b3c4bb6b3569112903f3, type: 2}
+  - {fileID: 11400000, guid: f6be1dbd4dda1f04bb4d0f9cc1d4c5b9, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 21300000, guid: f73a65555ae004a4285bf2f9bc00240c, type: 3}
-  dialogue: "Th\u1EADt kinh kh\u1EE7ng. Th\u1EBF t\u1EA1i sao Mark l\u1EA1i tha cho
-    c\u1EADu v\u1EADy?"
+  dialogue: "Th\u1EADt kinh kh\u1EE7ng ..."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 73cf34e58db290345b4a41f50b521511, type: 3}

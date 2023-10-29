@@ -15,7 +15,9 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: 5028f74f6347deb449a2f85451291e06, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "Jimmy, m\xECnh c\xF3 th\u1EC3 h\u1ECFi c\u1EADu m\u1ED9t v\xE0i chuy\u1EC7n
-    \u0111\u01B0\u1EE3c kh\xF4ng?"
+  dialogue: "Jimmy, t\u1EDB c\xF3 th\u1EC3 n\xF3i chuy\u1EC7n m\u1ED9t l\xFAc \u0111\u01B0\u1EE3c
+    kh\xF4ng?"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

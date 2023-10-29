@@ -13,12 +13,25 @@ MonoBehaviour:
   m_Name: CLR_Story_4.1.3
   m_EditorClassIdentifier: 
   dialogues:
+  - {fileID: 11400000, guid: 340fd371c76b4eb418488b55d1d3caa1, type: 2}
+  - {fileID: 11400000, guid: 83937e8afc1fb19428b3ab23dcdc8e34, type: 2}
+  - {fileID: 11400000, guid: d8d30de1392b65446bf3a9f4b2bba38b, type: 2}
+  - {fileID: 11400000, guid: f89eeb0307f646f4c8bb3d58a141bdf9, type: 2}
+  - {fileID: 11400000, guid: 2d61d47cac3220f45b42cc7ce1e74ee8, type: 2}
   - {fileID: 11400000, guid: ed913a0b923439041a51184b2ac42abf, type: 2}
   - {fileID: 11400000, guid: 659c845f0c418c149962ec951f29f81b, type: 2}
   - {fileID: 11400000, guid: 390602b1149f4734d9fc0141fbac55af, type: 2}
+  - {fileID: 11400000, guid: 6506f6a793a744841af7b904753107b2, type: 2}
   - {fileID: 11400000, guid: fe3b198ddeda79b48aa501c7c5542dda, type: 2}
+  - {fileID: 11400000, guid: 0fd93bcbaa1368146806498fdcb9edd1, type: 2}
   - {fileID: 11400000, guid: 31036d66fedb11d43807a30a74451d20, type: 2}
+  - {fileID: 11400000, guid: 2d6b66ffb32b03a4083b1513624b4e96, type: 2}
+  - {fileID: 11400000, guid: 7ffa510a0be68734998572caa7f2308c, type: 2}
+  - {fileID: 11400000, guid: 4d93152dd3d4318478b7fb0819aa9c01, type: 2}
+  - {fileID: 11400000, guid: d131e60b6c98c0744859d4dd6a440a32, type: 2}
   - {fileID: 11400000, guid: dafe86290ed6c64478fa7219146db61e, type: 2}
+  - {fileID: 11400000, guid: d0124781b0d8bfd4aad66db5ff1fe193, type: 2}
   - {fileID: 11400000, guid: c3bba5e0f59b34644855daf8590b091a, type: 2}
+  - {fileID: 11400000, guid: f752936de572d95488c84d1cf94ba41e, type: 2}
   - {fileID: 11400000, guid: 3d111cfd2e7e3ff4f92c86e3b4b404c6, type: 2}
   - {fileID: 11400000, guid: 7ca0ef60cbc45f74da6549a73eab037b, type: 2}

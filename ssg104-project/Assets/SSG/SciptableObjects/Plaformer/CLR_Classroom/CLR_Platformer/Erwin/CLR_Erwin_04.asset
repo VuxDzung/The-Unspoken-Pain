@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subDialogues:
   - {fileID: 11400000, guid: 0e3161ae99a0e9440bccf050e0f0cf72, type: 2}
-  characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterName: Erwin
+  characterImage: {fileID: 21300000, guid: a22abfe2a00067849939f6c1faf391c0, type: 3}
   backGroundImage: {fileID: 0}
-  dialogue: "(th\u1EDF d\xE0i) V\u1EC1 Mark \xE0\u2026"
+  dialogue: "(Th\u1EDF d\xE0i) V\u1EC1 Mark \xE0 \u2026"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

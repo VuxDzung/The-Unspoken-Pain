@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: 4.1.2_03
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: b75d224b96f027d4c9e4002b5ce525e4, type: 2}
+  - {fileID: 11400000, guid: 0f9323c771d35964ebd7861e4c83eede, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 21300000, guid: b822d54b1fa68b04e92e9f2855e2ccfd, type: 3}
   dialogue: "Em \u0111\xE3 nghe nhi\u1EC1u v\u1EC1 t\xECnh tr\u1EA1ng b\u1EAFt n\u1EA1t
     trong tr\u01B0\u1EDDng m\xECnh, \u0111\u1EB7c bi\u1EC7t l\xE0 do Mark \u0111\u1EE9ng
-    \u0111\u1EA7u. Th\u1EA7y c\xF3 bi\u1EBFt \u0111i\u1EC1u g\xEC v\u1EC1 v\u1EA5n
-    \u0111\u1EC1 n\xE0y kh\xF4ng?"
+    \u0111\u1EA7u."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 1d80ebc015af26a4198f57488ad8568b, type: 3}

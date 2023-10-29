@@ -19,3 +19,5 @@ MonoBehaviour:
   backGroundImage: {fileID: 21300000, guid: 2ce6aa24af7d6b441a210b7592834578, type: 3}
   dialogue: "NVC l\xE0 m\u1ED9t ng\u01B0\u1EDDi t\xF2 m\xF2, th\xEDch kh\xE1m ph\xE1
     v\xE0 lu\xF4n quan t\xE2m \u0111\u1EBFn ng\u01B0\u1EDDi th\xE2n xung quanh."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 24eec23381ae65e499bd5cf46aaf1dbd, type: 3}

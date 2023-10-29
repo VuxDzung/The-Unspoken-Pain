@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 4.1.2_02_1
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 4f6e6175621d449408b1ed8bc44a369b, type: 2}
+  characterName: "Th\u1EA7y Thompson"
+  characterImage: {fileID: 21300000, guid: 1fa180e3e4a5de443a956baf4a1cd573, type: 3}
+  backGroundImage: {fileID: 21300000, guid: b822d54b1fa68b04e92e9f2855e2ccfd, type: 3}
+  dialogue: "Vi\u1EC7c Alex ra \u0111i l\xE0 m\u1ED9t s\u1EF1 vi\u1EC7c r\u1EA5t
+    \u0111au bu\u1ED3n kh\xF4ng ch\u1EC9 trong l\u1EDBp ch\xFAng ta m\xE0 c\xF2n
+    v\u1EDBi c\u1EA3 tr\u01B0\u1EDDng."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 1d80ebc015af26a4198f57488ad8568b, type: 3}
