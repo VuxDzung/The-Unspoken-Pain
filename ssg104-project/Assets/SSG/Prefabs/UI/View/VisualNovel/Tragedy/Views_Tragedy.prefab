@@ -248,11 +248,21 @@ PrefabInstance:
       propertyPath: view
       value: 
       objectReference: {fileID: 7013060636230104822}
+    - target: {fileID: 4396443395594646334, guid: b1b6a2da2c0efc74e9b09635909a9b46,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5167061036432976992, guid: b1b6a2da2c0efc74e9b09635909a9b46,
         type: 3}
       propertyPath: view
       value: 
       objectReference: {fileID: 7013060636230104822}
+    - target: {fileID: 5372704155495174406, guid: b1b6a2da2c0efc74e9b09635909a9b46,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5962168304461208410, guid: b1b6a2da2c0efc74e9b09635909a9b46,
         type: 3}
       propertyPath: m_RootOrder
@@ -313,6 +323,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Views_Tragedy
       objectReference: {fileID: 0}
+    - target: {fileID: 8886787195196692957, guid: b1b6a2da2c0efc74e9b09635909a9b46,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9210105775378924625, guid: b1b6a2da2c0efc74e9b09635909a9b46,
         type: 3}
       propertyPath: view
@@ -366,6 +381,12 @@ MonoBehaviour:
 --- !u!4 &5395407973054119707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8894730201749032725, guid: b1b6a2da2c0efc74e9b09635909a9b46,
+    type: 3}
+  m_PrefabInstance: {fileID: 3571419414949785614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6091909399715226120 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7285404022022885894, guid: b1b6a2da2c0efc74e9b09635909a9b46,
     type: 3}
   m_PrefabInstance: {fileID: 3571419414949785614}
   m_PrefabAsset: {fileID: 0}
@@ -518,7 +539,7 @@ PrefabInstance:
     - target: {fileID: 1176164694943702240, guid: af6333d6bdf17cd4f946fcf5a3ffa269,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 540
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1176164694943702240, guid: af6333d6bdf17cd4f946fcf5a3ffa269,
         type: 3}
@@ -825,6 +846,16 @@ PrefabInstance:
       propertyPath: currentScene
       value: TragedyScene
       objectReference: {fileID: 0}
+    - target: {fileID: 6039815017433282390, guid: af6333d6bdf17cd4f946fcf5a3ffa269,
+        type: 3}
+      propertyPath: sourceSFX
+      value: 
+      objectReference: {fileID: 6091909399715226120}
+    - target: {fileID: 6039815017433282390, guid: af6333d6bdf17cd4f946fcf5a3ffa269,
+        type: 3}
+      propertyPath: sourceMusic
+      value: 
+      objectReference: {fileID: 6069677038615030854}
     - target: {fileID: 6757443757671411808, guid: af6333d6bdf17cd4f946fcf5a3ffa269,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -972,7 +1003,7 @@ PrefabInstance:
     - target: {fileID: 3373770782193867698, guid: cd51d04562e9e9a469ef382b8663cfba,
         type: 3}
       propertyPath: Loop
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3373770782193867698, guid: cd51d04562e9e9a469ef382b8663cfba,
         type: 3}
@@ -982,7 +1013,7 @@ PrefabInstance:
     - target: {fileID: 3373770782193867698, guid: cd51d04562e9e9a469ef382b8663cfba,
         type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3707562325104485556, guid: cd51d04562e9e9a469ef382b8663cfba,
         type: 3}
@@ -994,6 +1025,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd51d04562e9e9a469ef382b8663cfba, type: 3}
+--- !u!82 &6069677038615030854 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3373770782193867698, guid: cd51d04562e9e9a469ef382b8663cfba,
+    type: 3}
+  m_PrefabInstance: {fileID: 8856849549747009524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7958344661925745280 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1484043775260648820, guid: cd51d04562e9e9a469ef382b8663cfba,

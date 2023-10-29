@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
+
 public class UIDialogueView : MonoBehaviour
 {
     private DialogueManager manager => GetComponentInParent<DialogueManager>();
@@ -43,6 +45,11 @@ public class UIDialogueView : MonoBehaviour
         manager.showDialogue += ShowDialogue;
 
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
+
+        if (sourceMusic != null)
+        {
+            if (!sourceMusic.loop) sourceMusic.loop = true;
+        }
 
         for (int i = 0; i < choiceButtons.Length; i++)
         {
@@ -87,10 +94,14 @@ public class UIDialogueView : MonoBehaviour
 
     public void ShowDialogue(Dialogue dialogue)
     {
-        if (dialogue.nodeSFX != null && sourceSFX != null)
+        if (sourceSFX != null)
         {
-            sourceSFX.clip = dialogue.nodeSFX;
-            sourceSFX.Play();
+            if (dialogue.nodeSFX != null)
+            {
+                sourceSFX.clip = dialogue.nodeSFX;
+                sourceSFX.Play();
+            }
+            else sourceSFX.Stop();
         }
 
         if (dialogue.themeSFX != null && sourceMusic != null)
@@ -110,7 +121,7 @@ public class UIDialogueView : MonoBehaviour
         if (dialogue.dialogue.Length == 0)
         {
             dialogueBox.SetActive(false);
-            spaceToContinue.enabled = true;
+            Utility.Invoke(this, () => { spaceToContinue.enabled = true; }, 2f);
             return;
         }
         else
@@ -194,5 +205,19 @@ public class UIDialogueView : MonoBehaviour
             manager.nextDialogue();
         }
         FadingView();
+    }
+}
+
+public static class Utility
+{
+    public static void Invoke(this MonoBehaviour mb, Action f, float delay)
+    {
+        mb.StartCoroutine(InvokeRoutine(f, delay));
+    }
+
+    private static IEnumerator InvokeRoutine(System.Action f, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        f();
     }
 }
