@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 8.3.2.1_8
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 221b017b9d91f8f418c573785fd58720, type: 2}
+  characterName: Mark
+  characterImage: {fileID: 21300000, guid: dbc0fbdd9b13cfb4fb0cb7ced3d24166, type: 3}
+  backGroundImage: {fileID: 21300000, guid: 2cb3175af9bee0c4e8661850f587e0ff, type: 3}
+  dialogue: "(C\u01B0\u1EDDi ng\u1EA1o ngh\u1EC5) B\u1EA3n l\u0129nh \u0111\u1EA5y!"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 36e2d69d25fa6884981abf66980c33dc, type: 3}

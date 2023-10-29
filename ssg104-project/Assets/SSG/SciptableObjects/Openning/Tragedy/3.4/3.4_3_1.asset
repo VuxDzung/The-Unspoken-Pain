@@ -20,4 +20,4 @@ MonoBehaviour:
   dialogue: "V\u1EE5 vi\u1EC7c \u0111\u01B0\u1EE3c b\xE0n t\xE1n s\xF4i n\u1ED5i
     trong tr\u01B0\u1EDDng v\xE0 tr\xEAn m\u1EA1ng x\xE3 h\u1ED9i. "
   nodeSFX: {fileID: 0}
-  themeSFX: {fileID: 8300000, guid: 09616fb98ee40f94ab479c17c67ae80a, type: 3}
+  themeSFX: {fileID: 8300000, guid: fb1ae682792cb224ba8c3139a72e5eae, type: 3}

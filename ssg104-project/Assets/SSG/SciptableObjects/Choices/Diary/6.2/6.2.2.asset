@@ -20,3 +20,5 @@ MonoBehaviour:
   dialogue: "H\xF4m nay t\xF4i \u0111\u1EBFn l\u1EDBp s\u1EDBm \u0111\u1EC3 chu\u1EA9n
     b\u1ECB cho bu\u1ED5i h\u1ECDc \u0111\u1EA7u ti\xEAn, th\xEC t\xF4i b\u1ECB m\u1ED9t
     t\xEAn \u0111\u1EA7u g\u1EA5u \u0111e d\u1ECDa."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: fb1ae682792cb224ba8c3139a72e5eae, type: 3}

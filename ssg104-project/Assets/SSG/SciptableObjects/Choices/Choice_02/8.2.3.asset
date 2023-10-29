@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 8.2.3
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: 3c604bfb1cc910240bffbc0c79225d55, type: 2}
+  characterName: "D\u1EABn truy\u1EC7n"
+  characterImage: {fileID: 0}
+  backGroundImage: {fileID: 21300000, guid: e4e90e2379312834fbc92f6daf7cfead, type: 3}
+  dialogue: "N\xF3 di\u1EC5n ra th\xE0nh c\xF4ng v\xE0 nh\u1EADn \u0111\u01B0\u1EE3c
+    s\u1EF1 h\u01B0\u1EDFng \u1EE9ng c\u1EE7a ph\u1EE5 huynh h\u1ECDc sinh trong
+    v\xE0 ngo\xE0i tr\u01B0\u1EDDng."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 24eec23381ae65e499bd5cf46aaf1dbd, type: 3}

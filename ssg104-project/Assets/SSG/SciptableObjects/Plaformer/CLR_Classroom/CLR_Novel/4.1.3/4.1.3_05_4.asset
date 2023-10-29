@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: 4.1.3_05_4
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: dafe86290ed6c64478fa7219146db61e, type: 2}
+  - {fileID: 11400000, guid: d131e60b6c98c0744859d4dd6a440a32, type: 2}
   characterName: Mark
   characterImage: {fileID: 21300000, guid: dbc0fbdd9b13cfb4fb0cb7ced3d24166, type: 3}
   backGroundImage: {fileID: 21300000, guid: 26ffab22515044442a676f083cedf8f7, type: 3}
-  dialogue: "... c\xF2n kh\xF4ng th\xEC t\u1EDBi s\u1ED1 v\u1EDBi tao!"
+  dialogue: "\u1EDE \u0111\xE2y \xE1, nghe theo tao th\xEC s\u1ED1ng ..."
   nodeSFX: {fileID: 0}
   themeSFX: {fileID: 8300000, guid: 36e2d69d25fa6884981abf66980c33dc, type: 3}

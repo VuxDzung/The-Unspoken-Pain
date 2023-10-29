@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
+  m_Name: 8.1.0_1
+  m_EditorClassIdentifier: 
+  subDialogues:
+  - {fileID: 11400000, guid: e70dbb2315fab0f4eaa3c56dd72fa46d, type: 2}
+  characterName: NVC
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
+  backGroundImage: {fileID: 21300000, guid: cb5c355949e45904e97e45bbe35ad838, type: 3}
+  dialogue: "H\u1EAFn \u0111\xE3 l\xE0m h\u1EA1i qu\xE1 nhi\u1EC1u h\u1ECDc sinh
+    y\u1EBFu th\u1EBF r\u1ED3i."
+  nodeSFX: {fileID: 8300000, guid: 93f7805cee28ecc47bd5cc3999ebe058, type: 3}
+  themeSFX: {fileID: 8300000, guid: 1d80ebc015af26a4198f57488ad8568b, type: 3}

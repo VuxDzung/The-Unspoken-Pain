@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: 6.4.2
   m_EditorClassIdentifier: 
   subDialogues:
-  - {fileID: 11400000, guid: 91090049dbf1ca14a868bf30a6498e6a, type: 2}
+  - {fileID: 11400000, guid: 134bbb85689e45a4f84bd18db20e5aff, type: 2}
   characterName: Alex
   characterImage: {fileID: 21300000, guid: 7a6d502970a790347ba05b723703e5a6, type: 3}
-  backGroundImage: {fileID: 21300000, guid: 5662b493d47aec14d9e2cbb69d6f06a2, type: 3}
-  dialogue: "T\xF4i c\xF3 n\xEAn ch\u1EBFt \u0111\u1EC3 gi\u1EA3i tho\xE1t kh\xF4ng?
-    N\xEAn kh\xF4ng? T\xF4i c\u0169ng kh\xF4ng bi\u1EBFt n\u1EEFa, nh\u01B0ng v\u1EADy
-    th\xEC c\xF2n m\u1EB9 t\xF4i, ch\u1ECB t\xF4i, b\u1EA1n t\xF4i th\xEC sao."
+  backGroundImage: {fileID: 21300000, guid: d4d1b73d21544614a96a8c377c45fdc7, type: 3}
+  dialogue: "T\xF4i c\xF3 n\xEAn t\xECm \u0111\u1EBFn c\xE1i ch\u1EBFt \u0111\u1EC3
+    gi\u1EA3i tho\xE1t kh\xF4ng?"
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: fb1ae682792cb224ba8c3139a72e5eae, type: 3}

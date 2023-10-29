@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: CLR_Story_4.1.1
   m_EditorClassIdentifier: 
   dialogues:
+  - {fileID: 11400000, guid: 26860cf47fc0eab419cef365de49a24e, type: 2}
   - {fileID: 11400000, guid: d7f9c9cd6bacd254c96546e367f8f435, type: 2}
   - {fileID: 11400000, guid: ad708c29b6ea7a646b2a4dfda639c112, type: 2}
   - {fileID: 11400000, guid: f163726d4868a344bb0dd1dcd6b8126b, type: 2}

@@ -15,17 +15,12 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: d18f06659b7eb934f913ee7e7b16a2fb, type: 2}
   - {fileID: 11400000, guid: 1df18204be5745e47af8bf9ea705c9b5, type: 2}
+  - {fileID: 11400000, guid: abc38f7bb89ea6e448f8523980b0cb31, type: 2}
+  - {fileID: 11400000, guid: 8e6b5ccda1568f4498a011c01407982d, type: 2}
   - {fileID: 11400000, guid: 1ee477ab0fb342f4ab45777c1832ee12, type: 2}
   - {fileID: 11400000, guid: 217f5360ea591c3429f5ee0ac524139b, type: 2}
   - {fileID: 11400000, guid: d2abe8781924292418317293e91b2034, type: 2}
+  - {fileID: 11400000, guid: 4704376f9af9fa24d9f86f6b22dcc45d, type: 2}
   - {fileID: 11400000, guid: 8c41c991aa779364db396c7fde6ff8c5, type: 2}
-  - {fileID: 11400000, guid: 6e348f14ed1bd634c8c9aba3b0ae32a3, type: 2}
+  - {fileID: 11400000, guid: 468c7d7ab7765dd458dd891638328cd9, type: 2}
   - {fileID: 11400000, guid: 44dc7325e83ec0c43b34ea04eb7ad7bd, type: 2}
-  - {fileID: 11400000, guid: 11b71abf75a1d71489374b2ae8daa5ff, type: 2}
-  - {fileID: 11400000, guid: 0fd1a028afd95f744a419e7def3f3f7a, type: 2}
-  - {fileID: 11400000, guid: f2f5090c0c8997740a2bc3d7eb2b790e, type: 2}
-  - {fileID: 11400000, guid: 524c39d35bfdab741bed9d2a3bda3d50, type: 2}
-  - {fileID: 11400000, guid: 803315971ce19834089e66ea4b27159f, type: 2}
-  - {fileID: 11400000, guid: 5bd671df137129740af0fbd5238a6988, type: 2}
-  - {fileID: 11400000, guid: 0d630bfaf84bf9645bd1d811573c4a7d, type: 2}
-  - {fileID: 11400000, guid: 441a5a2a04735304d987e078a9426a85, type: 2}

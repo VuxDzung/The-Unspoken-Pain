@@ -19,4 +19,4 @@ MonoBehaviour:
   dialogue: "C\xF2n v\u1EDBi NVC, c\u1EADu \u0111\xE3 nh\u1ED1t b\u1EA3n th\xE2n
     trong ph\xF2ng su\u1ED1t m\u1EA5y ng\xE0y li\u1EC1n."
   nodeSFX: {fileID: 0}
-  themeSFX: {fileID: 8300000, guid: 09616fb98ee40f94ab479c17c67ae80a, type: 3}
+  themeSFX: {fileID: 8300000, guid: fb1ae682792cb224ba8c3139a72e5eae, type: 3}

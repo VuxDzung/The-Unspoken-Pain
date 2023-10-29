@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5908033b4690d21459d84e22d89617da, type: 3}
   m_Name: 6.2.5
   m_EditorClassIdentifier: 
-  subDialogues: []
+  subDialogues:
+  - {fileID: 11400000, guid: dcc9267f3fe29714786b006207d81c42, type: 2}
   characterName: Alex
   characterImage: {fileID: 21300000, guid: 7a6d502970a790347ba05b723703e5a6, type: 3}
   backGroundImage: {fileID: 21300000, guid: 5662b493d47aec14d9e2cbb69d6f06a2, type: 3}
   dialogue: "T\xF4i c\xE0ng kh\xF4ng mu\u1ED1n k\u1EC3 cho m\u1EB9 t\xF4i v\xEC m\u1EB9
     t\xF4i \u0111\xE3 tr\u1EA3i qua bao kh\xF3 kh\u0103n k\u1EC3 t\u1EEB khi b\u1ED1
-    t\xF4i m\u1EA5t r\u1ED3i. Hi v\u1ECDng m\u1ECDi chuy\u1EC7n s\u1EBD s\u1EDBm
-    qua th\xF4i."
+    t\xF4i m\u1EA5t r\u1ED3i."
+  nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: fb1ae682792cb224ba8c3139a72e5eae, type: 3}

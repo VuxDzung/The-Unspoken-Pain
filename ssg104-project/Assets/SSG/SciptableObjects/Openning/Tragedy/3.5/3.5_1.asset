@@ -20,4 +20,4 @@ MonoBehaviour:
   dialogue: "Alex, t\u1EA1i sao c\u1EADu l\u1EA1i l\xE0m \u0111i\u1EC1u d\u1EA1i
     d\u1ED9t v\u1EADy \u2026"
   nodeSFX: {fileID: 0}
-  themeSFX: {fileID: 8300000, guid: 09616fb98ee40f94ab479c17c67ae80a, type: 3}
+  themeSFX: {fileID: 8300000, guid: fb1ae682792cb224ba8c3139a72e5eae, type: 3}

@@ -426,10 +426,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Views_Openning
       objectReference: {fileID: 0}
+    - target: {fileID: 1136202760594445922, guid: 5730da2eab3987a4f80c1adcc8d69178, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1798219045202513178, guid: 5730da2eab3987a4f80c1adcc8d69178, type: 3}
       propertyPath: sourceSFX
       value: 
       objectReference: {fileID: 1301801578}
+    - target: {fileID: 6590920186343515820, guid: 5730da2eab3987a4f80c1adcc8d69178, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590920186343515820, guid: 5730da2eab3987a4f80c1adcc8d69178, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590920186343515820, guid: 5730da2eab3987a4f80c1adcc8d69178, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590920186343515820, guid: 5730da2eab3987a4f80c1adcc8d69178, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590920186343515820, guid: 5730da2eab3987a4f80c1adcc8d69178, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590920186343515820, guid: 5730da2eab3987a4f80c1adcc8d69178, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7362274665655128641, guid: 5730da2eab3987a4f80c1adcc8d69178, type: 3}
       propertyPath: Loop
       value: 0
