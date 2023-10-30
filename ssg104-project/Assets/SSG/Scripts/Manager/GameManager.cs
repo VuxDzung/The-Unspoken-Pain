@@ -13,6 +13,8 @@ public class GameManager : GenericSingleton<GameManager>
     public SourceManager source => FindObjectOfType<SourceManager>();
     private int dialogueViewOrder = -1;
 
+    public string currentLetter { get; set; }
+
     protected override void Awake()
     {
         base.Awake();
@@ -124,7 +126,7 @@ public class GameManager : GenericSingleton<GameManager>
             {
                 if (itemData.itemCanInteract.Contains(name)) continue;
                 itemData.itemCanInteract.Add(name);
-                Debug.LogError($"Add in RAM: {name}");
+                Debug.Log($"Add in RAM: {name}");
             }
         }
     }
@@ -154,9 +156,17 @@ public class GameManager : GenericSingleton<GameManager>
     }
     private void LoadInGame()
     {
-        AddInteractedItemsByName(itemData.itemCanInteract.ToArray());
+        if (itemData.itemCanInteract != null) AddInteractedItemsByName(itemData.itemCanInteract.ToArray());
         if (inventory != null) inventory.LoadInventory();
     }
+
+    public void RemoveAllItem()
+    {
+        if (itemData.itemCanInteract != null) itemData.itemCanInteract.Clear();
+
+        if (itemData.itemsInventory != null) itemData.itemsInventory.Clear();
+    }
+
 
     public void ChangeToScene(string sceneName) => SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     public void ChangeToScene(string sceneName, LoadSceneMode loadSceneMode) => SceneManager.LoadScene(sceneName, loadSceneMode);

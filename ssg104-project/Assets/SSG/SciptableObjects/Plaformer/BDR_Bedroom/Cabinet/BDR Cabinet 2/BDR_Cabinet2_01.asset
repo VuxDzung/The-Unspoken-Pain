@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subDialogues: []
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "Trong n\xE0y ch\u1EE9a thu\u1ED1c thang. \u1ED2, kia c\xF3 ph\u1EA3i
     l\xE0 thu\u1ED1c an th\u1EA7n kh\xF4ng? Ch\u1EAFc h\u1EB3n Alex ph\u1EA3i d\xF9ng
     n\xF3 th\u01B0\u1EDDng xuy\xEAn ..."
   nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

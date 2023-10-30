@@ -15,8 +15,9 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: c789acaef9f52ae43bd3825a58556d11, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "C\xF3 v\u1EBB \u0111\xE2y l\xE0 box chat c\u1EE7a Alex v\xE0 ch\u1ECB
     c\u1EE7a c\u1EADu \u1EA5y, Catherine."
   nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

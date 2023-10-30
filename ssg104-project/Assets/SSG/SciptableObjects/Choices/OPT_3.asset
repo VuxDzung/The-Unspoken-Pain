@@ -20,4 +20,4 @@ MonoBehaviour:
   dialogue: "M\xECnh s\u1EBD m\u1ED9t m\xECnh \u0111\u01B0\u01A1ng \u0111\u1EA7u
     v\u1EDBi Mark. "
   nodeSFX: {fileID: 0}
-  themeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 09616fb98ee40f94ab479c17c67ae80a, type: 3}

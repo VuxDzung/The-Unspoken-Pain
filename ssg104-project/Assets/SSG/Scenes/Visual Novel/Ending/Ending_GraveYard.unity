@@ -514,6 +514,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Views_Ending_GraveYard
       objectReference: {fileID: 0}
+    - target: {fileID: 4191180941745173736, guid: e30e1b44b181c424fa37b320883a7700,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191180941745173736, guid: e30e1b44b181c424fa37b320883a7700,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191180941745173736, guid: e30e1b44b181c424fa37b320883a7700,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191180941745173736, guid: e30e1b44b181c424fa37b320883a7700,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191180941745173736, guid: e30e1b44b181c424fa37b320883a7700,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -19,4 +19,4 @@ MonoBehaviour:
   backGroundImage: {fileID: 21300000, guid: 5cb36c9974cab4c43998125958f48168, type: 3}
   dialogue: "M\xECnh n\xEAn nghe Alex v\xE0 d\u1EEBng l\u1EA1i."
   nodeSFX: {fileID: 0}
-  themeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 09616fb98ee40f94ab479c17c67ae80a, type: 3}

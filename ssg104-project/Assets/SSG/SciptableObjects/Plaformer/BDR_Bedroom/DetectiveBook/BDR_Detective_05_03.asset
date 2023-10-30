@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subDialogues:
   - {fileID: 11400000, guid: 552a4e4970ba2da44822afec94b563db, type: 2}
-  characterName: 
-  characterImage: {fileID: 0}
+  characterName: NVC
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "\"\xD4ng ta \u0111\xE3 l\xEAn toa s\u1ED1 4, c\u1ED5ng s\u1ED1 7, th\u01B0a
     ng\xE0i!\""
   nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

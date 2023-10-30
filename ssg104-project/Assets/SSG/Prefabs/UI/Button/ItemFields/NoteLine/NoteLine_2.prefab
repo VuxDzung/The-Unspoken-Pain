@@ -25,7 +25,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6324876535694218302}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -66,10 +66,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- \xD4 s\u1ED1 3 l\xE0 s\u1ED1 4"
+  m_text: "- S\u1ED1 th\u1EE9 ba c\u1EE7a m\u1EADt m\xE3 l\xE0 s\u1ED1 4 (XX4X)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2b7a437273c79864d9693e463c991ae0, type: 2}
-  m_sharedMaterial: {fileID: 4316497025617987960, guid: 2b7a437273c79864d9693e463c991ae0,
+  m_fontAsset: {fileID: 11400000, guid: 0c7586aab256e2a4e9796b93585a0a54, type: 2}
+  m_sharedMaterial: {fileID: -6210159856900324548, guid: 0c7586aab256e2a4e9796b93585a0a54,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -133,6 +133,6 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}

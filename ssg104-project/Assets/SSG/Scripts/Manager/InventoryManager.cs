@@ -13,6 +13,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private RectTransform letterHolder;
     internal List<string> inventoryItems = new List<string>();
 
+    private string currentLetterName = "";
     private void Awake()
     {
         LoadInventory();
@@ -38,34 +39,52 @@ public class InventoryManager : MonoBehaviour
                     for (int i = 0; i < letterHolder.childCount; i++)
                     {
                         GameObject letter = letterHolder.GetChild(i).gameObject;
-                        letter.transform.GetComponent<RectTransform>().SetParent(letterHolder);
-                        if (inventoryItems.Contains(letter.name))
+                        if (letter.activeSelf) letter.SetActive(false);
+                    }
+
+                    for (int i = 0; i < letterHolder.childCount; i++)
+                    {
+                        GameObject letter = letterHolder.GetChild(i).gameObject;
+
+                        if (letter.name == GameManager.Instance.currentLetter)
                         {
-                            inventoryItems.Remove(letter.name);
+                            letter.SetActive(true);
                         }
                     }
                 }
-                item.GetComponent<RectTransform>().SetParent(letterHolder);
+                
             }
         }
 
         else if (item.name.Contains("MomChoice_")) //mom choices
         {
-            item.GetComponent<Button>().enabled = true;
-            item.GetComponent<Image>().enabled = true;
-            item.GetComponent<RectTransform>().SetParent(momChoiceHolder);
+            if (momChoiceHolder != null)
+            {
+                item.GetComponent<Button>().enabled = true;
+                item.GetComponent<Image>().enabled = true;
+                item.GetComponent<RectTransform>().SetParent(momChoiceHolder);
+            }
         }
         else // other items
         {
-            item.GetComponent<Button>().enabled = true;
-            item.GetComponent<Image>().enabled = true;
-            item.GetComponent<RectTransform>().SetParent(itemsHolder);
+            if (itemsHolder != null)
+            {
+                item.GetComponent<Button>().enabled = true;
+                item.GetComponent<Image>().enabled = true;
+                item.GetComponent<RectTransform>().SetParent(itemsHolder);
+            }
         }
 
+        if (item.GetComponent<InteractiveObject>() != null)
+            item.GetComponent<InteractiveObject>().interactable = true;
+
         if (inventoryItems.Contains(item.name)) return;
+
         inventoryItems.Add(item.name);
+        if (item.name.Contains("Letter_")) currentLetterName = item.name;
         Debug.Log($"Add Item: {item.name}");
         GameManager.Instance.itemData.itemsInventory = inventoryItems;
+        GameManager.Instance.currentLetter = currentLetterName;
     }
 
     public void AddItemByName(string[] itemNames)

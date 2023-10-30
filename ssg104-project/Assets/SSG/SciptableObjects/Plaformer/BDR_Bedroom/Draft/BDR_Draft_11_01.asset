@@ -15,8 +15,9 @@ MonoBehaviour:
   subDialogues:
   - {fileID: 11400000, guid: bfefaa5c285fa9d4086e5dbcd3b67e3e, type: 2}
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   backGroundImage: {fileID: 0}
   dialogue: "Hmm, t\u1EA1i sao Alex l\u1EA1i vi\u1EBFt l\u1EA1 nh\u01B0 v\u1EADy
     nh\u1EC9?"
   nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

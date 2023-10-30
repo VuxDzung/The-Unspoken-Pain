@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private string currentScene = "";
     [SerializeField] private string nextScene = "";
+    public bool allowToDefaultView = false;
 
     public string CurrentScene => currentScene;
 
@@ -163,6 +164,7 @@ public class DialogueManager : MonoBehaviour
                 if(stories.Length == 0)
                 {
                     GameManager.Instance.ChangeCanvas(GameManager.Instance.source.gameViews.Length);
+                    if (allowToDefaultView) GameManager.Instance.ChangeCanvas(0);
                     return;
                 }
                 changeStory = true;
@@ -201,6 +203,7 @@ public class DialogueManager : MonoBehaviour
             if (nextScene.Length == 0)
             {
                 GameManager.Instance.OutExternalView();
+                if (allowToDefaultView) GameManager.Instance.ChangeCanvas(0);
             }
             else
             {

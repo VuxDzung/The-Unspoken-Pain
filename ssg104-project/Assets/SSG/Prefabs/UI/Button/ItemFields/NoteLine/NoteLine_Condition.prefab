@@ -69,7 +69,7 @@ MonoBehaviour:
   m_text: "- \u0110\u1EC3 \xFD t\u1EDBi ch\u1EEF c\xE1i in hoa, th\u1EDDi gian th\u1EE9
     nh\u1EA5t"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2b7a437273c79864d9693e463c991ae0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0c7586aab256e2a4e9796b93585a0a54, type: 2}
   m_sharedMaterial: {fileID: 4316497025617987960, guid: 2b7a437273c79864d9693e463c991ae0,
     type: 2}
   m_fontSharedMaterials: []
@@ -134,6 +134,6 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}

@@ -922,7 +922,7 @@ PrefabInstance:
     - target: {fileID: 6598532943025768409, guid: 8edc6334a769ade42936f1f41fe78c90,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6598532943025768409, guid: 8edc6334a769ade42936f1f41fe78c90,
         type: 3}
@@ -932,7 +932,7 @@ PrefabInstance:
     - target: {fileID: 6598532943025768409, guid: 8edc6334a769ade42936f1f41fe78c90,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6598532943025768409, guid: 8edc6334a769ade42936f1f41fe78c90,
         type: 3}
@@ -942,7 +942,7 @@ PrefabInstance:
     - target: {fileID: 6598532943025768409, guid: 8edc6334a769ade42936f1f41fe78c90,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6598532943025768409, guid: 8edc6334a769ade42936f1f41fe78c90,
         type: 3}
@@ -1012,12 +1012,12 @@ PrefabInstance:
     - target: {fileID: 6598532943025768409, guid: 8edc6334a769ade42936f1f41fe78c90,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6598532943025768409, guid: 8edc6334a769ade42936f1f41fe78c90,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 540
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6598532943025768409, guid: 8edc6334a769ade42936f1f41fe78c90,
         type: 3}
@@ -2298,7 +2298,7 @@ PrefabInstance:
     - target: {fileID: 5962168304461208410, guid: b1b6a2da2c0efc74e9b09635909a9b46,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5962168304461208410, guid: b1b6a2da2c0efc74e9b09635909a9b46,
         type: 3}
@@ -2438,6 +2438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeSet
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022777986030948516, guid: cfdb88bd4a89a404abeb2bea13bfdf4b,
+        type: 3}
+      propertyPath: turnOffTextAfterFading
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5075143942278352927, guid: cfdb88bd4a89a404abeb2bea13bfdf4b,
         type: 3}

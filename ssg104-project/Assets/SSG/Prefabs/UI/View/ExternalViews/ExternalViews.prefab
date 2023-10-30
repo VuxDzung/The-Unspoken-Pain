@@ -1059,6 +1059,17 @@ PrefabInstance:
       propertyPath: view
       value: 
       objectReference: {fileID: 8848132173718256855}
+    - target: {fileID: 1452445607309223745, guid: 6fb369ba2b0ee3548a8406550b94a706,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710982792711475270, guid: 6fb369ba2b0ee3548a8406550b94a706,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e0c3e807e5af72b4f9286bc2cec394cd,
+        type: 3}
     - target: {fileID: 2716280888786798116, guid: 6fb369ba2b0ee3548a8406550b94a706,
         type: 3}
       propertyPath: m_Pivot.x

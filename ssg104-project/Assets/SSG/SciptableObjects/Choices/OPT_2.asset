@@ -20,4 +20,4 @@ MonoBehaviour:
   dialogue: "M\xECnh s\u1EBD x\xE2y d\u1EE5ng chi\u1EBFn d\u1ECBch ph\u1EA1m vi to\xE0n
     tr\u01B0\u1EDDng."
   nodeSFX: {fileID: 0}
-  themeSFX: {fileID: 0}
+  themeSFX: {fileID: 8300000, guid: 09616fb98ee40f94ab479c17c67ae80a, type: 3}

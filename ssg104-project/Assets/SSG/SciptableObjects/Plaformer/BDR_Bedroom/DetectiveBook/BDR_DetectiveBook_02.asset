@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subDialogues: []
   characterName: NVC
-  characterImage: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
-  backGroundImage: {fileID: 0}
+  characterImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
+  backGroundImage: {fileID: 21300000, guid: d6bb2c22465565f4fabf82059ecda4f8, type: 3}
   dialogue: "M\u1ED9t \u0111o\u1EA1n trong n\xE0y c\xF3 v\u1EBB \u0111\u01B0\u1EE3c
     \u0111\xE1nh d\u1EA5u l\u1EA1i ..."
   nodeSFX: {fileID: 0}
+  themeSFX: {fileID: 0}

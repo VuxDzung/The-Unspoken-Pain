@@ -1,8 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 public class UIHomeView : MonoBehaviour
 {
+    [SerializeField] private List<string> platformerScenes = new List<string>();
     [SerializeField] private Button newGameBtn;
     [SerializeField] private Button continueBtn;
     [SerializeField] private Button aboutUsBtn;
@@ -33,6 +35,11 @@ public class UIHomeView : MonoBehaviour
     {
         //Change to previous game scene
         string sceneName = SaveLoadSystem.LoadScene();
+
+        if (!platformerScenes.Contains(sceneName))
+        {
+            GameManager.Instance.RemoveAllItem();
+        }
         GameManager.Instance.ChangeToScene(sceneName);
     }
 

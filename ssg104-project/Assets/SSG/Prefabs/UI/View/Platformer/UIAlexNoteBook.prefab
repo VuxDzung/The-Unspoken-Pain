@@ -64,10 +64,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  loadType: 0
+  loadType: 2
   view: {fileID: 0}
   scene: 
   outExternalView: 0
+  allowToDefaultView: 0
   isSaveBtn: 0
 --- !u!114 &8495431804183555147
 MonoBehaviour:
@@ -121,8 +122,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+    m_PressedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -237,10 +238,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  loadType: 0
+  loadType: 2
   view: {fileID: 0}
   scene: 
   outExternalView: 0
+  allowToDefaultView: 0
   isSaveBtn: 0
 --- !u!114 &484252997710447408
 MonoBehaviour:
@@ -294,8 +296,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+    m_PressedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -413,6 +415,7 @@ MonoBehaviour:
   view: {fileID: 0}
   scene: 
   outExternalView: 0
+  allowToDefaultView: 0
   isSaveBtn: 0
 --- !u!114 &7581485145966759567
 MonoBehaviour:
@@ -466,8 +469,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+    m_PressedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -585,8 +588,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0110\u1ED3ng h\u1ED3 _XXX"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0c7586aab256e2a4e9796b93585a0a54, type: 2}
+  m_sharedMaterial: {fileID: -6210159856900324548, guid: 0c7586aab256e2a4e9796b93585a0a54,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -938,8 +942,9 @@ MonoBehaviour:
   m_text: "Quy\u1EC3n s\xE1ch c\u1EA7n \u0111\u1ECDc: Th\xE1m t\u1EED th\xF4ng th\xE1i
     v\xE0 chuy\u1EBFn t\xE0u b\xED \u1EA9n, trang 69"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0c7586aab256e2a4e9796b93585a0a54, type: 2}
+  m_sharedMaterial: {fileID: -6210159856900324548, guid: 0c7586aab256e2a4e9796b93585a0a54,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1210,8 +1215,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: XXXX
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0c7586aab256e2a4e9796b93585a0a54, type: 2}
+  m_sharedMaterial: {fileID: -6210159856900324548, guid: 0c7586aab256e2a4e9796b93585a0a54,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1613,3 +1619,4 @@ MonoBehaviour:
   setAlpha: 1
   setRGB: 0
   autoChange: 0
+  turnOffTextAfterFading: 0

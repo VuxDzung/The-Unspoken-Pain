@@ -17,6 +17,7 @@ public class InteractiveObject : MonoBehaviour
     [SerializeField] protected InteractiveView view;
     [SerializeField] private string scene;
     [SerializeField] private bool outExternalView;
+    [SerializeField] private bool allowToDefaultView = false;
     internal int viewOrder = 0;
     public Action<GameObject> interactAction { get; set; }
     public Action<GameObject> nonInteractAction { get; set; }
@@ -38,6 +39,8 @@ public class InteractiveObject : MonoBehaviour
     }
     public void OnOpen(GameObject obj)
     {
+        if (GameManager.Instance.dialogueManager != null)
+        GameManager.Instance.dialogueManager.allowToDefaultView = allowToDefaultView;
         switch (loadType)
         {
             case Load.view:

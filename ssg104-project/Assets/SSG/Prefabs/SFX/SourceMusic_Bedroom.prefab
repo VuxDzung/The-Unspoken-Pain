@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 1484043775260648820, guid: cd51d04562e9e9a469ef382b8663cfba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1484043775260648820, guid: cd51d04562e9e9a469ef382b8663cfba,
         type: 3}
@@ -73,8 +73,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: SourceMusic_Bedroom
       objectReference: {fileID: 0}
+    - target: {fileID: 3707562325104485556, guid: cd51d04562e9e9a469ef382b8663cfba,
+        type: 3}
+      propertyPath: m_TagString
+      value: MusicPlayer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3707562325104485556, guid: cd51d04562e9e9a469ef382b8663cfba,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6315563250886960327}
   m_SourcePrefab: {fileID: 100100000, guid: cd51d04562e9e9a469ef382b8663cfba, type: 3}
+--- !u!1 &1635438853760855979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3707562325104485556, guid: cd51d04562e9e9a469ef382b8663cfba,
+    type: 3}
+  m_PrefabInstance: {fileID: 2720691711783258911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6315563250886960327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635438853760855979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccdecccd3994b10428acfe1f2d187beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

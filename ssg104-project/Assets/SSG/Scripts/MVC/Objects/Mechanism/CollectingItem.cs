@@ -9,14 +9,17 @@ public class CollectingItem : MonoBehaviour
     Image image => GetComponent<Image>();
     [SerializeField] private Image containerImage;
     [SerializeField] private Sprite altImage;
+    [SerializeField] private InteractiveObject inventoryItem;
     void Start()
     {
         item.interactAction += Collecting;
     }
-    private void Awake()
+    private void OnEnable()
     {
-        if (item.interactable) return;
-        Collecting(this.gameObject);
+        if (inventoryItem.interactable)
+        {
+            Collecting(this.gameObject);
+        }
     }
     private void Collecting(GameObject obj)
     {
