@@ -45,7 +45,7 @@ public class UIHomeView : MonoBehaviour
 
     public void GoToDevsPage()
     {
-        Application.OpenURL("https://www.facebook.com/61552327743443/posts/pfbid0gA9p5dhjtV3cvckbYnAv1VeYeuPTz2sTs4xtbqSXLLW8cXJS2v2s83o91t5VR4RVl/?mibextid=cr9u03");
+        Application.OpenURL("https://www.facebook.com/profile.php?id=61552327743443");
     }
 
     public void StartNewGame()

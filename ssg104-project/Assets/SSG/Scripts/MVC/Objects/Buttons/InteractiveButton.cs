@@ -22,9 +22,16 @@ public class InteractiveButton : InteractiveObject
 
     private void Awake()
     {
-        button.onClick.AddListener(() => OnAction());
+        try
+        {
+            button.onClick.AddListener(() => OnAction());
 
-        if (isSaveBtn) button.onClick.AddListener(SaveProcess);
+            if (isSaveBtn) button.onClick.AddListener(SaveProcess);
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogError(ex);
+        }
     }
     private void ActiveColor()
     {

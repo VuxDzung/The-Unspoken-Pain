@@ -24,6 +24,15 @@ public static class SaveLoadSystem
         return LoadScene().Length != 0 && LoadPlayerName().Length != 0;
     }
 
+    public static void SetFirstPlay()
+    {
+        PlayerPrefs.SetInt("FirstPlay", 1);
+    }
+
+    public static bool IsFirstPlay()
+    {
+        return PlayerPrefs.GetInt("FirstPlay") == 0;
+    }
 
     #region SAVE_NON_VOLATILE
     public static void SaveScene(string sceneName) { PlayerPrefs.SetString("Scene", sceneName); }
