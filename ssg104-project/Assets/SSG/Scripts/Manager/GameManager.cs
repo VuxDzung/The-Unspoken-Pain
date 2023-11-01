@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,10 +16,17 @@ public class GameManager : GenericSingleton<GameManager>
 
     public string currentLetter { get; set; }
 
+    //internal int password = 0;
+    //internal int[] passDigits = new int[4];
+
     protected override void Awake()
     {
         base.Awake();
         LoadProcess();
+        //password = UnityEngine.Random.Range(1010, 9900);
+        //for(int i=0; i<passDigits.Length;i++)
+            //passDigits[i] = (int)(password / Math.Pow(10, passDigits.Length - i - 1)) % 10;
+
     }
 
     private void Start()

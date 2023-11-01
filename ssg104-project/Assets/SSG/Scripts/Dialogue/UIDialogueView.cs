@@ -39,6 +39,9 @@ public class UIDialogueView : MonoBehaviour
 
     private AudioClip currentClip;
 
+    private char[] textCollector;
+    private float typingTime;
+
     private void Awake()
     {
         playerName = SaveLoadSystem.LoadPlayerName();
@@ -140,10 +143,11 @@ public class UIDialogueView : MonoBehaviour
 
         if (tmpDialogue != null)
         {
-            string rawDialogue = dialogue.dialogue;
+            //string rawDialogue = dialogue.dialogue;
 
-            if (rawDialogue.Contains("NVC")) tmpDialogue.text = rawDialogue.Replace("NVC", playerName);
-            else tmpDialogue.text = rawDialogue;
+            //if (rawDialogue.Contains("NVC")) tmpDialogue.text = rawDialogue.Replace("NVC", playerName);
+            //else tmpDialogue.text = rawDialogue;
+            TextActive(dialogue);
         }
             
 
@@ -188,7 +192,28 @@ public class UIDialogueView : MonoBehaviour
         }
         
     }
+    Coroutine typingCoroutine = null;
+    private void TextActive(Dialogue dialogue)
+    {
+        if (tmpDialogue == null) return;
 
+        if (dialogue.typingTime <= 0) typingTime = 0.035f; //default
+        else typingTime = dialogue.typingTime;
+
+        string rawDialogue = dialogue.dialogue;
+
+        if (rawDialogue.Contains("NVC")) textCollector = rawDialogue.Replace("NVC", playerName).ToCharArray();
+        else textCollector = rawDialogue.ToCharArray();
+        if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+        typingCoroutine = StartCoroutine(TypingText(0));
+    }
+    private IEnumerator TypingText(int index)
+    {
+        if (index == 0) tmpDialogue.text = "";
+        tmpDialogue.text += textCollector[index];
+        yield return new WaitForSeconds(typingTime);
+        if (index < textCollector.Length - 1) typingCoroutine = StartCoroutine(TypingText(index + 1));
+    }
     private void Update()
     {
         if (manager.ReachEndOfStory())

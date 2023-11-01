@@ -13,4 +13,5 @@ public class Dialogue : ScriptableObject
     public string dialogue;
     public AudioClip nodeSFX;
     public AudioClip themeSFX;
+    public float typingTime = 0.035f;
 }
