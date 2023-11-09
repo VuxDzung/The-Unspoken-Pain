@@ -648,6 +648,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGS_Analytics_Home
       objectReference: {fileID: 0}
+    - target: {fileID: 2154654805859593871, guid: db4be0dddf3442b4fb3b2d0092ba920f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2964964931452776929, guid: db4be0dddf3442b4fb3b2d0092ba920f,
         type: 3}
       propertyPath: m_RootOrder
@@ -4417,7 +4422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4954495754153060825
 RectTransform:
   m_ObjectHideFlags: 0

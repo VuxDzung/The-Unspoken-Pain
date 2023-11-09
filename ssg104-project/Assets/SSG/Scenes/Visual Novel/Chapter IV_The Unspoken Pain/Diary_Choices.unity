@@ -1219,6 +1219,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UGS_Analytics_Diary_Choices
       objectReference: {fileID: 0}
+    - target: {fileID: 9217501885623978968, guid: d0fcbfe13e1de074087761e72571b82c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
